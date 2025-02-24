@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+		<meta charset="utf-8">
+		<title>Vendor Verbiage &mdash; Not Simon 🐐</title>
+		<link rel="stylesheet" type="text/css" href="https://infosec.press/css/write.css?f404f7b90ed9c9c7e4164cbf"/>
+		<link rel="shortcut icon" href="https://infosec.press/favicon.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="canonical" href="https://infosec.press/screaminggoat/vendor-verbiage"/>
+		<meta name="generator" content="WriteFreely">
+		<meta name="title" content="Vendor Verbiage � Not Simon 🐐">
+		<meta name="description" content="Software vendors make it extremely difficult (by design) to understand when a vulnerability affecting their product is either publicly kn...">
+		<meta name="twitter:label1" value="Views">
+		<meta name="twitter:data1" value="23,441">
+		<meta name="author" content="Not Simon 🐐"/>
+		<meta itemprop="description" content="Software vendors make it extremely difficult (by design) to understand when a vulnerability affecting their product is either publicly kn...">
+		<meta itemprop="datePublished" content="2024-12-23"/>
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:description" content="Software vendors make it extremely difficult (by design) to understand when a vulnerability affecting their product is either publicly kn...">
+		<meta name="twitter:title" content="Vendor Verbiage � Not Simon 🐐">
+		<meta name="twitter:image" content="https://infosec.press/img/avatars/n.png">
+		<meta property="og:title" content="Vendor Verbiage"/>
+		<meta property="og:description" content="Software vendors make it extremely difficult (by design) to understand when a vulnerability affecting their product is either publicly kn..."/>
+		<meta property="og:site_name" content="Not Simon 🐐"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="https://infosec.press/screaminggoat/vendor-verbiage"/>
+		<meta property="og:updated_time" content="2024-12-23T23:30:12Z"/>
+		<meta property="og:image" content="https://infosec.press/img/avatars/n.png">
+		<meta property="article:published_time" content="2024-12-23T23:30:12Z">
+	<link rel="me" href="https://infosec.exchange/@screaminggoat"/>
+<script>
+  addEventListener('DOMContentLoaded', function () {
+    var hlbaseUri = "/js/";
+    var lb = document.querySelectorAll("code[class^='language-']");
+    var aliasmap = {
+      "elisp"      : "lisp",
+      "emacs-lisp" : "lisp",
+      "c"          : "cpp",
+      "cc"         : "cpp",
+      "h"          : "cpp",
+      "c++"        : "cpp",
+      "h++"        : "cpp",
+      "hpp"        : "cpp",
+      "hh"         : "cpp",
+      "hxx"        : "cpp",
+      "cxx"        : "cpp",
+      "sh"         : "bash",
+      "js"         : "javascript",
+      "jsx"        : "javascript",
+      "html"       : "xml"
+    };
+    function highlight(nodes) {
+      for (i=0; i < nodes.length; i++) {
+          hljs.highlightBlock(nodes[i]);
+      }
+    }
+    function loadLanguages(uris, callback) {
+      uris.forEach(function(uri) {
+        var sc = document.createElement('script');
+        sc.src = uri;
+        sc.async = false; 
+        if (uris.indexOf(uri) == uris.length-1) {
+          sc.onload  = callback; sc.onerror = callback;
+        }
+        document.head.appendChild(sc);
+      });
+    }
+    if (lb.length > 0) {
+      var st = document.createElement('link');
+      st.rel = "stylesheet";
+      st.href = "/css/lib/atom-one-light.min.css";
+      document.head.appendChild(st);
+      var jss = [hlbaseUri + "highlight.min.js"];
+      for (i=0; i < lb.length; i++) {
+        lang = lb[i].className.replace('language-','').toLowerCase();
+        if (aliasmap[lang]) lang = aliasmap[lang];
+        lurl = hlbaseUri + "highlightjs/" + lang + ".min.js";
+        if (!jss.includes(lurl)) {
+          jss.push(lurl);
+        }
+      }
+      loadLanguages(jss, () => {highlight(lb)});
+    }
+  });
+</script>
+	</head>
+	<body id="post">
+		<div id="overlay"></div>
+		<header>
+		<h1 dir="ltr" id="blog-title"><a rel="author" href="https://infosec.press/screaminggoat/" class="h-card p-author">Not Simon 🐐</a></h1>
+			<nav>
+				<a class="pinned" href="about-this.html">About this</a><a class="pinned" href="hello-world.html">Hello World!</a><a class="pinned" href="russia.html">Russia</a><a class="pinned" href="china.html">China </a><a class="pinned" href="iran.html">Iran</a><a class="pinned" href="north-korea.html">North Korea</a><a class="pinned" href="attribution.html">Attribution</a>
+			</nav>
+		</header>
+		<article id="post-body" class="norm h-entry "><h2 id="title" class="p-name dated">Vendor Verbiage</h2><time class="dt-published" datetime="2024-12-23T23:30:12Z" pubdate itemprop="datePublished" content="2024-12-23 23:30:12 +0000 UTC">December 23, 2024</time><div class="e-content"><p>Software vendors make it extremely difficult (by design) to understand when a vulnerability affecting their product is either publicly known (proof of concept) or exploited in the wild (possibly as a zero-day). Everyone&#39;s language is different from each other. I have compiled a list of messages (sorted by vendor name) from official security advisories that either imply or explicitly state proof of concept or evidence of exploitation. I have included a link and date for reference, in case these vendors change their verbiage in the future. Pair this with the <a href="https://infosec.press/screaminggoat/patch-tuesday" rel="nofollow">Patch Tuesday</a> post.</p>
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+
+<h3 id="a" id="a">A</h3>
+
+<p><strong>Adobe</strong>:</p>
+<ul><li>Proof of Concept: “Adobe is aware that  CVE-2024-53961 has a known proof-of-concept...” <a href="https://helpx.adobe.com/security/products/coldfusion/apsb24-107.html" rel="nofollow">Link</a> (December 23, 2024)</li>
+<li>Exploited in the Wild:
+<ul><li>“Adobe is aware that CVE-2023-29298 has been exploited in the wild in limited attacks targeting Adobe ColdFusion.” <a href="https://helpx.adobe.com/security/products/coldfusion/apsb23-40.html" rel="nofollow">Link</a> (July 19, 2023)</li>
+<li>“As of September 28, Adobe is aware of a report that CVE-2018-15961 is being actively exploited in the wild.” <a href="https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html" rel="nofollow">Link</a>
+(September 28, 2018)</li>
+<li>“Adobe is aware that CVE-2024-34102 has been exploited in the wild in limited attacks targeting Adobe Commerce merchants.” (<a href="https://helpx.adobe.com/security/products/magento/apsb24-40.html" rel="nofollow">Link</a>: June 26, 2024)</li></ul></li></ul>
+
+<p><strong>Apple</strong>:</p>
+<ul><li>Exploited in the wild:
+<ul><li>“Apple is aware of a report that this issue may have been exploited.” (<a href="https://support.apple.com/en-us/120311" rel="nofollow">Link</a>: January 22, 2024)</li>
+<li>“Apple is aware of a report that this issue may have been actively exploited on Intel-based Mac systems.” (<a href="https://support.apple.com/en-us/121752" rel="nofollow">Link</a>: November 19, 2024)</li></ul></li></ul>
+
+<p><strong>Arm</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Arm is aware of reports of this vulnerability being exploited in the wild.” (<a href="https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities" rel="nofollow">Link</a>: June 07, 2024)</li>
+<li>“There is evidence that this vulnerability may be under limited, targeted exploitation.” (<a href="https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities" rel="nofollow">Link</a>: October 02, 2023)</li></ul></li></ul>
+
+<p><strong>Atlassian</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploited a previously unknown vulnerability in publicly accessible Confluence Data Center and Server instances to create unauthorized Confluence administrator accounts and access Confluence instances.” “UPDATE: We have evidence to suggest that a known nation-state actor is actively exploiting CVE-2023-22515 and continue to work closely with our partners and customers to investigate.” (<a href="https://confluence.atlassian.com/security/cve-2023-22515-broken-access-control-vulnerability-in-confluence-data-center-and-server-1295682276.html" rel="nofollow">Link</a>: October 05, 2023)</li>
+<li>“As part of Atlassian&#39;s ongoing monitoring and investigation of this CVE, we observed several active exploits and reports of threat actors using ransomware.” (<a href="https://confluence.atlassian.com/security/cve-2023-22518-improper-authorization-vulnerability-in-confluence-data-center-and-server-1311473907.html" rel="nofollow">Link</a>: November 06, 2023)</li>
+<li>“Atlassian is aware of current active exploitation of a critical severity unauthenticated remote code execution vulnerability in Confluence Data Center and Server.” (<a href="https://confluence.atlassian.com/kb/faq-for-cve-2022-26134-1139441859.html" rel="nofollow">Link</a>: June 03, 2022)</li></ul></li></ul>
+
+<h3 id="b" id="b">B</h3>
+
+<p><strong>Barracuda</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Based on our investigation to date, we’ve identified that the vulnerability resulted in unauthorized access to a subset of email gateway appliances.” (<a href="https://status.barracuda.com/incidents/34kx82j5n4q9" rel="nofollow">Link</a>: May 23, 2023)</li>
+<li>“Earliest identified evidence of exploitation of CVE-2023-2868 is currently October 2022.” (<a href="https://www.barracuda.com/company/legal/esg-vulnerability" rel="nofollow">Link</a>: May 30, 2023)</li>
+<li>”...including that exploitation occurred on a subset of compromised Barracuda Email Security Gateway (ESG) appliances by an aggressive and highly skilled actor conducting targeted activity...” (<a href="https://www.barracuda.com/company/legal/esg-vulnerability" rel="nofollow">Link</a>: June 15, 2023)</li></ul></li></ul>
+
+<h3 id="c" id="c">C</h3>
+
+<p><strong>Check Point</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Following our security update on May 27, 2024, Check Point&#39;s dedicated task force continues investigating attempts to gain unauthorized access to VPN products used by our customers. On May 28, 2024 we discovered a vulnerability in Security Gateways with IPsec VPN in Remote Access VPN community and the Mobile Access software blade (CVE-2024-24919). Exploiting this vulnerability can result in accessing sensitive information on the Security Gateway.” (<a href="https://support.checkpoint.com/results/sk/sk182336" rel="nofollow">Link</a>: May 29, 2024)</li>
+<li>“Yesterday (May 27, 2024) we delivered a solution that addresses attempts we saw on a small number of customers’ VPN remote access networks as referenced below. Today, we found the root cause for these and are now releasing a fix.” (<a href="https://blog.checkpoint.com/security/enhance-your-vpn-security-posture" rel="nofollow">Link</a>: May 28, 2024)</li></ul></li></ul>
+
+<p><strong>Cisco</strong>:</p>
+<ul><li>Proof of Concept: “The Cisco PSIRT is aware that proof-of-concept exploit code is available for the vulnerability that is described in this advisory.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-injection-6kn9tSxm" rel="nofollow">Link</a>: September 04, 2024)</li>
+<li>Exploited in the Wild:
+<ul><li>“Cisco is aware of active exploitation of these vulnerabilities.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-iosxe-webui-privesc-j22SaA4z" rel="nofollow">Link</a>: October 16, 2023)</li>
+<li>“The Cisco Product Security Incident Response Team (PSIRT) is aware of malicious use of the vulnerability that is described in this advisory.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-bf-dos-vDZhLqrW" rel="nofollow">Link</a>: October 23, 2024)</li>
+<li>“In November 2024, the Cisco Product Security Incident Response Team (PSIRT) became aware of additional attempted exploitation of this vulnerability in the wild.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-CVE-2014-2120" rel="nofollow">Link</a>: December 02, 2024)</li></ul></li></ul>
+
+<p><strong>Citrix</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Exploits of these CVEs on unmitigated appliances have been observed.” (<a href="https://support.citrix.com/s/article/CTX584986-netscaler-adc-and-netscaler-gateway-security-bulletin-for-cve20236548-and-cve20236549?language=en_US" rel="nofollow">Link</a>: January 16, 2024)</li>
+<li>“Exploits of CVE-2023-3519 on unmitigated appliances have been observed.” (<a href="https://support.citrix.com/s/article/CTX561482-citrix-adc-and-citrix-gateway-security-bulletin-for-cve20233519-cve20233466-cve20233467?language=en_US" rel="nofollow">Link</a>: July 18, 2023)</li>
+<li>“We are aware of a small number of targeted attacks in the wild using this vulnerability” (<a href="https://www.citrix.com/blogs/2022/12/13/critical-security-update-now-available-for-citrix-adc-citrix-gateway/" rel="nofollow">Link</a>: June 07, 2023)</li></ul></li></ul>
+
+<h3 id="d" id="d">D</h3>
+
+<p><strong>D-Link</strong>:</p>
+<ul><li>Proof of Concept:
+<ul><li>“0-day Vulnerability” (<a href="https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10295" rel="nofollow">Link</a>: September 06, 2022)</li>
+<li>“On May 15th,  2024, a 3rd party security researcher, publically 0-day disclosed the D-Link Router DIR-X4860 (firmware ver. 1.04b03) with potential vulnerabilities.” (<a href="https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10390" rel="nofollow">Link</a>: May 16, 2024)</li></ul></li></ul>
+
+<h3 id="e" id="e">E</h3>
+
+<h3 id="f" id="f">F</h3>
+
+<p><strong>F5</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“F5 has observed threat actors using this vulnerability to exploit CVE-2023-46748.” (<a href="https://my.f5.com/manage/s/article/K000137353" rel="nofollow">Link</a>: October 30, 2023)</li>
+<li>“This information is based on the evidence F5 has seen on compromised devices, which appear to be reliable indicators.” (<a href="https://my.f5.com/manage/s/article/K000137365" rel="nofollow">Link</a>: October 30, 2023)</li></ul></li></ul>
+
+<p><strong>Fortinet</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Reports have shown this vulnerability to be exploited in the wild.” (<a href="https://www.fortiguard.com/psirt/FG-IR-24-423" rel="nofollow">Link</a>: November 27, 2024)</li>
+<li>“Note: This is potentially being exploited in the wild.” (<a href="https://www.fortiguard.com/psirt/FG-IR-24-015" rel="nofollow">Link</a>: February 08, 2024)</li>
+<li>“A third-party report is indicating this may be exploited in the wild.” (<a href="https://www.fortiguard.com/psirt/FG-IR-24-029" rel="nofollow">Link</a>: October 11, 2024)</li></ul></li></ul>
+
+<h3 id="g" id="g">G</h3>
+
+<p><strong>Google</strong> (Android):</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Note: There are indications that the following may be under limited, targeted exploitation.” (<a href="https://source.android.com/docs/security/bulletin/2024-11-01" rel="nofollow">Link</a>: November 04, 2024)</li>
+<li>“Note: There are indications that CVE-2024-36971 may be under limited, targeted exploitation.” (<a href="https://source.android.com/docs/security/bulletin/2024-08-01" rel="nofollow">Link</a>: August 05, 2024)</li></ul></li></ul>
+
+<p><strong>Google</strong> (Chrome):</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Google is aware of reports that an exploit for CVE-2024-0519 exists in the wild.” (<a href="https://chromereleases.googleblog.com/2024/01/stable-channel-update-for-desktop_16.html" rel="nofollow">Link</a>: January 16, 2024)</li>
+<li>“Updated on 26 August 2024 to reflect the in the wild exploitation of CVE-2024-7965 which was reported after this release.” (<a href="https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_21.html" rel="nofollow">Link</a>: August 26, 2024)</li></ul></li></ul>
+
+<h3 id="h" id="h">H</h3>
+
+<h3 id="i" id="i">I</h3>
+
+<p><strong>Ivanti</strong>:</p>
+<ul><li>Proof of Concept: “However, a Proof of Concept is publicly available...” (<a href="https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Virtual-Traffic-Manager-vTM-CVE-2024-7593?language=en_US" rel="nofollow">Link</a>: August 12, 2024)</li>
+<li>Exploited in the Wild:
+<ul><li>“We are aware of a limited number of customers’ Ivanti Connect Secure appliances being exploited by CVE-2025-0282 at the time of disclosure.” (<a href="https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-Policy-Secure-ZTA-Gateways-CVE-2025-0282-CVE-2025-0283?language=en_US" rel="nofollow">Link</a>: January 08, 2025)</li>
+<li>“We are aware of a limited number of customers running CSA 4.6 patch 518 and prior who have been exploited when CVE-2024-9379 or CVE-2024-9380 are chained with CVE-2024-8963” (<a href="https://www.ivanti.com/blog/october-2024-security-update" rel="nofollow">Link</a>: October 08, 2024)</li>
+<li>”...at time of disclosure we were aware of a limited number of customers impacted by CVE-2023-46805, CVE-2024-21887 and CVE-2024-21893.” “We are aware of less than 20 customers impacted by the vulnerabilities prior to public disclosure.” (<a href="https://forums.ivanti.com/s/article/KB-CVE-2023-46805-Authentication-Bypass-CVE-2024-21887-Command-Injection-for-Ivanti-Connect-Secure-and-Ivanti-Policy-Secure-Gateways?language=en_US" rel="nofollow">Link</a>: January 10, 2024)</li></ul></li></ul>
+
+<h3 id="j" id="j">J</h3>
+
+<p><strong>JetBrains</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“On October 17, 2023, the Microsoft Threat Intelligence Center team reached out to JetBrains to inform us they have observed multiple North Korean nation-state threat actors actively exploiting the CVE-2023-42793 vulnerability since early October 2023.” (<a href="https://blog.jetbrains.com/teamcity/2023/10/cve-2023-42793-vulnerability-in-teamcity-october-18-2023-update/" rel="nofollow">Link</a>: October 18, 2023)</li>
+<li>“On December 13, 2023 the Cybersecurity &amp; Infrastructure Security Agency of the U.S. Department of Homeland Security (CISA) released a public advisory, in which they shared new ways in which this vulnerability (CVE-2023-42793) has been exploited by Russian nation-state threat actors as of September 2023.” (<a href="https://blog.jetbrains.com/teamcity/2023/12/cve-2023-42793-vulnerability-in-teamcity-december-14-2023-update/" rel="nofollow">Link</a>: December 14, 2023)</li>
+<li>“Customer A ... Believed they were impacted by the CVE-2024-27198 vulnerability.” “They noticed several unauthorized admin accounts created on the server.” “Their TeamCity environment had been compromised through the recent vulnerabilities.” “Several unknown user accounts had been created on their TeamCity server.” (<a href="https://blog.jetbrains.com/teamcity/2024/03/preventing-exploits-jetbrains-ethical-approach-to-vulnerability-disclosure/" rel="nofollow">Link</a>: March 11, 2024)</li></ul></li></ul>
+
+<p><strong>Juniper</strong>:</p>
+<ul><li>Proof of Concept: “However, a proof-of-concept exploit does exist in the wild.” (<a href="https://supportportal.juniper.net/s/article/2021-07-Security-Bulletin-Junos-OS-J-Web-allows-a-locally-authenticated-attacker-to-escalate-their-privileges-to-root-CVE-2021-0278?language=en_US" rel="nofollow">Link</a>: June 28, 2021)</li>
+<li>Exploited in the Wild: “Juniper SIRT is aware of successful malicious exploitation of these vulnerabilities.”  (<a href="https://supportportal.juniper.net/s/article/2023-08-Out-of-Cycle-Security-Bulletin-Junos-OS-SRX-Series-and-EX-Series-Multiple-vulnerabilities-in-J-Web-can-be-combined-to-allow-a-preAuth-Remote-Code-Execution?language=en_US" rel="nofollow">Link</a>: November 08, 2023)</li></ul>
+
+<h3 id="k" id="k">K</h3>
+
+<h3 id="l" id="l">L</h3>
+
+<h3 id="m" id="m">M</h3>
+
+<p><strong>Microsoft</strong>:</p>
+<ul><li>Proof of Concept: “Publicly disclosed: Yes” (<a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49138" rel="nofollow">Link</a>: December 10, 2024)</li>
+<li>Exploited in the Wild: “Exploited: Yes” ; “Exploitability assessment: Exploitation Detected” (<a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49138" rel="nofollow">Link</a>: December 10, 2024)</li></ul>
+
+<p><strong>Mozilla Foundation</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“We have had reports of this vulnerability being exploited in the wild.” (<a href="https://www.mozilla.org/en-US/security/advisories/mfsa2024-51/" rel="nofollow">Link</a>: October 09, 2024)</li>
+<li>“An exploit built on this vulnerability has been discovered in the wild targeting Firefox and Tor Browser users on Windows.” (<a href="https://www.mozilla.org/en-US/security/advisories/mfsa2016-92/#CVE-2016-9079" rel="nofollow">Link</a>: November 30, 2016)</li></ul></li></ul>
+
+<h3 id="n" id="n">N</h3>
+
+<h3 id="o" id="o">O</h3>
+
+<p><strong>Oracle</strong>:</p>
+<ul><li>Exploited in the Wild: “It was reported as being actively exploited “in the wild” by CrowdStrike.” (<a href="https://blogs.oracle.com/security/post/alert-cve-2024-21287" rel="nofollow">Link</a>: November 18, 2024)</li></ul>
+
+<h3 id="p" id="p">P</h3>
+
+<p><strong>Palo Alto Networks</strong>:</p>
+<ul><li>Proof of Concept:
+<ul><li>“We are aware of a publicly available conference talk and blog posts discussing this issue. A proof of concept for this issue is also publicly available.” (<a href="https://security.paloaltonetworks.com/CVE-2024-5921" rel="nofollow">Link</a>: November 25, 2024)</li>
+<li>“However, a proof of concept for this issue is publicly available.” (<a href="https://security.paloaltonetworks.com/CVE-2024-9473" rel="nofollow">Link</a>: October 09, 2024)</li>
+<li>“Proof of concepts for this vulnerability have been publicly disclosed by third parties.” (<a href="https://security.paloaltonetworks.com/CVE-2024-3400" rel="nofollow">Link</a>: April 29, 2024)</li></ul></li>
+<li>Exploited in the Wild:
+<ul><li>“Palo Alto Networks is aware of customers experiencing this denial of service (DoS) when their firewall blocks malicious DNS packets that trigger this issue.” (<a href="https://security.paloaltonetworks.com/CVE-2024-3393" rel="nofollow">Link</a>: December 26, 2024)</li>
+<li>“Palo Alto Networks is aware of an increasing number of attacks that leverage the exploitation of this vulnerability.” (<a href="https://security.paloaltonetworks.com/CVE-2024-9474" rel="nofollow">Link</a>: November 18, 2024)</li>
+<li>“Palo Alto Networks is aware of an increasing number of attacks that leverage the exploitation of this vulnerability.” (<a href="https://security.paloaltonetworks.com/CVE-2024-3400" rel="nofollow">Link</a>: April 29, 2024)</li>
+<li>“Palo Alto Networks recently learned that an attempted reflected denial-of-service (RDoS) attack was identified by a service provider. This attempted attack took advantage of susceptible firewalls from multiple vendors, including Palo Alto Networks.” (<a href="https://security.paloaltonetworks.com/CVE-2022-0028" rel="nofollow">Link</a>: August 10, 2022)</li></ul></li></ul>
+
+<p><strong>PaperCut</strong>:</p>
+<ul><li>Exploited in the Wild: “We have evidence to suggest that unpatched servers are being exploited in the wild.” “PaperCut received our first report from a customer of suspicious activity on their PaperCut server on the 18th April at 03:30 AEST / 17th April 17:30 UTC.” (<a href="https://www.papercut.com/kb/Main/PO-1216-and-PO-1219" rel="nofollow">Link</a>: April 18, 2023)</li></ul>
+
+<p><strong>Progress Software</strong> (MOVEit):</p>
+<ul><li>Exploited in the Wild: “NOTE: this is exploited in the wild in May and June 2023” (<a href="https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-31May2023" rel="nofollow">Link</a>: June 16, 2023)</li></ul>
+
+<h3 id="q" id="q">Q</h3>
+
+<p><strong>Qlik</strong>:</p>
+<ul><li>Exploited in the Wild: “Qlik has received reports that this vulnerability may be being used by malicious actors.” (<a href="https://community.qlik.com/t5/Official-Support-Articles/Critical-Security-fixes-for-Qlik-Sense-Enterprise-for-Windows/ta-p/2110801" rel="nofollow">Link</a>: May 15, 2024)</li></ul>
+
+<p><strong>QNAP</strong>:</p>
+<ul><li>Exploited in the Wild: “QNAP detected a new DeadBolt ransomware campaign on the morning of September 3rd, 2022 (GMT+8). The campaign appears to target QNAP NAS devices running Photo Station with internet exposure.” (<a href="https://www.qnap.com/en/security-advisory/qsa-22-24" rel="nofollow">Link</a>: September 03, 2022)</li></ul>
+
+<p><strong>Qualcomm</strong>:</p>
+<ul><li>Exploited in the Wild: “There are indications from Google Threat Analysis Group that CVE-2024-43047 may be under limited, targeted exploitation.” (<a href="https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2024-bulletin.html" rel="nofollow">Link</a>: October 07, 2024)</li></ul>
+
+<h3 id="r" id="r">R</h3>
+
+<h3 id="s" id="s">S</h3>
+
+<p><strong>SolarWinds</strong>:</p>
+<ul><li>Exploited in the Wild: “This is being exploited in the wild.” (<a href="https://www.solarwinds.com/trust-center/security-advisories/cve-2024-28995" rel="nofollow">Link</a>: June 06, 2024)</li></ul>
+
+<p><strong>SonicWall</strong>:</p>
+<ul><li>Proof of Concept: “SonicWall PSIRT is aware that a proof of concept (PoC) exploit for this vulnerabilities is publicly available” (<a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0016" rel="nofollow">Link</a>: September 27, 2024)</li>
+<li>Exploited in the Wild: “This vulnerability is potentially being exploited in the wild.” (<a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0015" rel="nofollow">Link</a>: September 06, 2024)</li></ul>
+
+<p><strong>Sophos</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Sophos has observed this vulnerability being used in the wild.” (<a href="https://www.sophos.com/en-us/security-advisories/sophos-sa-20220923-sfos-rce" rel="nofollow">Link</a>: October 20, 2022)</li>
+<li>“In December 2023, we delivered an updated fix after identifying new exploit attempts against this same vulnerability in older, unsupported versions of the Sophos Firewall.” (<a href="https://www.sophos.com/en-us/security-advisories/sophos-sa-20220923-sfos-rce" rel="nofollow">Link</a>: December 11, 2023)</li></ul></li></ul>
+
+<p><strong>SysAid</strong>:</p>
+<ul><li>Exploited in the Wild: “The investigation determined that there was a zero-day vulnerability in the SysAid on-premises software.”“The vulnerability was exploited by a group known as DEV-0950 (Lace Tempest), as identified by the Microsoft Threat Intelligence team.” (<a href="https://www.sysaid.com/blog/service-desk/on-premise-software-security-vulnerability-notification" rel="nofollow">Link</a>: November 08, 2023)</li></ul>
+
+<h3 id="t" id="t">T</h3>
+
+<p><strong>TP-Link</strong>:</p>
+<ul><li>Exploited in the Wild: “TP-Link is aware of reports that the Remote Code Execution (REC) vulnerability detailed in CVE-2023-1389 in AX21 has been added to the Mirai botnet Arsenal.” (<a href="https://www.tp-link.com/us/support/faq/3643/" rel="nofollow">Link</a>: April 27, 2023)</li></ul>
+
+<p><strong>Trend Micro</strong>:</p>
+<ul><li>Exploited in the Wild: “ITW Alert: Trend Micro has observed at least one active attempt of potential exploitation of this vulnerability in the wild.” (<a href="https://success.trendmicro.com/en-US/solution/KA-0013373" rel="nofollow">Link</a>: September 13, 2022)</li></ul>
+
+<h3 id="u" id="u">U</h3>
+
+<h3 id="v" id="v">V</h3>
+
+<p><strong>Veritas</strong>:</p>
+<ul><li>Exploited in the Wild: “March 2023: A known exploit is available in the wild for the vulnerabilities below and could be used as part of a ransomware attack.” (<a href="https://www.veritas.com/support/en_US/security/VTS21-001" rel="nofollow">Link</a>: March ?? 2023)</li></ul>
+
+<p><strong>Versa</strong>:</p>
+<ul><li>Proof of Concept: “A proof of concept exists in the lab environment.” (<a href="https://security-portal.versa-networks.com/emailbulletins/66e4a8ebda545d61ec2b1ab9" rel="nofollow">Link</a>: September 20, 2024)</li>
+<li>Exploited in the Wild: “This vulnerability has been exploited in at least one known instance by an Advanced Persistent Threat actor.” (<a href="https://versa-networks.com/blog/versa-security-bulletin-update-on-cve-2024-39717-versa-director-dangerous-file-type-upload-vulnerability/" rel="nofollow">Link</a>: August 26, 2024)</li></ul>
+
+<p><strong>VMware</strong> (Broadcom):</p>
+<ul><li>Proof of Concept: “VMware has confirmed that exploit code leveraging CVE-2021-39144 against impacted products has been published.” (<a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/23646" rel="nofollow">Link</a>: October 27, 2022)</li>
+<li>Exploited in the Wild:
+<ul><li>“VMware by Broadcom confirmed that exploitation has occurred in the wild for CVE-2024-38812.” (<a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/24968" rel="nofollow">Link</a>: November 18, 2024) (<a href="https://versa-networks.com/blog/versa-security-bulletin-update-on-cve-2024-39717-versa-director-dangerous-file-type-upload-vulnerability/" rel="nofollow">Link</a>: August 26, 2024)</li>
+<li>“VMware has confirmed that exploitation of CVE-2023-20887 has occurred in the wild.” (<a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/23674" rel="nofollow">Link</a>: June 20, 2023)</li></ul></li></ul>
+
+<h3 id="w" id="w">W</h3>
+
+<h3 id="x" id="x">X</h3>
+
+<h3 id="y" id="y">Y</h3>
+
+<h3 id="z" id="z">Z</h3>
+
+<p><strong>Zimbra</strong>:</p>
+<ul><li>Exploited in the Wild: “Important: This vulnerability has been actively exploited, making it imperative to take immediate action.” (<a href="https://blog.zimbra.com/2023/07/security-update-for-zimbra-collaboration-suite-version-8-8-15/" rel="nofollow">Link</a>: July 13, 2023)</li></ul>
+
+<p><strong>Zoho</strong> (ManageEngine):</p>
+<ul><li>Proof of Concept: “The exploit POC for the above vulnerability is available in public.” (<a href="https://www.manageengine.com/products/passwordmanagerpro/advisory/cve-2022-35405.html" rel="nofollow">Link</a>: July 19, 2022)</li></ul>
+
+<p><strong>Zyxel</strong>:</p>
+<ul><li>Exploited in the Wild: “Zyxel is aware of recent attempts by threat actors to target Zyxel firewalls through previously disclosed vulnerabilities” (<a href="https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-protecting-against-recent-firewall-threats-11-27-2024" rel="nofollow">Link</a>: November 27, 2024)</li></ul>
+</div></article>
+		<footer dir="ltr"><hr><nav><p style="font-size: 0.9em">published with <a href="https://writefreely.org/">writefreely</a></p></nav></footer>
+	</body>
+	<script src="https://infosec.press/js/localdate.js"></script>
+	<script type="text/javascript">
+	try { 
+	  WebFontConfig = {
+		custom: { families: [ 'Lora:400,700:latin', 'Open+Sans:400,700:latin' ], urls: [ '/css/fonts.css' ] }
+	  };
+	  (function() {
+		var wf = document.createElement('script');
+		wf.src = '/js/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	  })();
+	} catch (e) {   }
+	</script>
+</html>

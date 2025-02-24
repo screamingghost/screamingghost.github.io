@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+		<meta charset="utf-8">
+		<title>Patch Tuesday &mdash; Not Simon 🐐</title>
+		<link rel="stylesheet" type="text/css" href="https://infosec.press/css/write.css?f404f7b90ed9c9c7e4164cbf"/>
+		<link rel="shortcut icon" href="https://infosec.press/favicon.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="canonical" href="https://infosec.press/screaminggoat/patch-tuesday"/>
+		<meta name="generator" content="WriteFreely">
+		<meta name="title" content="Patch Tuesday ? Not Simon 🐐">
+		<meta name="description" content="Here's a handy resource: A list of vendor security advisories, sorted by Patch Tuesday schedule (if they adhere to it). This is not a com...">
+		<meta name="twitter:label1" value="Views">
+		<meta name="twitter:data1" value="3,254">
+		<meta name="author" content="Not Simon 🐐"/>
+		<meta itemprop="description" content="Here's a handy resource: A list of vendor security advisories, sorted by Patch Tuesday schedule (if they adhere to it). This is not a com...">
+		<meta itemprop="datePublished" content="2024-12-26"/>
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:description" content="Here's a handy resource: A list of vendor security advisories, sorted by Patch Tuesday schedule (if they adhere to it). This is not a com...">
+		<meta name="twitter:title" content="Patch Tuesday ? Not Simon 🐐">
+		<meta name="twitter:image" content="https://infosec.press/img/avatars/n.png">
+		<meta property="og:title" content="Patch Tuesday"/>
+		<meta property="og:description" content="Here's a handy resource: A list of vendor security advisories, sorted by Patch Tuesday schedule (if they adhere to it). This is not a com..."/>
+		<meta property="og:site_name" content="Not Simon 🐐"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="https://infosec.press/screaminggoat/patch-tuesday"/>
+		<meta property="og:updated_time" content="2024-12-26T03:09:42Z"/>
+		<meta property="og:image" content="https://infosec.press/img/avatars/n.png">
+		<meta property="article:published_time" content="2024-12-26T03:09:42Z">
+	<link rel="me" href="https://infosec.exchange/@screaminggoat"/>
+<script>
+  addEventListener('DOMContentLoaded', function () {
+    var hlbaseUri = "/js/";
+    var lb = document.querySelectorAll("code[class^='language-']");
+    var aliasmap = {
+      "elisp"      : "lisp",
+      "emacs-lisp" : "lisp",
+      "c"          : "cpp",
+      "cc"         : "cpp",
+      "h"          : "cpp",
+      "c++"        : "cpp",
+      "h++"        : "cpp",
+      "hpp"        : "cpp",
+      "hh"         : "cpp",
+      "hxx"        : "cpp",
+      "cxx"        : "cpp",
+      "sh"         : "bash",
+      "js"         : "javascript",
+      "jsx"        : "javascript",
+      "html"       : "xml"
+    };
+    function highlight(nodes) {
+      for (i=0; i < nodes.length; i++) {
+          hljs.highlightBlock(nodes[i]);
+      }
+    }
+    function loadLanguages(uris, callback) {
+      uris.forEach(function(uri) {
+        var sc = document.createElement('script');
+        sc.src = uri;
+        sc.async = false; 
+        if (uris.indexOf(uri) == uris.length-1) {
+          sc.onload  = callback; sc.onerror = callback;
+        }
+        document.head.appendChild(sc);
+      });
+    }
+    if (lb.length > 0) {
+      var st = document.createElement('link');
+      st.rel = "stylesheet";
+      st.href = "/css/lib/atom-one-light.min.css";
+      document.head.appendChild(st);
+      var jss = [hlbaseUri + "highlight.min.js"];
+      for (i=0; i < lb.length; i++) {
+        lang = lb[i].className.replace('language-','').toLowerCase();
+        if (aliasmap[lang]) lang = aliasmap[lang];
+        lurl = hlbaseUri + "highlightjs/" + lang + ".min.js";
+        if (!jss.includes(lurl)) {
+          jss.push(lurl);
+        }
+      }
+      loadLanguages(jss, () => {highlight(lb)});
+    }
+  });
+</script>
+	</head>
+	<body id="post">
+		<div id="overlay"></div>
+		<header>
+		<h1 dir="ltr" id="blog-title"><a rel="author" href="/web/20250113130048/https://infosec.press/screaminggoat/" class="h-card p-author">Not Simon 🐐</a></h1>
+			<nav>
+				<a class="pinned" href="about-this.html">About this</a><a class="pinned" href="hello-world.html">Hello World!</a><a class="pinned" href="russia.html">Russia</a><a class="pinned" href="china.html">China </a><a class="pinned" href="iran.html">Iran</a><a class="pinned" href="north-korea.html">North Korea</a><a class="pinned" href="attribution.html">Attribution</a>
+			</nav>
+		</header>
+		<article id="post-body" class="norm h-entry "><h2 id="title" class="p-name dated">Patch Tuesday</h2><time class="dt-published" datetime="2024-12-26T03:09:42Z" pubdate itemprop="datePublished" content="2024-12-26 03:09:42 +0000 UTC">December 26, 2024</time><div class="e-content"><p>Here&#39;s a handy resource: A list of vendor security advisories, sorted by Patch Tuesday schedule (if they adhere to it). This is not a complete or definitive list, but it&#39;s better than nothing. I also don&#39;t worry about all of the listed vendors, and didn&#39;t include ones who don&#39;t even have a portal/landing page for security advisories. I&#39;ll try to keep the page updated when I add more vendors, or know that their link changed. (Ideally you&#39;d be monitoring these on your own using RSS). Visit the <a href="https://infosec.press/screaminggoat/vendor-verbiage" rel="nofollow">Vendor Verbiage</a> page to figure out what was publicly disclosed or exploited.</p>
+
+<p>Page last updated: December 25, 2024.</p>
+
+<h3 id="first-monday-of-the-month" id="first-monday-of-the-month">First Monday of the month</h3>
+<ul><li>Android: <a href="https://source.android.com/docs/security/bulletin" rel="nofollow">https://source.android.com/docs/security/bulletin</a></li></ul>
+
+<h3 id="first-weekday-of-the-month" id="first-weekday-of-the-month">First Weekday of the month</h3>
+<ul><li>Qualcomm: <a href="https://docs.qualcomm.com/product/publicresources/securitybulletin" rel="nofollow">https://docs.qualcomm.com/product/publicresources/securitybulletin</a></li></ul>
+
+<h3 id="second-tuesday-of-the-month" id="second-tuesday-of-the-month">Second Tuesday of the month</h3>
+<ul><li>Adobe: <a href="https://helpx.adobe.com/security/security-bulletin.html" rel="nofollow">https://helpx.adobe.com/security/security-bulletin.html</a></li>
+<li>Fortinet: <a href="https://www.fortiguard.com/psirt" rel="nofollow">https://www.fortiguard.com/psirt</a></li>
+<li>Intel: <a href="https://www.intel.com/content/www/us/en/security-center/default.html" rel="nofollow">https://www.intel.com/content/www/us/en/security-center/default.html</a></li>
+<li>Ivanti: <a href="https://www.ivanti.com/blog/topics/security-advisory" rel="nofollow">https://www.ivanti.com/blog/topics/security-advisory</a></li>
+<li>Microsoft: <a href="https://msrc.microsoft.com/update-guide/vulnerability/" rel="nofollow">https://msrc.microsoft.com/update-guide/vulnerability/</a></li>
+<li>SAP: <a href="https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html" rel="nofollow">https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html</a></li></ul>
+
+<h3 id="preferred-on-second-tuesday-of-the-month-but-whenever" id="preferred-on-second-tuesday-of-the-month-but-whenever">Preferred on (second Tuesday) of the month (but whenever)</h3>
+<ul><li>Arm: <a href="https://developer.arm.com/Arm%20Security%20Center/#f-navigationhierarchiescontenttype=Security%20Bulletin&amp;aq=%40navigationhierarchiescategories%3D%3D%22Arm%20Security%20Updates%22%20%20AND%20%40navigationhierarchiescontenttype%3D%3D(%22Security%20Update%22%2C%22Security%20Bulletin%22)" rel="nofollow">link shortened for length reasons</a></li>
+<li>Cisco: <a href="https://sec.cloudapps.cisco.com/security/center/publicationListing.x" rel="nofollow">https://sec.cloudapps.cisco.com/security/center/publicationListing.x</a></li>
+<li>Google Chrome: <a href="https://chromereleases.googleblog.com/" rel="nofollow">https://chromereleases.googleblog.com/</a></li></ul>
+
+<h3 id="third-tuesday-of-the-month" id="third-tuesday-of-the-month">Third Tuesday of the month</h3>
+<ul><li>Atlassian: <a href="https://www.atlassian.com/trust/security/advisories" rel="nofollow">https://www.atlassian.com/trust/security/advisories</a></li></ul>
+
+<h3 id="quarterly" id="quarterly">Quarterly</h3>
+<ul><li>Oracle (third Tuesday of January, April, July, and October): <a href="https://www.oracle.com/security-alerts/" rel="nofollow">https://www.oracle.com/security-alerts/</a></li>
+<li>Splunk: <a href="https://advisory.splunk.com/" rel="nofollow">https://advisory.splunk.com/</a></li></ul>
+
+<h3 id="regular-schedule-lol" id="regular-schedule-lol">Regular Schedule? LOL</h3>
+<ul><li>AMD: <a href="https://www.amd.com/en/resources/product-security.html" rel="nofollow">https://www.amd.com/en/resources/product-security.html</a></li>
+<li>Apple: <a href="https://support.apple.com/en-us/100100" rel="nofollow">https://support.apple.com/en-us/100100</a></li>
+<li>Citrix: <a href="https://support.citrix.com/s/topic/0TO4z0000001GYdGAM/security-bulletin?language=en_US" rel="nofollow">https://support.citrix.com/s/topic/0TO4z0000001GYdGAM/security-bulletin?language=en_US</a></li>
+<li>Dell: <a href="https://www.dell.com/support/security/en-us" rel="nofollow">https://www.dell.com/support/security/en-us</a></li>
+<li>Draytek: <a href="https://www.draytek.com/about/security-advisory/" rel="nofollow">https://www.draytek.com/about/security-advisory/</a></li>
+<li>Elastic: <a href="https://discuss.elastic.co/c/announcements/security-announcements/31?ascending=false&amp;order=activity" rel="nofollow">https://discuss.elastic.co/c/announcements/security-announcements/31?ascending=false&amp;order=activity</a></li>
+<li>GitLab: <a href="https://about.gitlab.com/releases/categories/releases/" rel="nofollow">https://about.gitlab.com/releases/categories/releases/</a></li>
+<li>Jenkins: <a href="https://www.jenkins.io/security/advisories/" rel="nofollow">https://www.jenkins.io/security/advisories/</a></li>
+<li>JetBrains: <a href="https://www.jetbrains.com/privacy-security/issues-fixed/" rel="nofollow">https://www.jetbrains.com/privacy-security/issues-fixed/</a></li>
+<li>Juniper: <a href="https://supportportal.juniper.net/s/global-search/%40uri?language=en_US#sort=relevancy&amp;f:ctype=[Security%20Advisories" rel="nofollow">https://supportportal.juniper.net/s/global-search/%40uri?language=en_US#sort=relevancy&amp;f:ctype=[Security%20Advisories</a>]</li>
+<li>Mozilla: <a href="https://www.mozilla.org/en-US/security/advisories/" rel="nofollow">https://www.mozilla.org/en-US/security/advisories/</a></li>
+<li>Okta: <a href="https://trust.okta.com/security-advisories/" rel="nofollow">https://trust.okta.com/security-advisories/</a></li>
+<li>Palo Alto Networks: <a href="https://security.paloaltonetworks.com/" rel="nofollow">https://security.paloaltonetworks.com/</a></li>
+<li>Red Hat: <a href="https://access.redhat.com/security/security-updates/security-advisories" rel="nofollow">https://access.redhat.com/security/security-updates/security-advisories</a></li>
+<li>Rockwell Automation: <a href="https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html" rel="nofollow">https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html</a></li>
+<li>SolarWinds: <a href="https://www.solarwinds.com/trust-center/security-advisories" rel="nofollow">https://www.solarwinds.com/trust-center/security-advisories</a></li>
+<li>SonicWall: <a href="https://psirt.global.sonicwall.com/vuln-list" rel="nofollow">https://psirt.global.sonicwall.com/vuln-list</a></li>
+<li>VMware: <a href="https://support.broadcom.com/web/ecx/security-advisory" rel="nofollow">https://support.broadcom.com/web/ecx/security-advisory?</a></li>
+<li>Zimbra: <a href="https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories" rel="nofollow">https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories</a></li></ul>
+
+<h3 id="patching-lmao" id="patching-lmao">Patching? LMAO</h3>
+<ul><li>D-Link: <a href="https://supportannouncement.us.dlink.com/" rel="nofollow">https://supportannouncement.us.dlink.com/</a></li></ul>
+</div></article>
+
+		
+		<footer dir="ltr"><hr><nav><p style="font-size: 0.9em">published with <a href="https://writefreely.org/">writefreely</a></p></nav></footer>
+	</body>
+	<script src="https://infosec.press/js/localdate.js"></script>
+	<script type="text/javascript">
+	try { 
+	  WebFontConfig = {
+		custom: { families: [ 'Lora:400,700:latin', 'Open+Sans:400,700:latin' ], urls: [ '/css/fonts.css' ] }
+	  };
+	  (function() {
+		var wf = document.createElement('script');
+		wf.src = '/js/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	  })();
+	} catch (e) {   }
+	</script>
+</html>

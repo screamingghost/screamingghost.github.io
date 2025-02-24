@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+		<meta charset="utf-8">
+		<title>CTI Report Template &mdash; Not Simon 🐐</title>
+		<link rel="stylesheet" type="text/css" href="https://infosec.press/css/write.css?f404f7b90ed9c9c7e4164cbf"/>
+		<link rel="shortcut icon" href="https://infosec.press/favicon.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="canonical" href="https://infosec.press/screaminggoat/cti-report-template"/>
+		<meta name="generator" content="WriteFreely">
+		<meta name="title" content="CTI Report Template ? Not Simon 🐐">
+		<meta name="description" content="This is a variation of Kraven Security's Cyber Threat Intelligence Report Template which contains great information already but I added m...">
+		<meta name="twitter:label1" value="Views">
+		<meta name="twitter:data1" value="2,211">
+		<meta name="author" content="Not Simon 🐐"/>
+		<meta itemprop="description" content="This is a variation of Kraven Security's Cyber Threat Intelligence Report Template which contains great information already but I added m...">
+		<meta itemprop="datePublished" content="2025-01-10"/>
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:description" content="This is a variation of Kraven Security's Cyber Threat Intelligence Report Template which contains great information already but I added m...">
+		<meta name="twitter:title" content="CTI Report Template ? Not Simon 🐐">
+		<meta name="twitter:image" content="https://i.imgur.com/yEkPRu2.png">
+		<meta property="og:title" content="CTI Report Template"/>
+		<meta property="og:description" content="This is a variation of Kraven Security's Cyber Threat Intelligence Report Template which contains great information already but I added m..."/>
+		<meta property="og:site_name" content="Not Simon 🐐"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="https://infosec.press/screaminggoat/cti-report-template"/>
+		<meta property="og:updated_time" content="2025-01-10T01:04:21Z"/>
+		<meta property="og:image" content="https://i.imgur.com/yEkPRu2.png"/>
+		<meta property="article:published_time" content="2025-01-10T01:04:21Z">
+	<link rel="me" href="https://infosec.exchange/@screaminggoat"/>
+<script>
+  addEventListener('DOMContentLoaded', function () {
+    var hlbaseUri = "/js/";
+    var lb = document.querySelectorAll("code[class^='language-']");
+    var aliasmap = {
+      "elisp"      : "lisp",
+      "emacs-lisp" : "lisp",
+      "c"          : "cpp",
+      "cc"         : "cpp",
+      "h"          : "cpp",
+      "c++"        : "cpp",
+      "h++"        : "cpp",
+      "hpp"        : "cpp",
+      "hh"         : "cpp",
+      "hxx"        : "cpp",
+      "cxx"        : "cpp",
+      "sh"         : "bash",
+      "js"         : "javascript",
+      "jsx"        : "javascript",
+      "html"       : "xml"
+    };
+    function highlight(nodes) {
+      for (i=0; i < nodes.length; i++) {
+          hljs.highlightBlock(nodes[i]);
+      }
+    }
+    function loadLanguages(uris, callback) {
+      uris.forEach(function(uri) {
+        var sc = document.createElement('script');
+        sc.src = uri;
+        sc.async = false; 
+        if (uris.indexOf(uri) == uris.length-1) {
+          sc.onload  = callback; sc.onerror = callback;
+        }
+        document.head.appendChild(sc);
+      });
+    }
+    if (lb.length > 0) {
+      var st = document.createElement('link');
+      st.rel = "stylesheet";
+      st.href = "/css/lib/atom-one-light.min.css";
+      document.head.appendChild(st);
+      var jss = [hlbaseUri + "highlight.min.js"];
+      for (i=0; i < lb.length; i++) {
+        lang = lb[i].className.replace('language-','').toLowerCase();
+        if (aliasmap[lang]) lang = aliasmap[lang];
+        lurl = hlbaseUri + "highlightjs/" + lang + ".min.js";
+        if (!jss.includes(lurl)) {
+          jss.push(lurl);
+        }
+      }
+      loadLanguages(jss, () => {highlight(lb)});
+    }
+  });
+</script>
+	</head>
+	<body id="post">
+		<div id="overlay"></div>
+		<header>
+		<h1 dir="ltr" id="blog-title"><a rel="author" href="https://infosec.press/screaminggoat/" class="h-card p-author">Not Simon 🐐</a></h1>
+			<nav>
+				<a class="pinned" href="about-this.html">About this</a><a class="pinned" href="hello-world.html">Hello World!</a><a class="pinned" href="russia.html">Russia</a><a class="pinned" href="china.html">China </a><a class="pinned" href="iran.html">Iran</a><a class="pinned" href="north-korea.html">North Korea</a><a class="pinned" href="attribution.html">Attribution</a>
+			</nav>
+		</header>
+		<article id="post-body" class="norm h-entry "><h2 id="title" class="p-name dated">CTI Report Template</h2><time class="dt-published" datetime="2025-01-10T01:04:21Z" pubdate itemprop="datePublished" content="2025-01-10 01:04:21 +0000 UTC">January 10, 2025</time><div class="e-content"><p>This is a variation of Kraven Security&#39;s <a href="https://kravensecurity.com/cyber-threat-intelligence-report-template/" rel="nofollow">Cyber Threat Intelligence Report Template</a> which contains great information already but I added my own preferences. Feel free to use this however you&#39;d like.</p>
+<p><strong>Report</strong>: #
+<strong>Date</strong>:
+<strong>Priority</strong>: Low/Moderate/High/Critical
+<strong>Source and Reliability Information</strong>: Admiralty Scale Score [A-F][1-6]
+<strong>Sensitivity</strong>: Traffic Light Protocol</p>
+<ol><li>Executive Summary</li>
+<li>Key Takeaways</li>
+<li>Intelligence Assessment</li>
+<li>Key Intelligence Gaps</li>
+<li>Indicators of Compromise (IOCs)</li>
+<li>MITRE ATT&amp;CK Techniques</li>
+<li>Detection Opportunities</li>
+<li>Appendices
+<ul><li>Probability Matrix</li>
+<li>Priority Matrix</li>
+<li>Source Reliability and Information Credibility</li>
+<li>Confidence Levels</li>
+<li>Feedback Contacts</li>
+<li>Definitions and Acronyms</li></ul></li></ol>
+
+<h2 id="1-executive-summary" id="1-executive-summary">1. Executive Summary</h2>
+
+<p>A brief summary of the report. It should explain the report&#39;s significance, create a simple, easy-to-follow narrative of its key findings, and support a single decision. The reader should be able to make an informed decision based entirely on this summary. Aim to answer the following questions concisely:</p>
+<ul><li>What intelligence requirement(s) has this report fulfilled?</li>
+<li>Why is this report relevant to the organization?</li>
+<li>What is the biggest takeaway?</li>
+<li>What new intelligence has been provided?</li>
+<li>Does this report support or contradict existing assumptions, security initiatives, or objectives?</li></ul>
+
+<h2 id="2-key-takeaways" id="2-key-takeaways">2. Key Takeaways</h2>
+
+<p>A bulleted list of the key findings from this report. Aim to answer the following questions:</p>
+<ul><li>Who is this report for?</li>
+<li>Where was the data collected (source)?</li>
+<li>Who was the attacker?</li>
+<li>Who was the victim?</li>
+<li>Why does this report matter to the target audience?</li>
+<li>What is the main takeaway from this report?</li></ul>
+
+<p>This bulleted list is followed by a table summarizing key intelligence and a general analysis of the threat the report discusses using the Diamond Model. This allows key intelligence metrics to be easily identified and visualized.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Intelligence Requirements Addressed</strong></th>
+<th align="left">Citation of the IR addressed by this report</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><strong>Data Sources</strong></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><strong>Threat Actor</strong></td>
+<td align="left">Primary threat actor (and aliases) or N/A or Unknown</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Victim Location</strong></td>
+<td align="left">Country of victim</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Sectors</strong></td>
+<td align="left">Industry targeted</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Motivation</strong></td>
+<td align="left">Cybercrime / Espionage / Hacktivism / Ransomware / ICS / Other / Unknown</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="https://i.imgur.com/yEkPRu2.png" alt="Diamond Model"></p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Capabilities</strong></th>
+<th><strong>Adversary</strong></th>
+<th><strong>Infrastructure</strong></th>
+<th><strong>Victim</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>MITRE technique, malware, hacking tool</td>
+<td>Threat Actor, alias, email address, persona</td>
+<td>IP address, domain name, URL, C2 server</td>
+<td>company, workstation/server name, email address</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="3-intelligence-assessment" id="3-intelligence-assessment">3. Intelligence Assessment</h2>
+
+<p>This section should include:</p>
+<ul><li>A call to action, recommendation, or judgment: This threat (e.g., activity, threat actor, malware, etc.) demonstrates X and could potentially impact us. Therefore, we should do Y.</li>
+<li>Any new information: This threat has a new tool, capability, TTP, etc.
+Key evidence: The threat has the following characteristics that uniquely distinguish it.</li>
+<li>Estimative language (see Probability Matrix): “I assess with a  level of certainty that &lt; judgment&gt; will impact us .”<br></li>
+<li>Background information: Any relevant background information about the threat actor, malware, TTP, etc., to give context to this new assessment.</li>
+<li>Relations to your organization: How does this threat relate to your organization? Does it target your country or sector? Does it target vulnerabilities in the systems or technologies you use? Does it relate to any previous security incidents or detections?</li></ul>
+
+<p>This section should include a kill chain analysis technique like Lockheed Martin’s Cyber Kill Chain. List the IOCs or TTPs found at each stage of the attack to create an attack narrative for the reader. The security operations team can then use this to identify possible mitigations or gaps.</p>
+
+<h3 id="cyber-kill-chain" id="cyber-kill-chain"><strong>Cyber Kill Chain</strong></h3>
+<ul><li><strong>S1: Reconnaissance</strong></li>
+<li><strong>S2: Weaponization</strong></li>
+<li><strong>S3: Delivery</strong></li>
+<li><strong>S4: Exploitation</strong></li>
+<li><strong>S5: Installation</strong></li>
+<li><strong>S6: Command &amp; Control</strong></li>
+<li><strong>S7: Actions on Objective</strong></li></ul>
+
+<h2 id="4-key-intelligence-gaps" id="4-key-intelligence-gaps">4. Key Intelligence Gaps</h2>
+
+<p>A bulleted list that summarizes additional information the CTI team needs to complete their analysis and raise the confidence of the assessment. You should highlight gaps affecting the assessment, such as if new information is discovered or existing information is proven wrong.</p>
+
+<p>These gaps should be tracked externally from the report using a project/task management system.</p>
+
+<h2 id="5-indicators-of-compromise-iocs" id="5-indicators-of-compromise-iocs">5. Indicators of Compromise (IOCs)</h2>
+
+<p>This section consists of IOCs found on endpoint devices (workstations, servers, mobile devices), in network logs, related malware, and any vulnerabilities relevant to the threat being discussed.</p>
+<ul><li>Endpoint Artifact: Endpoint Artifact, Type, Description, Tactic</li>
+<li>Network Artifacts: Network Artifact, Type, Description, Kill Chain Stage (first observed, last observed)</li>
+<li>Malware: Malware, Hash Type, File Hash, Description, Malware Analysis Report, Kill Chain Stage</li>
+<li>Common Vulnerabilities and Exposures (CVEs): CVE ID, CVSS (include version) Score, Patch Available (Y/N), Remediation, Date Reported, Patch Applied (Y/N/ N/A)</li>
+<li>MITRE ATT&amp;CK Techniques: Tactic, Technique, Procedure, D3FEND, Security Control</li>
+<li>Detection Opportunities: Rule/Query, Name, Type, Description, Reference (source)</li></ul>
+
+<h2 id="6-appendices" id="6-appendices">6. Appendices</h2>
+
+<h3 id="probability-matrix" id="probability-matrix">Probability Matrix</h3>
+
+<table>
+<thead>
+<tr>
+<th>almost no chance</th>
+<th>very unlikely</th>
+<th>unlikely</th>
+<th>roughly even chance</th>
+<th>likely</th>
+<th>very likely</th>
+<th>almost certain(ly)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>remote</td>
+<td>highly improbable</td>
+<td>improbable</td>
+<td>roughly even odds</td>
+<td>probable (probably)</td>
+<td>highly probable</td>
+<td>nearly certain</td>
+</tr>
+
+<tr>
+<td>01-05%</td>
+<td>05-20%</td>
+<td>20-45%</td>
+<td>45-55%</td>
+<td>55-80%</td>
+<td>80-95%</td>
+<td>95-99%</td>
+</tr>
+</tbody>
+</table>
+
+<p>Analysts are strongly encouraged not to mix terms from different rows. Products that do mix terms must include a disclaimer clearly noting the terms indicate the same assessment of probability.</p>
+
+<p>To avoid confusion, products that express an analyst&#39;s confidence in an assessment or judgment using a “confidence level” (e.g., “high confidence”) must not combine a confidence level and a degree of likelihood, which refers to an event or development, in the same sentence.</p>
+
+<h3 id="priority-matrix" id="priority-matrix">Priority Matrix</h3>
+
+<p>You should assign each report a priority based on its impact on your organization. The following table describes four general priority levels you can assign to a report.</p>
+<ul><li><strong>Low</strong>: The threat requires regular monitoring and should be addressed when possible.</li>
+<li><strong>Moderate</strong>: The threat needs to be monitored closely and addressed.</li>
+<li><strong>High</strong>: The threat needs to be addressed quickly and monitored.</li>
+<li><strong>Critical</strong>: Immediate action is required.</li></ul>
+
+<h3 id="source-and-information-reliability" id="source-and-information-reliability">Source and Information Reliability</h3>
+
+<p>Each report should include an evaluation of source reliability. An industry standard is the Admiralty Scale, developed by NATO. This scale scores source reliability on a scale of A-F and information credibility on a scale of 1-6. Attaching an appendix that describes this to the reader provides clarity.</p>
+
+<p><strong>Source Reliability (A-F)</strong></p>
+<ul><li><strong>A (Completely reliable)</strong>: The source has a history of consistently providing accurate information.</li>
+<li><strong>B (Usually reliable)</strong>: Most of the time, the source provides accurate information.</li>
+<li><strong>C (Fairly reliable)</strong>: The source has provided accurate information on occasion.</li>
+<li><strong>D (Not usually reliable)</strong>: The source has provided accurate information infrequently.</li>
+<li><strong>E (Unreliable)</strong>: The source has rarely or never provided accurate information.</li>
+<li><strong>F (Reliability cannot be judged)</strong>: The source’s reliability is unknown or untested.</li></ul>
+
+<p><strong>Information Credibility (1-6)</strong></p>
+<ul><li><strong>1 (Confirmed)</strong>: Other independent sources have confirmed the information.</li>
+<li><strong>2 (Probably true)</strong>: The information is likely true but has not been confirmed.</li>
+<li><strong>3 (Possibly true)</strong>: The information might be true, but it is unconfirmed.</li>
+<li><strong>4 (Doubtful)</strong>: The information is unlikely to be true.</li>
+<li><strong>5 (Improbable)</strong>: The information is very unlikely to be true.</li>
+<li><strong>6 (Cannot be judged)</strong>: The credibility of the information cannot be assessed.</li></ul>
+
+<h3 id="confidence-levels" id="confidence-levels">Confidence Levels</h3>
+<ul><li><strong>High</strong>: Good quality of information, evidence from multiple collection capabilities, possible to make a clear judgment.</li>
+<li><strong>Moderate</strong>: Evidence is open to a number of interpretations, or is credible and plausible but lacks correlation.</li>
+<li><strong>Low</strong>: Fragmentary information, or from collection capabilities of dubious reliability.</li></ul>
+
+<h3 id="sensitivity-matrix" id="sensitivity-matrix">Sensitivity Matrix</h3>
+
+<p>Each report should attach a sensitivity level as defined by your organization’s data protection policy. This ensures data is handled appropriately and only shared with appropriate personnel. Attaching an appendix that describes this to the reader provides clarity.</p>
+<ul><li><strong>TLP:RED</strong>: For the eyes and ears of individual recipients only, no further disclosure. Sources may use TLP:RED when information cannot be effectively acted upon without significant risk for the privacy, reputation, or operations of the organizations involved. Recipients may therefore not share TLP:RED information with anyone else. In the context of a meeting, for example, TLP:RED information is limited to those present at the meeting</li>
+<li><strong>TLP:AMBER</strong>: Limited disclosure, recipients can only spread this on a need-to-know basis within their organization and its clients. Note that TLP:AMBER+STRICT restricts sharing to the organization only. Sources may use TLP:AMBER when information requires support to be effectively acted upon, yet carries risk to privacy, reputation, or operations if shared outside of the organizations involved. Recipients may share TLP:AMBER information with members of their own organization and its clients, but only on a need-to-know basis to protect their organization and its clients and prevent further harm. Note: If the source wants to restrict sharing to the organization only, they must specify <strong>TLP:AMBER+STRICT</strong>.</li>
+<li><strong>TLP:GREEN</strong>: Limited disclosure, recipients can spread this within their community. Sources may use TLP:GREEN when information is useful to increase awareness within their wider community. Recipients may share TLP:GREEN information with peers and partner organizations within their community, but not via publicly accessible channels. TLP:GREEN information may not be shared outside of the community. Note: When “community” is not defined, assume the cybersecurity/cyber defense community.</li>
+<li><strong>TLP:CLEAR</strong>: Recipients can spread this to the world, there is no limit on disclosure. Sources may use TLP:CLEAR when information carries minimal or no foreseeable risk of misuse, in accordance with applicable rules and procedures for public release. Subject to standard copyright rules, TLP:CLEAR information may be shared without restriction.</li></ul>
+
+<h3 id="feedback-contacts" id="feedback-contacts">Feedback Contacts</h3>
+
+<p>Provide a point of contact where the intelligence consumer can direct their feedback once the intelligence report has been published. This will help the CTI team improve future reports, ensure intelligence requirements are being met, and maintain communication channels.</p>
+
+<h3 id="definitions-and-acronyms" id="definitions-and-acronyms">Definitions and Acronyms</h3>
+
+<p>A list of key terms and acronyms used throughout the report. This lets the reader understand how the CTI team defines a particular technical term.</p>
+</div></article>
+		<footer dir="ltr"><hr><nav><p style="font-size: 0.9em">published with <a href="https://writefreely.org/">writefreely</a></p></nav></footer>
+	</body>
+	<script src="https://infosec.press/js/localdate.js"></script>
+	<script type="text/javascript">
+	try { 
+	  WebFontConfig = {
+		custom: { families: [ 'Lora:400,700:latin', 'Open+Sans:400,700:latin' ], urls: [ '/css/fonts.css' ] }
+	  };
+	  (function() {
+		var wf = document.createElement('script');
+		wf.src = '/js/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	  })();
+	} catch (e) {   }
+	</script>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+		<meta charset="utf-8">
+		<title>Not Simon 🐐 &mdash; Infosec Press</title>
+		<link rel="stylesheet" type="text/css" href="https://infosec.press/css/write.css?f404f7b90ed9c9c7e4164cbf"/>
+		<link rel="shortcut icon" href="https://infosec.press/favicon.ico"/>
+		<link rel="canonical" href="https://infosec.press/screaminggoat/">
+		<link rel="prev" href="https://infosec.press/screaminggoat/">
+		<link rel="alternate" type="application/rss+xml" title="Not Simon 🐐 � Feed" href="feed/"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="generator" content="WriteFreely">
+		<meta name="description" content="">
+		<meta itemprop="name" content="Not Simon 🐐">
+		<meta itemprop="description" content="">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Not Simon 🐐">
+		<meta name="twitter:image" content="https://infosec.press/img/avatars/n.png">
+		<meta name="twitter:description" content="">
+		<meta property="og:title" content="Not Simon 🐐"/>
+		<meta property="og:site_name" content="Not Simon 🐐"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="https://infosec.press/screaminggoat/"/>
+		<meta property="og:description" content=""/>
+		<meta property="og:image" content="https://infosec.press/img/avatars/n.png">
+	<link rel="me" href="https://infosec.exchange/@screaminggoat"/>
+<script>
+  addEventListener('DOMContentLoaded', function () {
+    var hlbaseUri = "/js/";
+    var lb = document.querySelectorAll("code[class^='language-']");
+    var aliasmap = {
+      "elisp"      : "lisp",
+      "emacs-lisp" : "lisp",
+      "c"          : "cpp",
+      "cc"         : "cpp",
+      "h"          : "cpp",
+      "c++"        : "cpp",
+      "h++"        : "cpp",
+      "hpp"        : "cpp",
+      "hh"         : "cpp",
+      "hxx"        : "cpp",
+      "cxx"        : "cpp",
+      "sh"         : "bash",
+      "js"         : "javascript",
+      "jsx"        : "javascript",
+      "html"       : "xml"
+    };
+    function highlight(nodes) {
+      for (i=0; i < nodes.length; i++) {
+          hljs.highlightBlock(nodes[i]);
+      }
+    }
+    function loadLanguages(uris, callback) {
+      uris.forEach(function(uri) {
+        var sc = document.createElement('script');
+        sc.src = uri;
+        sc.async = false; 
+        if (uris.indexOf(uri) == uris.length-1) {
+          sc.onload  = callback; sc.onerror = callback;
+        }
+        document.head.appendChild(sc);
+      });
+    }
+    if (lb.length > 0) {
+      var st = document.createElement('link');
+      st.rel = "stylesheet";
+      st.href = "/css/lib/atom-one-light.min.css";
+      document.head.appendChild(st);
+      var jss = [hlbaseUri + "highlight.min.js"];
+      for (i=0; i < lb.length; i++) {
+        lang = lb[i].className.replace('language-','').toLowerCase();
+        if (aliasmap[lang]) lang = aliasmap[lang];
+        lurl = hlbaseUri + "highlightjs/" + lang + ".min.js";
+        if (!jss.includes(lurl)) {
+          jss.push(lurl);
+        }
+      }
+      
+      loadLanguages(jss, () => {highlight(lb)});
+    }
+  });
+</script>
+	</head>
+	<body id="collection" itemscope itemtype="http://schema.org/WebPage">
+		<header>
+		<h1 dir="auto" id="blog-title"><a href="" class="h-card p-author u-url" rel="me author">Not Simon 🐐</a></h1>
+		<nav>
+			<a class="pinned" href="about-this.html">About this</a><a class="pinned" href="hello-world.html">Hello World!</a><a class="pinned" href="russia.html">Russia</a><a class="pinned" href="china.html">China </a><a class="pinned" href="iran.html">Iran</a><a class="pinned" href="north-korea.html">North Korea</a><a class="pinned" href="attribution.html">Attribution</a>
+		</header>
+		<section id="wrapper" itemscope itemtype="http://schema.org/Blog">		
+<article id="post-gs87j8s7kl" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="muddywater.html" itemprop="url" class="u-url">MuddyWater</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-05-26T14:04:02Z" pubdate itemprop="datePublished" content="2024-05-26 14:04:02 +0000 UTC">May 26, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong> Islamic Republic of Iran
+<strong>Organization:</strong> Ministry of Intelligence and Security (MOIS)
+<strong>Objective:</strong> Espionage
+<em>(Page last updated October 26, 2024)</em></p>
+
+<h2 id="aliases" id="aliases">Aliases:</h2>
+<ul><li>MuddyWater (<a href="https://radar.certfa.com/en/insights/cluster/fe272810/" rel="nofollow">CERTFA</a>, Check Point, Cisco Talos Intelligence, Clearsky, Deep Instinct, ESET Research, Group-IB, <a href="https://attack.mitre.org/groups/G0069/" rel="nofollow">MITRE</a>, <a href="https://apt.securelist.com/apt/muddywater" rel="nofollow">Kaspersky</a>, <a href="https://kcm.trellix.com/corporate/index?page=content&amp;id=KB93934" rel="nofollow">Trellix</a>, Unit 42)</li>
+<li>Seedworm (<a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/seedworm-espionage-group" rel="nofollow">Symantec</a>)</li>
+<li>TEMP.Zagros (FireEye)</li>
+<li>Static Kitten (<a href="https://www.crowdstrike.com/adversaries/static-kitten/" rel="nofollow">CrowdStrike</a>)</li>
+<li>MERCURY (formerly used by Microsoft)</li>
+<li>Mango Sandstorm (<a href="https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming" rel="nofollow">Microsoft</a>)</li>
+<li>Boggy Serpens (<a href="https://pan-unit42.github.io/playbook_viewer/?pb=boggyserpens" rel="nofollow">Unit 42</a>)</li>
+<li>ENT-11 (NTT Security)</li>
+<li>TA450 (Proofpoint)</li>
+<li>Cobalt Ulster (<a href="https://www.secureworks.com/research/threat-profiles/cobalt-ulster" rel="nofollow">SecureWorks</a>)</li>
+<li>ATK 51 (Thales)</li>
+<li>T-APT-14 (Tencent)</li>
+<li>ITG17 (IBM)</li>
+<li>Yellow Nix (PWC)</li>
+<li>Earth Vetala (Trend Micro)</li></ul>
+
+<h2 id="vulnerabilities-exploited" id="vulnerabilities-exploited">Vulnerabilities Exploited</h2>
+<ul><li><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-27350" rel="nofollow">CVE-2023-27350</a> (CVSSv3: 9.8 critical)
+PaperCut MF/NG Improper Access Control Vulnerability. Source: <a href="https://twitter.com/MsftSecIntel/status/1654620023019933696" rel="nofollow">Microsoft</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-45046" rel="nofollow">CVE-2021-45046</a> (CVSSv3: 9.0 critical)
+Apache Log4j2 Remote Code Execution Vulnerability (also related to Log4Shell). Source: <a href="https://www.microsoft.com/en-us/security/blog/2022/08/25/mercury-leveraging-log4j-2-vulnerabilities-in-unpatched-systems-to-target-israeli-organizations/" rel="nofollow">Microsoft</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228" rel="nofollow">CVE-2021-44228</a> (CVSSv3: 10.0 critical)
+Apache Log4j2 Remote Code Execution Vulnerability (aka Log4Shell). Source: <a href="https://www.microsoft.com/en-us/security/blog/2022/08/25/mercury-leveraging-log4j-2-vulnerabilities-in-unpatched-systems-to-target-israeli-organizations/" rel="nofollow">Microsoft</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-0688" rel="nofollow">CVE-2020-0688</a> (CVSSv3: 8.8 high)
+Microsoft Exchange Validation Key Remote Code Execution Vulnerability.  Source: <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-055a" rel="nofollow">CISA</a>, <a href="https://www.sentinelone.com/labs/wading-through-muddy-waters-recent-activity-of-an-iranian-state-sponsored-threat-actor/" rel="nofollow">SentinelOne</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-1472" rel="nofollow">CVE-2020-1472</a> (CVSSv3: 10.0 critical)
+Netlogon Elevation of Privilege Vulnerability (aka ZeroLogon). Source: <a href="https://www.clearskysec.com/operation-quicksand/" rel="nofollow">Clearsky</a>, <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-055a" rel="nofollow">CISA</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-0688" rel="nofollow">CVE-2020-0688</a> (CVSSv3: 8.8 high)
+Microsoft Exchange Validation Key Remote Code Execution Vulnerability. Source: <a href="https://www.clearskysec.com/operation-quicksand/" rel="nofollow">Clearsky</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2017-0199" rel="nofollow">CVE-2017-0199</a> (CVSSv3: 7.8 high)
+Microsoft Office/WordPad Remote Code Execution Vulnerability. Source: <a href="https://www.clearskysec.com/muddywater2/" rel="nofollow">Clearsky</a>, <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-055a" rel="nofollow">CISA</a></li></ul>
+
+<h2 id="references" id="references">References</h2>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>October 22, 2024 – <strong>k3yp0d</strong>: <a href="https://k3yp0d.blogspot.com/2024/10/something-phishy-is-happening-in-armenia.html" rel="nofollow">Something phishy is happening in Armenia</a> (independent researcher)</li>
+<li>July 15, 2024 – <strong>Sekoia</strong>: <a href="https://blog.sekoia.io/muddywater-replaces-atera-by-custom-muddyrot-implant-in-a-recent-campaign/" rel="nofollow">MuddyWater replaces Atera by custom MuddyRot implant in a recent campaign</a></li>
+<li>July 15, 2024 – <strong>Check Point Research</strong>: <a href="https://research.checkpoint.com/2024/new-bugsleep-backdoor-deployed-in-recent-muddywater-campaigns/" rel="nofollow">New BugSleep Backdoor Deployed in Recent MuddyWater Campaigns</a></li>
+<li>May 14, 2024 – <strong>ESET Research:</strong> <a href="https://www.welivesecurity.com/en/eset-research/eset-apt-activity-report-q4-2023-q1-2024/" rel="nofollow">ESET APT Activity Report Q4 2023–Q1 2024</a></li>
+<li>April 24, 2024 – <strong>Broadcom:</strong> <a href="https://www.broadcom.com/support/security-center/protection-bulletin/seedworm-exploits-atera-agent-in-a-spear-phishing-campaign" rel="nofollow">Seedworm exploits Atera Agent in a spear-phishing Campaign</a></li>
+<li>22 April 2024 – <strong>HarfangLab:</strong> <a href="https://harfanglab.io/en/press/increased-activity-from-iran-sponsored-apt-muddywater/" rel="nofollow">Increased activity from Iran sponsored APT MuddyWater, targeting Middle East, African &amp; European organisations.</a></li>
+<li>April 08, 2024: <strong>Unit 42:</strong> <a href="https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2024-Boggy-Serpens-use-of-AutodialDLL.txt" rel="nofollow">Boggy Serpens (MuddyWater) Use of AutodialDLL</a></li>
+<li>April 07, 2024 – <strong>Broadcom:</strong> <a href="https://www.broadcom.com/support/security-center/protection-bulletin/seedworm-distributing-remote-administration-management-software-agents" rel="nofollow">Seedworm distributing remote administration management software agents</a></li>
+<li>March 29, 2024 – <strong>Malwation:</strong> <a href="https://www.malwation.com/blog/new-muddywater-campaigns-after-operation-swords-of-iron" rel="nofollow">New MuddyWater Campaigns After Operation Swords of Iron</a></li>
+<li>March 21, 2024 – <strong>Proofpoint:</strong> <a href="https://www.proofpoint.com/us/blog/threat-insight/security-brief-ta450-uses-embedded-links-pdf-attachments-latest-campaign" rel="nofollow">Security Brief: TA450 Uses Embedded Links in PDF Attachments in Latest Campaign</a></li>
+<li>March 07, 2024 – <strong>Israel National Cyber Directorate:</strong> <a href="https://www.gov.il/he/pages/alert_1718" rel="nofollow">An active phishing campaign in Israeli territory – the Iranian attack group MuddyWater</a> (Hebrew language)</li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>December 19, 2023 – <strong>Symantec:</strong> <a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/iran-apt-seedworm-africa-telecoms" rel="nofollow">Seedworm: Iranian Hackers Target Telecoms Orgs in North and East Africa</a></li>
+<li>November 08, 2023 – <strong>Deep Instinct:</strong> <a href="https://www.deepinstinct.com/blog/muddyc2go-latest-c2-framework-used-by-iranian-apt-muddywater-spotted-in-israel" rel="nofollow">MuddyC2Go – Latest C2 Framework Used by Iranian APT MuddyWater Spotted in Israel</a></li>
+<li>November 01, 2023 – <strong>Deep Instinct:</strong> <a href="https://www.deepinstinct.com/blog/muddywater-en-able-spear-phishing-with-new-ttps" rel="nofollow">MuddyWater eN-Able spear-phishing with new TTPs</a></li>
+<li>June 29, 2023 – <strong>Deep Instinct:</strong> <a href="https://www.deepinstinct.com/blog/phonyc2-revealing-a-new-malicious-command-control-framework-by-muddywater" rel="nofollow">PhonyC2: Revealing a New Malicious Command &amp; Control Framework by MuddyWater</a></li>
+<li>May 5, 2023 – <strong>Microsoft:</strong> <a href="https://twitter.com/MsftSecIntel/status/1654610012457648129" rel="nofollow">Twitter: “Microsoft has now observed Iranian state-sponsored threat actors Mint Sandstorm (PHOSPHORUS) &amp; Mango Sandstorm (MERCURY) exploiting CVE-2023-27350.”</a></li>
+<li>May 02 2023 – <strong>ESET Research:</strong> <a href="https://www.welivesecurity.com/2023/05/02/apt-groups-muddying-waters-msps/" rel="nofollow">APT groups muddying the waters for MSPs</a></li>
+<li>April 18, 2023 – <strong>Group-IB:</strong> <a href="https://www.group-ib.com/blog/muddywater-infrastructure/" rel="nofollow">SimpleHarm: Tracking MuddyWater’s infrastructure</a></li>
+<li>April 07, 2023 – <strong>Microsoft:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2023/04/07/mercury-and-dev-1084-destructive-attack-on-hybrid-environment/" rel="nofollow">MERCURY and DEV-1084: Destructive attack on hybrid environment</a></li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>December 08, 2022 – <strong>Deep Instinct:</strong> <a href="https://www.deepinstinct.com/blog/new-muddywater-threat-old-kitten-new-tricks" rel="nofollow">New MuddyWater Threat: Old Kitten; New Tricks</a></li>
+<li>September 09, 2022 – <strong>U.S. Treasury:</strong>  <a href="https://home.treasury.gov/news/press-releases/jy0941" rel="nofollow">Treasury Sanctions Iranian Ministry of Intelligence and Minister for Malign Cyber Activities</a></li>
+<li>August 25, 2022 – <strong>Microsoft:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2022/08/25/mercury-leveraging-log4j-2-vulnerabilities-in-unpatched-systems-to-target-israeli-organizations/" rel="nofollow">MERCURY leveraging Log4j 2 vulnerabilities in unpatched systems to target Israeli organizations</a></li>
+<li>June 21, 2022 – <strong>Lab52:</strong> <a href="https://lab52.io/blog/muddywaters-light-first-stager-targetting-middle-east/" rel="nofollow">MuddyWater’s “light” first-stager targeting Middle East</a></li>
+<li>May 11, 2022 – <strong>NTT Security:</strong> <a href="https://www.security.ntt/blog/analysis-of-an-iranian-apts-e400-powgoop-variant" rel="nofollow">Analysis of an Iranian APTs “E400” PowGoop variant reveals dozens of control servers dating back to 2020</a></li>
+<li>March 14, 2022 – <strong>EclecticIQ:</strong> <a href="https://blog.eclecticiq.com/muddywater-apt-attributed-to-iranian-ministry-of-intelligence-and-security-and-the-increasing-global-ransomware-threat" rel="nofollow">MuddyWater APT attributed to Iranian Ministry of Intelligence and Security, and the Increasing Global Ransomware Threat</a></li>
+<li>March 10, 2022 – <strong>Cisco Talos:</strong> <a href="https://blog.talosintelligence.com/iranian-supergroup-muddywater/" rel="nofollow">Iranian linked conglomerate MuddyWater comprised of regionally focused subgroups</a></li>
+<li>February 24, 2022 – <strong>CISA:</strong> <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-055a" rel="nofollow">Iranian Government-Sponsored Actors Conduct Cyber Operations Against Global Government and Commercial Networks</a>
+<ul><li>February 24, 2022 – <strong>NCSC-UK:</strong> <a href="https://www.ncsc.gov.uk/files/NCSC-Malware-Analysis-Report-Small-Sieve.pdf" rel="nofollow">Malware Analysis  Report: Small Sieve</a> (PDF)</li></ul></li>
+<li>January 31, 2022 – <strong>Cisco Talos:</strong> <a href="https://blog.talosintelligence.com/iranian-apt-muddywater-targets-turkey/" rel="nofollow">Iranian APT MuddyWater targets Turkish users via malicious PDFs, executables</a></li>
+<li>January 13, 2022 – <strong>Picus</strong>: <a href="https://www.picussecurity.com/resource/blog/ttp-ioc-used-by-muddywater-apt-group-attacks" rel="nofollow">TTPs and IOCs Used by MuddyWater APT Group in Latest Attack Campaign</a></li>
+<li>January 12, 2022 – <strong>USCYBERCOM:</strong> <a href="https://www.cybercom.mil/Media/News/Article/2897570/iranian-intel-cyber-suite-of-malware-uses-open-source-tools/" rel="nofollow">Iranian intel cyber suite of malware uses open source tools</a> (<strong>ATTRIBUTION</strong>)</li>
+<li>January 12, 2022 – <strong>SentinelOne:</strong> <a href="https://www.sentinelone.com/labs/wading-through-muddy-waters-recent-activity-of-an-iranian-state-sponsored-threat-actor/" rel="nofollow">Wading Through Muddy Waters | Recent Activity of an Iranian State-Sponsored Threat Actor</a></li></ul>
+
+<h3 id="2021" id="2021">2021</h3>
+<ul><li>December 14, 2021 – <strong>Symantec:</strong> <a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/espionage-campaign-telecoms-asia-middle-east" rel="nofollow">Espionage Campaign Targets Telecoms Organizations across Middle East and Asia</a></li>
+<li>March 05, 2021 – <strong>Trend Micro:</strong> <a href="https://www.trendmicro.com/en_us/research/21/c/earth-vetala---muddywater-continues-to-target-organizations-in-t.html" rel="nofollow">Earth Vetala – MuddyWater Continues to Target Organizations in the Middle East</a></li>
+<li>February 10, 2021 – <strong>Anomali:</strong> <a href="https://www.anomali.com/blog/probable-iranian-cyber-actors-static-kitten-conducting-cyberespionage-campaign-targeting-uae-and-kuwait-government-agencies" rel="nofollow">Probable Iranian Cyber Actors, Static Kitten, Conducting Cyberespionage Campaign Targeting UAE and Kuwait Government Agencies</a></li></ul>
+
+<h3 id="2020" id="2020">2020</h3>
+<ul><li>October 21, 2020 – <strong>Symantec:</strong> <a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/seedworm-apt-iran-middle-east" rel="nofollow">Seedworm: Iran-Linked Group Continues to Target Organizations in the Middle East</a></li>
+<li>October 15, 2020 – <strong>Clearsky:</strong> <a href="https://www.clearskysec.com/operation-quicksand/" rel="nofollow">Operation Quicksand</a></li>
+<li>February 26, 2020 – <strong>Secureworks:</strong> <a href="https://www.secureworks.com/blog/business-as-usual-for-iranian-operations-despite-increased-tensions" rel="nofollow">Business as Usual for Iranian Operations Despite Increased Tensions</a></li></ul>
+
+<h3 id="2019" id="2019">2019</h3>
+<ul><li>June 09, 2019 – <strong>Trend Micro</strong>: <a href="https://documents.trendmicro.com/assets/white_papers/wp_new_muddywater_findings_uncovered.pdf" rel="nofollow">New MuddyWater Activities
+Uncovered</a> (PDF)</li>
+<li>June 06, 2019 – <strong>Clearsky</strong>: <a href="https://www.clearskysec.com/muddywater2/" rel="nofollow">Iranian APT group ‘MuddyWater’ Adds Exploits to Their Arsenal</a></li>
+<li>May 29, 2019 – <strong>Group-IB:</strong> <a href="https://www.group-ib.com/blog/muddywater/" rel="nofollow">Catching fish in muddy waters</a></li>
+<li>May 20, 109 – <strong>Cisco</strong> Talos: <a href="https://blog.talosintelligence.com/recent-muddywater-associated-blackwater/" rel="nofollow">Recent MuddyWater-associated BlackWater campaign shows signs of new anti-detection techniques</a></li>
+<li>April 29, 2019 – <strong>Kaspersky</strong>: <a href="https://securelist.com/muddywaters-arsenal/90659/" rel="nofollow">I know what you did last summer, MuddyWater blending in the crowd</a></li>
+<li>April 15, 2019 – <strong>Clearsky:</strong> <a href="https://www.clearskysec.com/muddywater-targets-kurdish-groups-turkish-orgs/" rel="nofollow">Iranian APT MuddyWater Attack Infrastructure Targeting Kurdish Political Groups and Organizations in Turkey</a></li>
+<li>April 10, 2019 – <strong>Check Point:</strong> <a href="https://research.checkpoint.com/2019/the-muddy-waters-of-apt-attacks/" rel="nofollow">The Muddy Waters of APT Attacks</a></li>
+<li>March 07, 2019 – <strong>NSHC</strong>: <a href="https://redalert.nshc.net/2019/03/07/sectord02-powershell-backdoor-analysis/" rel="nofollow">SectorD02 PowerShell Backdoor Analysis</a></li></ul>
+
+<h3 id="2018" id="2018">2018</h3>
+<ul><li>December 10, 2018 – <strong>Symantec:</strong> <a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/seedworm-espionage-group?es_p=8239106" rel="nofollow">Seedworm: Group Compromises Government Agencies, Oil &amp; Gas, NGOs, Telecoms, and IT Firms</a></li>
+<li>November 30, 2018 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/18/k/new-powershell-based-backdoor-found-in-turkey-strikingly-similar-to-muddywater-tools.html" rel="nofollow">New PowerShell-based Backdoor, MuddyWater Similarities</a></li>
+<li>November 28, 2018 – <strong>Clearsky:</strong> <a href="https://www.clearskysec.com/muddywater-operations-in-lebanon-and-oman/" rel="nofollow">MuddyWater Operations in Lebanon and Oman</a></li>
+<li>October 10, 2018 – <strong>Kaspersky:</strong> <a href="https://securelist.com/muddywater/88059/" rel="nofollow">MuddyWater expands operations</a></li>
+<li>June 14, 2018 – <strong>Trend Micro:</strong> <a href="https://www.trendmicro.com/en_us/research/18/f/another-potential-muddywater-campaign-uses-powershell-based-prb-backdoor.html" rel="nofollow">Potential MuddyWater Campaign uses PRB-Backdoor</a></li>
+<li>March 13, 2018 – <strong>FireEye:</strong> <a href="https://cloud.google.com/blog/topics/threat-intelligence/iranian-threat-group-updates-ttps-in-spear-phishing-campaign/" rel="nofollow">Iranian Threat Group Updates Tactics, Techniques and Procedures in Spear Phishing Campaign</a></li>
+<li>March 12, 2018 – <strong>Trend Micro:</strong> <a href="https://www.trendmicro.com/en_us/research/18/c/campaign-possibly-connected-muddywater-surfaces-middle-east-central-asia.html" rel="nofollow">Potential MuddyWater Campaign Seen in the Middle East</a></li>
+<li>March 10, 2018 – <strong>Security 0wnage</strong>: <a href="https://sec0wn.blogspot.com/2018/03/a-quick-dip-into-muddywaters-recent.html" rel="nofollow">A Quick Dip into MuddyWater&#39;s Recent Activity</a></li>
+<li>February 01, 2018 – <strong>Security 0wnage</strong>: <a href="https://sec0wn.blogspot.com/2018/02/burping-on-muddywater.html" rel="nofollow">Burping on MuddyWater</a></li></ul>
+
+<h3 id="2017" id="2017">2017</h3>
+<ul><li>November 14, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-muddying-the-water-targeted-attacks-in-the-middle-east/" rel="nofollow">Muddying the Water: Targeted Attacks in the Middle East</a></li>
+<li>October 04, 2017 – <strong>Security 0wnage</strong>: <a href="https://sec0wn.blogspot.com/2017/10/continued-activity-targeting-middle-east.html" rel="nofollow">Continued Activity targeting the Middle East</a></li></ul>
+
+<p></details></p>
+</div></article><article id="post-wf3swreduv" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="apt31.html" itemprop="url" class="u-url">APT31</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-05-26T05:29:12Z" pubdate itemprop="datePublished" content="2024-05-26 05:29:12 +0000 UTC">May 26, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong> People&#39;s Republic of China (PRC)
+<strong>Organization:</strong> Hubei State Security Department (HSSD), of the Ministry of State Security (MSS)
+<strong>Objective:</strong> Espionage</p>
+
+<h3 id="aliases" id="aliases">Aliases:</h3>
+<ul><li>BRONZE VINEWOOD (Secureworks)</li>
+<li>Judgment Panda (CrowdStrike)</li>
+<li>Red keres (PwC)</li>
+<li>TA412 (Proofpoint)</li>
+<li>Violet Typhoon (Microsoft)</li>
+<li>ZIRCONIUM (formerly used by Microsoft, <a href="https://attack.mitre.org/groups/G0128/" rel="nofollow">MITRE</a>)</li>
+<li>RedBravo (Recorded Future)</li></ul>
+
+<h3 id="front-company" id="front-company">Front Company</h3>
+<ul><li>Wuhan Xiaoruizhi Science and Technology Company, Limited (Wuhan XRZ, 武汉晓睿智科技有限责任公司)</li></ul>
+
+<h3 id="identified-members" id="identified-members">Identified Members</h3>
+<ul><li>Ni Gaobin (倪高彬)</li>
+<li>Weng Ming (翁明)</li>
+<li>Cheng Feng (程锋)</li>
+<li>Peng Yaowen (彭耀文)</li>
+<li>Sun Xiaohui (孙小辉)</li>
+<li>Xiong Wang (熊旺)</li>
+<li>Zhao Guangzong (赵光宗)</li></ul>
+
+<h3 id="links" id="links">Links</h3>
+<ul><li><strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/seven-hackers-associated-chinese-government-charged-computer-intrusions-targeting-perceived" rel="nofollow">Seven Hackers Associated with Chinese Government Charged with Computer Intrusions Targeting Perceived Critics of China and U.S. Businesses and Politicians</a> (March 25, 2024)</li>
+<li><strong>U.S. State Department</strong>: <a href="https://www.state.gov/u-s-takes-action-to-further-disrupt-prc-cyber-activities/" rel="nofollow">U.S. Takes Action to Further Disrupt PRC Cyber Activities</a> (March 25, 2024)</li>
+<li><strong>Rewards for Justice</strong>: <a href="https://rewardsforjustice.net/rewards/apt31-wuhan-xiaoruizhi-science-technology-company-ltd/" rel="nofollow">APT31/Wuhan Xiaoruizhi Science &amp;Technology Company, Ltd.</a> (March 25, 2024)</li>
+<li><strong>U.S. Treasury</strong>: <a href="https://home.treasury.gov/news/press-releases/jy2205" rel="nofollow">Treasury Sanctions China-Linked Hackers for Targeting U.S. Critical Infrastructure</a> (March 25, 2024)</li>
+<li><strong>United Kingdom</strong>: <a href="https://www.gov.uk/government/news/uk-holds-china-state-affiliated-organisations-and-individuals-responsible-for-malicious-cyber-activity" rel="nofollow">UK holds China state-affiliated organisations and individuals responsible for malicious cyber activity</a> (March 25, 2024)</li>
+<li><strong>NCSC-UK</strong>: <a href="https://www.ncsc.gov.uk/news/china-state-affiliated-actors-target-uk-democratic-institutions-parliamentarians" rel="nofollow">UK calls out China state-affiliated actors for malicious cyber targeting of UK democratic institutions and parliamentarians</a> (March 25, 2024)</li></ul>
+</div></article><article id="post-xitlqh0uu4" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name">Sandworm
+		
+	</h2>
+	<time class="dt-published" datetime="2024-05-26T04:25:43Z" pubdate itemprop="datePublished" content="2024-05-26 04:25:43 +0000 UTC">May 26, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong> Russia
+<strong>Organization:</strong> Military Unit 74455, of the Main Center for Special Technologies (GTsST), of the Main Directorate of the General Staff of the Armed Forces of the Russian Federation (GRU), formerly known as the Main Intelligence Directorate
+<strong>Objective:</strong> Espionage, Attack, Influence Operations</p>
+
+<h3 id="aliases" id="aliases">Aliases:</h3>
+<ul><li>UAC-0133 (CERT-UA)</li>
+<li>Sandworm Team (Trend Micro, <a href="https://attack.mitre.org/groups/G0034/" rel="nofollow">MITRE</a>)</li>
+<li>Sandworm (ESET, Rapid7)</li>
+<li>Iron Viking (SecureWorks)</li>
+<li>CTG-7263 (SecureWorks)</li>
+<li>APT44 (Google Cloud, Mandiant)</li>
+<li>FROZENBARENTS  (Google Threat Analysis Group)</li>
+<li>IRIDIUM (formerly used by Microsoft)</li>
+<li>Seashell Blizzard (Microsoft)</li>
+<li>Voodoo Bear (CrowdStrike)</li>
+<li>ELECTRUM (Dragos)</li>
+<li>Quedagh</li>
+<li>Black Energy (Group)</li>
+<li>TEMP.Noble</li></ul>
+
+<h3 id="personas-used" id="personas-used">Personas Used</h3>
+<ul><li>Cyber Army of Russia Reborn</li></ul>
+
+<h3 id="identified-members" id="identified-members">Identified Members</h3>
+<ul><li><strong>Yuriy Sergeyevich Andrienko</strong>:
+<ul><li><a href="https://rewardsforjustice.net/rewards/yuriy-sergeyevich-andrienko/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/yuriy-sergeyevich-andrienko" rel="nofollow">FBI Most Wanted</a></li></ul></li>
+<li><strong>Sergey Vladimirovich Detistov</strong>:
+<ul><li><a href="https://rewardsforjustice.net/rewards/sergey-vladimirovich-detistov/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/sergey-vladimirovich-detistov" rel="nofollow">FBI Most Wanted</a></li></ul></li>
+<li><strong>Pavel Valeryevich Frolov</strong>:
+<ul><li><a href="https://rewardsforjustice.net/rewards/pavel-valeryevich-frolov/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/pavel-valeryevich-frolov" rel="nofollow">FBI Most Wanted</a></li></ul></li>
+<li><strong>Anatoliy Sergeyevich Kovalev</strong>:
+<ul><li><a href="https://rewardsforjustice.net/rewards/anatoliy-sergeyevich-kovalev/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/anatoliy-sergeyevich-kovalev" rel="nofollow">FBI Most Wanted</a></li></ul></li>
+<li><strong>Artem Valeryevich Ochichenko</strong>:
+<ul><li><a href="https://rewardsforjustice.net/rewards/artem-valeryevich-ochichenko/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/artem-valeryevich-ochichenko" rel="nofollow">FBI Most Wanted</a></li></ul></li>
+<li><strong>Petr Nikolayevich Pliskin</strong>:
+<ul><li><a href="https://rewardsforjustice.net/rewards/petr-nikolayevich-pliskin/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/petr-nikolayevich-pliskin" rel="nofollow">FBI Most Wanted</a></li></ul></li></ul>
+
+<h3 id="links" id="links">Links</h3>
+<ul><li><strong>U.S. Department of Defense</strong>: <a href="https://media.defense.gov/2022/Feb/23/2002943421/-1/-1/0/CSA_NEW_SANDWORM_MALWARE_CYCLOPS_BLINK_REPLACES_VPNFILTER_20220223.PDF" rel="nofollow">New Sandworm malware Cyclops Blink replaces VPNFilter</a> (PDF, February 23, 2022)</li>
+<li><strong>U.S. Department of Justice</strong>:
+<ul><li><a href="https://www.justice.gov/opa/pr/six-russian-gru-officers-charged-connection-worldwide-deployment-destructive-malware-and" rel="nofollow">Six Russian GRU Officers Charged in Connection with Worldwide Deployment of Destructive Malware and Other Disruptive Actions in Cyberspace</a> (October 19, 2020)</li>
+<li><a href="https://www.justice.gov/opa/pr/justice-department-announces-court-authorized-disruption-botnet-controlled-russian-federation" rel="nofollow">Justice Department Announces Court-Authorized Disruption of Botnet Controlled by the Russian Federation’s Main Intelligence Directorate (GRU)</a> (April 6, 2022)</li></ul></li>
+<li><strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/analysis-reports/ar23-243a" rel="nofollow">Infamous Chisel Malware Analysis Report</a> (August 31, 2023)</li>
+<li><strong>NSA</strong>: <a href="https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3511738/government-agencies-report-new-russian-malware-targets-ukrainian-military/" rel="nofollow">Government Agencies Report New Russian Malware Targets Ukrainian Military</a> (August 31, 2023)</li>
+<li><strong>NCSC-UK</strong>: <a href="https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter" rel="nofollow">New Sandworm malware Cyclops Blink replaces VPNFilter</a> (February 23, 2022)</li></ul>
+</div></article><article id="post-22tat3drn5" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name">Callisto Group
+		
+	</h2>
+	<time class="dt-published" datetime="2024-05-26T02:32:42Z" pubdate itemprop="datePublished" content="2024-05-26 02:32:42 +0000 UTC">May 26, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong> Russian Federation
+<strong>Organization:</strong> Federal Security Service (FSB) Center 18
+<strong>Motivation:</strong> Espionage
+<em>(Page last updated October 02, 2024)</em></p>
+
+<h2 id="aliases" id="aliases">Aliases</h2>
+<ul><li>SEABORGIUM (formerly used by Microsoft)</li>
+<li>Star Blizzard (<a href="https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming" rel="nofollow">Microsoft</a>)</li>
+<li>TA446 (Proofpoint)</li>
+<li>COLDRIVER (Google Threat Analysis Group)</li>
+<li>TAG-53 (formerly used by Recorded Future)</li>
+<li>BlueCharlie (Recorded Future)</li>
+<li>Iron Frontier (<a href="https://www.secureworks.com/research/threat-profiles/iron-frontier" rel="nofollow">Secureworks</a>)</li>
+<li>Blue Callisto (PwC)</li>
+<li>Calisto (Sekoia)</li>
+<li>The Callisto Group (F-Secure, now called WithSecure)</li>
+<li>UNC4057 (Mandiant)</li>
+<li>Gossamer Bear (<a href="https://www.crowdstrike.com/adversaries/gossamer-bear/" rel="nofollow">CrowdStrike</a>)</li></ul>
+
+<h2 id="identified-members" id="identified-members">Identified Members</h2>
+<ul><li><strong>Ruslan Aleksandrovich Peretyatko</strong>
+<ul><li><a href="https://rewardsforjustice.net/rewards/ruslan-aleksandrovich-peretyatko/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/ruslan-aleksandrovich-peretyatko" rel="nofollow">FBI Most Wanted</a></li></ul></li>
+<li><strong>Andrey Stanislavovich Korinets</strong>
+<ul><li><a href="https://rewardsforjustice.net/rewards/andrey-stanislavovich-korinets/" rel="nofollow">Rewards for Justice</a></li>
+<li><a href="https://www.fbi.gov/wanted/cyber/andrey-stanislavovich-korinets" rel="nofollow">FBI Most Wanted</a></li></ul></li></ul>
+
+<h2 id="references-sorted-by-chronological-order" id="references-sorted-by-chronological-order">References (Sorted by Chronological Order)</h2>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>October 01, 2024 – <strong>Zimperium</strong>: <a href="https://www.zimperium.com/blog/zimperium-coverage-on-coldriver-phishing-campaign/" rel="nofollow">Zimperium Coverage on COLDRIVER Phishing Campaign </a></li>
+<li>September 07, 2024 – <strong>Free Russia Foundation</strong>: <a href="https://www.4freerussia.org/press-center/free-russia-foundation-response-to-data-breach/" rel="nofollow">Free Russia Foundation Response to Data Breach</a></li>
+<li>April 25, 2024 – <strong>Mandiant:</strong> <a href="https://cloud.google.com/blog/topics/threat-intelligence/cyber-threats-global-elections" rel="nofollow">Poll Vaulting: Cyber Threats to Global Elections</a></li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>December 13, 2023 – <strong>Sekoia:</strong> <a href="https://blog.sekoia.io/calisto-doxxing-sekoia-io-findings-concurs-to-reuters-investigation-on-fsb-related-andrey-korinets/" rel="nofollow">CALISTO doxxing: Sekoia.io findings concurs to Reuters’ investigation on FSB-related Andrey Korinets</a></li>
+<li>December 8, 2023:
+<ul><li><strong>NCSC-NZ:</strong> <a href="https://www.ncsc.govt.nz/news/global-spear-phishing-campaigns/" rel="nofollow">Joint Advisory: Russian state cyber actors’ global spear-phishing campaigns</a></li>
+<li><strong>ACSC ASD:</strong> <a href="https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/russian-fsb-cyber-actor-star-blizzard-continues-worldwide-spear-phishing-campaigns" rel="nofollow">Russian FSB cyber actor Star Blizzard continues worldwide spear-phishing campaigns</a></li></ul></li>
+<li>December 7, 2023: (<strong>ATTRIBUTION</strong>)
+<ul><li><strong>NCSC-UK:</strong> <a href="https://www.ncsc.gov.uk/news/star-blizzard-continues-spear-phishing-campaigns" rel="nofollow">Russian FSB cyber actor Star Blizzard continues worldwide spear-phishing campaigns</a></li>
+<li><strong>United Kingdom:</strong> <a href="https://www.gov.uk/government/news/uk-exposes-attempted-russian-cyber-interference-in-politics-and-democratic-processes" rel="nofollow">UK exposes attempted Russian cyber interference in politics and democratic processes</a></li>
+<li><strong>CISA:</strong> <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-341a" rel="nofollow">Russian FSB Cyber Actor Star Blizzard Continues Worldwide Spear-phishing Campaigns</a></li>
+<li><strong>FBI:</strong> <a href="https://www.ic3.gov/Media/News/2023/231208.pdf" rel="nofollow">Russian FSB cyber actor Star Blizzard continues worldwide spear-phishing campaigns.</a> (PDF)</li>
+<li><strong>U.S. Cyber Command:</strong> <a href="https://www.cybercom.mil/Media/News/Article/3610373/us-allies-highlight-russian-state-cyber-actor-star-blizzard-spear-phishing-camp/" rel="nofollow">US, Allies Highlight Russian-State Cyber Actor “Star Blizzard” Spear-phishing Campaigns</a></li>
+<li><strong>U.S. Department of Justice:</strong> <a href="https://www.justice.gov/opa/pr/two-russian-nationals-working-russias-federal-security-service-charged-global-computer" rel="nofollow">Two Russian Nationals Working with Russia’s Federal Security Service Charged with Global Computer Intrusion Campaign</a></li>
+<li><strong>U.S. Treasury:</strong> <a href="https://home.treasury.gov/news/press-releases/jy1962" rel="nofollow">United States and the United Kingdom Sanction Members of Russian State Intelligence-Sponsored Advanced Persistent Threat Group</a></li>
+<li><strong>U.S. State Department:</strong> <a href="https://www.state.gov/u-s-takes-action-to-further-disrupt-russian-cyber-activities/" rel="nofollow">U.S. Takes Action to Further Disrupt Russian Cyber Activities</a></li>
+<li><strong>Microsoft:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2023/12/07/star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks/" rel="nofollow">Star Blizzard increases sophistication and evasion in ongoing attacks</a></li></ul></li>
+<li>August 02, 2023 – <strong>Recorded Future:</strong> <a href="https://www.recordedfuture.com/bluecharlie-previously-tracked-as-tag-53-continues-to-deploy-new-infrastructure-in-2023" rel="nofollow">BlueCharlie, Previously Tracked as TAG-53, Continues to Deploy New Infrastructure in 2023</a></li>
+<li>February 15, 2023 – <strong>Mandiant/Google TAG:</strong> <a href="https://services.google.com/fh/files/blogs/google_fog_of_war_research_report.pdf" rel="nofollow">Fog of War: How the Ukraine Conflict Transformed the Cyber Threat Landscape</a> (PDF)</li>
+<li>January 26, 2023 – <strong>NCSC-UK:</strong> <a href="https://www.ncsc.gov.uk/news/spear-phishing-campaigns-targets-of-interest" rel="nofollow">SEABORGIUM and TA453 continue their respective spear-phishing campaigns against targets of interest</a></li>
+<li>January 06, 2023 – <strong>Reuters:</strong> <a href="https://www.reuters.com/world/europe/russian-hackers-targeted-us-nuclear-scientists-2023-01-06/" rel="nofollow">Exclusive: Russian hackers targeted U.S. nuclear scientists</a> (News article)</li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>December 05, 2022:
+<ul><li><strong>Sekoia:</strong> <a href="https://blog.sekoia.io/calisto-show-interests-into-entities-involved-in-ukraine-war-support/" rel="nofollow">Calisto show interests into entities involved in Ukraine war support</a></li>
+<li><strong>Recorded Future:</strong> <a href="https://www.recordedfuture.com/exposing-tag-53-credential-harvesting-infrastructure-for-russia-aligned-espionage-operations" rel="nofollow">Exposing TAG-53’s Credential Harvesting Infrastructure Used for Russia-Aligned Espionage Operations</a></li></ul></li>
+<li>December 02, 2022 – <strong>PwC:</strong> <a href="https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/blue-callisto-orbits-around-us.html" rel="nofollow">Blue Callisto orbits around US Laboratories in 2022</a></li>
+<li>August 15, 2022 – <strong>Microsoft:</strong> <a href="https://www.microsoft.com/en-us/security/blog/2022/08/15/disrupting-seaborgiums-ongoing-phishing-operations/" rel="nofollow">Disrupting SEABORGIUM’s ongoing phishing operations</a></li>
+<li>June 22, 2022 – <strong>Sekoia:</strong> <a href="https://blog.sekoia.io/calisto-continues-its-credential-harvesting-campaign/" rel="nofollow">CALISTO continues its credential harvesting campaign</a></li>
+<li>May 03, 2022 – <strong>Google Threat Analysis Group</strong>: <a href="https://blog.google/threat-analysis-group/update-on-cyber-activity-in-eastern-europe/" rel="nofollow">Update on cyber activity in Eastern Europe</a></li>
+<li>March 30, 2022 – <strong>Google Threat Analysis Group</strong>: <a href="https://blog.google/threat-analysis-group/tracking-cyber-activity-eastern-europe/" rel="nofollow">Tracking cyber activity in Eastern Europe</a></li></ul>
+
+<h3 id="2017" id="2017">2017</h3>
+<ul><li>April 13, 2017 – <strong>F-Secure:</strong> <a href="https://labs.withsecure.com/content/dam/labs/docs/callisto-group.pdf" rel="nofollow">The Callisto Group</a> (PDF)</li></ul>
+</div></article>
+
+
+		<nav id="paging" class="content-container clearfix">
+			
+				
+				<a style="float:right;" href="">Newer &#8674;</a>
+			
+		</nav>
+
+		
+    
+
+
+		</section>
+
+		
+		<footer>
+			<hr/>
+			<nav dir="ltr">
+				<a class="home pubd" href="https://infosec.press/">Infosec Press</a> &middot; powered by <a style="margin-left:0" href="https://writefreely.org/">writefreely</a>
+			</nav>
+		</footer>
+		
+	</body>
+
+	
+	<script src="https://infosec.press/js/h.js"></script>
+	<script src="https://infosec.press/js/postactions.js"></script>
+	<script src="https://infosec.press/js/localdate.js"></script>
+	<script type="text/javascript" src="https://infosec.press/js/menu.js"></script>
+	<script type="text/javascript">
+var deleting = false;
+function delPost(e, id, owned) {
+	e.preventDefault();
+	if (deleting) {
+		return;
+	}
+
+	
+	if (window.confirm('Are you sure you want to delete this post?')) {
+		
+		deletePost(id, "", function() {
+			
+			var $postEl = document.getElementById('post-' + id);
+			$postEl.parentNode.removeChild($postEl);
+			
+		});
+	}
+}
+
+var deletePost = function(postID, token, callback) {
+	deleting = true;
+
+	var $delBtn = document.getElementById('post-' + postID).getElementsByClassName('delete action')[0];
+	$delBtn.innerHTML = '...';
+
+	var http = new XMLHttpRequest();
+	var url = "/api/posts/" + postID;
+	http.open("DELETE", url, true);
+	http.onreadystatechange = function() {
+		if (http.readyState == 4) {
+			deleting = false;
+			if (http.status == 204) {
+				callback();
+			} else if (http.status == 409) {
+				$delBtn.innerHTML = 'delete';
+				alert("Post is synced to another account. Delete the post from that account instead.");
+				
+				
+				
+			} else {
+				$delBtn.innerHTML = 'delete';
+				alert("Failed to delete." + (http.status>=500?" Please try again.":""));
+			}
+		}
+	}
+	http.send();
+};
+
+var pinning = false;
+function pinPost(e, postID, slug, title) {
+	e.preventDefault();
+	if (pinning) {
+		return;
+	}
+	pinning = true;
+
+	var callback = function() {
+		
+		var $postEl = document.getElementById('post-' + postID);
+		$postEl.parentNode.removeChild($postEl);
+		var $header = document.getElementsByTagName('header')[0];
+		var $pinnedNavs = $header.getElementsByTagName('nav');
+		
+		var link = '<a class="pinned" href="/screaminggoat/'+slug+'">'+title+'</a>';
+		if ($pinnedNavs.length == 0) {
+			$header.insertAdjacentHTML("beforeend", '<nav>'+link+'</nav>');
+		} else {
+			$pinnedNavs[0].insertAdjacentHTML("beforeend", link);
+		}
+	};
+
+	var $pinBtn = document.getElementById('post-' + postID).getElementsByClassName('pin action')[0];
+	$pinBtn.innerHTML = '...';
+
+	var http = new XMLHttpRequest();
+	var url = "/api/collections/screaminggoat/pin";
+	var params = [ { "id": postID } ];
+	http.open("POST", url, true);
+	http.setRequestHeader("Content-type", "application/json");
+	http.onreadystatechange = function() {
+		if (http.readyState == 4) {
+			pinning = false;
+			if (http.status == 200) {
+				callback();
+			} else if (http.status == 409) {
+				$pinBtn.innerHTML = 'pin';
+				alert("Post is synced to another account. Delete the post from that account instead.");
+				
+				
+				
+			} else {
+				$pinBtn.innerHTML = 'pin';
+				alert("Failed to pin." + (http.status>=500?" Please try again.":""));
+			}
+		}
+	}
+	http.send(JSON.stringify(params));
+};
+
+	try {
+	  WebFontConfig = {
+		custom: { families: [ 'Lora:400,700:latin', 'Open+Sans:400,700:latin' ], urls: [ '/css/fonts.css' ] }
+	  };
+	  (function() {
+		var wf = document.createElement('script');
+		wf.src = '/js/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	  })();
+	} catch (e) {}
+	</script>
+</html>

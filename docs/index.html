@@ -1,0 +1,1556 @@
+<!DOCTYPE HTML>
+		<meta charset="utf-8">
+		<title>Not Simon 🐐 &mdash; Infosec Press</title>
+		<link rel="stylesheet" type="text/css" href="https://infosec.press/css/write.css?f404f7b90ed9c9c7e4164cbf"/>
+		<link rel="shortcut icon" href="https://infosec.press/favicon.ico"/>
+		<link rel="canonical" href="https://infosec.press/screaminggoat/">
+		<link rel="next" href="page/2.html">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="generator" content="WriteFreely">
+		<meta name="description" content="">
+		<meta itemprop="name" content="Not Simon 🐐">
+		<meta itemprop="description" content="">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Not Simon 🐐">
+		<meta name="twitter:image" content="https://infosec.press/img/avatars/n.png">
+		<meta name="twitter:description" content="">
+		<meta property="og:title" content="Not Simon 🐐"/>
+		<meta property="og:site_name" content="Not Simon 🐐"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="https://infosec.press/screaminggoat/"/>
+		<meta property="og:description" content=""/>
+		<meta property="og:image" content="https://infosec.press/img/avatars/n.png">
+	<link rel="me" href="https://infosec.exchange/@screaminggoat"/>
+<script>
+  addEventListener('DOMContentLoaded', function () {
+    var hlbaseUri = "/js/";
+    var lb = document.querySelectorAll("code[class^='language-']");
+    var aliasmap = {
+      "elisp"      : "lisp",
+      "emacs-lisp" : "lisp",
+      "c"          : "cpp",
+      "cc"         : "cpp",
+      "h"          : "cpp",
+      "c++"        : "cpp",
+      "h++"        : "cpp",
+      "hpp"        : "cpp",
+      "hh"         : "cpp",
+      "hxx"        : "cpp",
+      "cxx"        : "cpp",
+      "sh"         : "bash",
+      "js"         : "javascript",
+      "jsx"        : "javascript",
+      "html"       : "xml"
+    };
+    function highlight(nodes) {
+      for (i=0; i < nodes.length; i++) {
+          hljs.highlightBlock(nodes[i]);
+      }
+    }
+    function loadLanguages(uris, callback) {
+      uris.forEach(function(uri) {
+        var sc = document.createElement('script');
+        sc.src = uri;
+        sc.async = false; 
+        if (uris.indexOf(uri) == uris.length-1) {
+          sc.onload  = callback; sc.onerror = callback;
+        }
+        document.head.appendChild(sc);
+      });
+    }
+    if (lb.length > 0) {
+      var st = document.createElement('link');
+      st.rel = "stylesheet";
+      st.href = "/css/lib/atom-one-light.min.css";
+      document.head.appendChild(st);
+      var jss = [hlbaseUri + "highlight.min.js"];
+      for (i=0; i < lb.length; i++) {
+        lang = lb[i].className.replace('language-','').toLowerCase();
+        if (aliasmap[lang]) lang = aliasmap[lang];
+        lurl = hlbaseUri + "highlightjs/" + lang + ".min.js";
+        if (!jss.includes(lurl)) {
+          jss.push(lurl);
+        }
+      }
+      loadLanguages(jss, () => {highlight(lb)});
+    }
+  });
+</script>
+	</head>
+	<body id="collection" itemscope itemtype="http://schema.org/WebPage">
+		<header>
+		<h1 dir="auto" id="blog-title"><a href="" class="h-card p-author u-url" rel="me author">Not Simon 🐐</a></h1>
+		<nav>
+			<a class="pinned" href="about-this.html">About this</a><a class="pinned" href="hello-world.html">Hello World!</a><a class="pinned" href="russia.html">Russia</a><a class="pinned" href="china.html">China </a><a class="pinned" href="iran.html">Iran</a><a class="pinned" href="north-korea.html">North Korea</a><a class="pinned" href="attribution.html">Attribution</a>
+		</header>
+		<section id="wrapper" itemscope itemtype="http://schema.org/Blog">
+
+<article id="post-b4p0ybar3p" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="silk-typhoon.html" itemprop="url" class="u-url">Silk Typhoon</a>
+	</h2>
+	<time class="dt-published" datetime="2025-01-11T23:08:53Z" pubdate itemprop="datePublished" content="2025-01-11 23:08:53 +0000 UTC">January 11, 2025</time>
+<div lang="en" dir="ltr" class="book e-content"><p><strong>Country:</strong> People&#39;s Republic of China
+<strong>Organization:</strong> Ministry of State Security (MSS)
+<strong>Objective:</strong> Espionage
+<em>(Page Last Updated: January 11, 2025)</em></p>
+<h2 id="aliases" id="aliases">Aliases:</h2>
+<ul><li>HAFNIUM (formerly used by Microsoft) (<a href="https://apt.etda.or.th/cgi-bin/showcard.cgi?g=Hafnium&amp;n=1" rel="nofollow">ETDA</a>, <a href="https://malpedia.caad.fkie.fraunhofer.de/actor/hafnium" rel="nofollow">Malpedia</a>, <a href="https://attack.mitre.org/groups/G0125/" rel="nofollow">Mitre</a>, <a href="https://www.rapid7.com/blog/post/2021/03/23/defending-against-the-zero-day-analyzing-attacker-behavior-post-exploitation-of-microsoft-exchange/" rel="nofollow">Rapid7</a>, <a href="https://en.wikipedia.org/wiki/Hafnium_(group)" rel="nofollow">Wikipedia</a>)</li>
+<li>Operation Exchange Marauder (<a href="https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/" rel="nofollow">Volexity</a>)</li>
+<li>Red Dev 13 (PwC)</li>
+<li>Silk Typhoon (<a href="https://www.microsoft.com/en-us/security/security-insider/silk-typhoon" rel="nofollow">Microsoft</a>)</li>
+<li>UNC2639 (FireEye/Mandiant)</li>
+<li>UNC2640 (FireEye/Mandiant)</li>
+<li>UNC2643 (FireEye/Mandiant)</li></ul>
+
+<h3 id="links-to-other-groups" id="links-to-other-groups">Links to Other Groups</h3>
+<ul><li><a href="apt40.html" rel="nofollow">APT40</a> (Hainan State Security Department (HSSD), of the MSS)</li></ul>
+
+<h2 id="vulnerabilities-exploited" id="vulnerabilities-exploited">Vulnerabilities Exploited</h2>
+<ul><li><a href="https://cve.org/CVERecord?id=CVE-2021-40539" rel="nofollow">CVE-2021-40539</a> (<strong>9.8 critical</strong>, in CISA&#39;s KEV Catalog)
+Zoho ManageEngine ADSelfService Plus Authentication Bypass Vulnerability
+Source: Implied to be CVE-2021-40539 by <a href="https://www.microsoft.com/en-us/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/" rel="nofollow">Microsoft</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-44228" rel="nofollow">CVE-2021-44228</a> (<strong>10.0 critical</strong>, in CISA&#39;s KEV Catalog)
+Apache Log4j2 Remote Code Execution Vulnerability (aka Log4Shell).
+Source: <a href="https://www.microsoft.com/en-us/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/" rel="nofollow">Microsoft</a></li></ul>
+
+<p>The following four vulnerabilities have the same source: <a href="https://www.microsoft.com/en-us/security/blog/2021/03/02/hafnium-targeting-exchange-servers/" rel="nofollow">Microsoft</a></p>
+<ul><li><a href="https://cve.org/CVERecord?id=CVE-2021-26855" rel="nofollow">CVE-2021-26855</a> (<strong>9.1 critical</strong>; NVD 9.8, in CISA&#39;s KEV Catalog)
+Microsoft Exchange Server Remote Code Execution Vulnerability (aka ProxyLogon)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-26857" rel="nofollow">CVE-2021-26857</a> (7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Exchange Server Remote Code Execution Vulnerability (aka ProxyLogon)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-26858" rel="nofollow">CVE-2021-26858</a> (7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Exchange Server Remote Code Execution Vulnerability (aka ProxyLogon)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-27065" rel="nofollow">CVE-2021-27065</a> (7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Exchange Server Remote Code Execution Vulnerability (aka ProxyLogon)</li></ul>
+
+<h2 id="tactics-techniques-and-procedures" id="tactics-techniques-and-procedures">Tactics, Techniques, and Procedures</h2>
+
+<p>Mapped to <a href="https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fattack.mitre.org%2Fgroups%2FG0125%2FG0125-enterprise-layer.json" rel="nofollow">MITRE ATT&amp;CK</a></p>
+
+<h2 id="known-tools-used" id="known-tools-used">Known Tools Used</h2>
+
+<p>External link: <a href="https://attack.mitre.org/groups/G0125/#:~:text=servers.%5B5%5D-,Software,-ID" rel="nofollow">MITRE</a></p>
+
+<h2 id="references" id="references">References</h2>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="2025" id="2025">2025</h3>
+<ul><li>January 10, 2025 – <strong>CNN</strong>: <a href="https://edition.cnn.com/2025/01/10/politics/chinese-hackers-breach-committee-on-foreign-investment-in-the-us/index.html" rel="nofollow">Chinese hackers breached US government office that assesses foreign investments for national security risks</a> (news article)</li>
+<li>January 08, 2025 – <strong>Bloomberg</strong>: <a href="https://www.bloomberg.com/news/articles/2025-01-08/white-house-rushes-to-finish-cyber-order-after-china-hacks" rel="nofollow">White House Rushes to Finish Cyber Order After China Hacks</a> (news article)</li>
+<li>January 06, 2025 – <strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/news/cisa-update-treasury-breach" rel="nofollow">CISA Update on Treasury Breach</a> (news article)</li>
+<li>January 01, 2025 – <strong>Washington Post</strong>: <a href="https://www.washingtonpost.com/national-security/2025/01/01/treasury-hack-china/" rel="nofollow">Treasury’s sanctions office hacked by Chinese government, officials say</a> (news article)</li></ul>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>December 30, 2024 – <strong>New York Times</strong>: <a href="https://www.nytimes.com/2024/12/30/us/politics/china-hack-treasury.html" rel="nofollow">China Hacked Treasury Dept. in ‘Major’ Breach, U.S. Says</a> (news article)</li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>April 12, 2022 – <strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/" rel="nofollow">Tarrask malware uses scheduled tasks for defense evasion</a></li></ul>
+
+<h3 id="2021" id="2021">2021</h3>
+<ul><li>December 11, 2021 – <strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/" rel="nofollow">Guidance for preventing, detecting, and hunting for exploitation of the Log4j 2 vulnerability</a></li>
+<li>August 19, 2021 – <strong>National Counterintelligence and Security Center</strong>: <a href="https://www.dni.gov/files/NCSC/documents/SafeguardingOurFuture/HAFNIUM%20Compromises%20MS%20Exchange%20Servers.pdf" rel="nofollow">HAFNIUM Compromises MS Exchange Servers</a> (PDF)</li>
+<li>July 19, 2021:
+<ul><li><strong>U.S. White House</strong>: <a href="https://www.whitehouse.gov/briefing-room/statements-releases/2021/07/19/the-united-states-joined-by-allies-and-partners-attributes-malicious-cyber-activity-and-irresponsible-state-behavior-to-the-peoples-republic-of-china/" rel="nofollow">The United States, Joined by Allies and Partners, Attributes Malicious Cyber Activity and Irresponsible State Behavior to the People’s Republic of China</a></li>
+<li><strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-062a" rel="nofollow">Mitigate Microsoft Exchange Server Vulnerabilities</a> (<strong>ATTRIBUTION</strong>)</li>
+<li><strong>UK Government</strong>: <a href="https://www.gov.uk/government/news/uk-and-allies-hold-chinese-state-responsible-for-a-pervasive-pattern-of-hacking" rel="nofollow">UK and allies hold Chinese state responsible for a pervasive pattern of hacking</a></li>
+<li><strong>NCSC-UK</strong>: <a href="https://www.ncsc.gov.uk/news/uk-allies-hold-chinese-state-responsible-for-pervasive-pattern-of-hacking" rel="nofollow">UK and allies hold Chinese state responsible for pervasive pattern of hacking</a></li></ul></li>
+<li>April 13, 2021 – <strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/justice-department-announces-court-authorized-effort-disrupt-exploitation-microsoft-exchange" rel="nofollow">Justice Department Announces Court-Authorized Effort to Disrupt Exploitation of Microsoft Exchange Server Vulnerabilities</a></li>
+<li>March 23, 2021 – <strong>Rapid7</strong>: <a href="https://www.rapid7.com/blog/post/2021/03/23/defending-against-the-zero-day-analyzing-attacker-behavior-post-exploitation-of-microsoft-exchange/" rel="nofollow">Defending Against the Zero Day: Analyzing Attacker Behavior Post-Exploitation of Microsoft Exchange</a></li>
+<li>March 11, 2021 – <strong>ShadowServer</strong>: <a href="https://www.shadowserver.org/news/shadowserver-special-reports-hafnium-exchange-victims/" rel="nofollow">Shadowserver Special Reports – HAFNIUM Exchange Victims</a></li>
+<li>March 10, 2021 – <strong>FBI</strong>: <a href="https://www.ic3.gov/CSA/2021/210310.pdf" rel="nofollow">Compromise of Microsoft Exchange Server</a> (PDF)</li>
+<li>March 04, 2021 – <strong>FireEye</strong>: <a href="https://cloud.google.com/blog/topics/threat-intelligence/detection-response-to-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/" rel="nofollow">Detection and Response to Exploitation of Microsoft Exchange Zero-Day Vulnerabilities</a></li>
+<li>March 02, 2021:
+<ul><li><strong>Microsoft</strong>: <a href="https://blogs.microsoft.com/on-the-issues/2021/03/02/new-nation-state-cyberattacks/" rel="nofollow">New nation-state cyberattacks</a></li>
+<li><strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2021/03/02/hafnium-targeting-exchange-servers/" rel="nofollow">HAFNIUM targeting Exchange Servers with 0-day exploits</a></li>
+<li><strong>Volexity</strong>: <a href="https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/" rel="nofollow">Operation Exchange Marauder: Active Exploitation of Multiple Zero-Day Microsoft Exchange Vulnerabilities</a></li></ul></li></ul>
+
+<p></details></p>
+
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+</div></article><article id="post-hln6gg9m68" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="cti-report-template.html" itemprop="url" class="u-url">CTI Report Template</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2025-01-10T01:04:21Z" pubdate itemprop="datePublished" content="2025-01-10 01:04:21 +0000 UTC">January 10, 2025</time>
+
+
+<div lang="en" dir="ltr" class="book e-content"><p>This is a variation of Kraven Security&#39;s <a href="https://kravensecurity.com/cyber-threat-intelligence-report-template/" rel="nofollow">Cyber Threat Intelligence Report Template</a> which contains great information already but I added my own preferences. Feel free to use this however you&#39;d like.</p>
+
+<p><strong>Report</strong>: #
+<strong>Date</strong>:
+<strong>Priority</strong>: Low/Moderate/High/Critical
+<strong>Source and Reliability Information</strong>: Admiralty Scale Score [A-F][1-6]
+<strong>Sensitivity</strong>: Traffic Light Protocol</p>
+<ol><li>Executive Summary</li>
+<li>Key Takeaways</li>
+<li>Intelligence Assessment</li>
+<li>Key Intelligence Gaps</li>
+<li>Indicators of Compromise (IOCs)</li>
+<li>MITRE ATT&amp;CK Techniques</li>
+<li>Detection Opportunities</li>
+<li>Appendices
+<ul><li>Probability Matrix</li>
+<li>Priority Matrix</li>
+<li>Source Reliability and Information Credibility</li>
+<li>Confidence Levels</li>
+<li>Feedback Contacts</li>
+<li>Definitions and Acronyms</li></ul></li></ol>
+
+<h2 id="1-executive-summary" id="1-executive-summary">1. Executive Summary</h2>
+
+<p>A brief summary of the report. It should explain the report&#39;s significance, create a simple, easy-to-follow narrative of its key findings, and support a single decision. The reader should be able to make an informed decision based entirely on this summary. Aim to answer the following questions concisely:</p>
+<ul><li>What intelligence requirement(s) has this report fulfilled?</li>
+<li>Why is this report relevant to the organization?</li>
+<li>What is the biggest takeaway?</li>
+<li>What new intelligence has been provided?</li>
+<li>Does this report support or contradict existing assumptions, security initiatives, or objectives?</li></ul>
+
+<h2 id="2-key-takeaways" id="2-key-takeaways">2. Key Takeaways</h2>
+
+<p>A bulleted list of the key findings from this report. Aim to answer the following questions:</p>
+<ul><li>Who is this report for?</li>
+<li>Where was the data collected (source)?</li>
+<li>Who was the attacker?</li>
+<li>Who was the victim?</li>
+<li>Why does this report matter to the target audience?</li>
+<li>What is the main takeaway from this report?</li></ul>
+
+<p>This bulleted list is followed by a table summarizing key intelligence and a general analysis of the threat the report discusses using the Diamond Model. This allows key intelligence metrics to be easily identified and visualized.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Intelligence Requirements Addressed</strong></th>
+<th align="left">Citation of the IR addressed by this report</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><strong>Data Sources</strong></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"><strong>Threat Actor</strong></td>
+<td align="left">Primary threat actor (and aliases) or N/A or Unknown</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Victim Location</strong></td>
+<td align="left">Country of victim</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Sectors</strong></td>
+<td align="left">Industry targeted</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Motivation</strong></td>
+<td align="left">Cybercrime / Espionage / Hacktivism / Ransomware / ICS / Other / Unknown</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="https://i.imgur.com/yEkPRu2.png" alt="Diamond Model"></p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Capabilities</strong></th>
+<th><strong>Adversary</strong></th>
+<th><strong>Infrastructure</strong></th>
+<th><strong>Victim</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>MITRE technique, malware, hacking tool</td>
+<td>Threat Actor, alias, email address, persona</td>
+<td>IP address, domain name, URL, C2 server</td>
+<td>company, workstation/server name, email address</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="3-intelligence-assessment" id="3-intelligence-assessment">3. Intelligence Assessment</h2>
+
+<p>This section should include:</p>
+<ul><li>A call to action, recommendation, or judgment: This threat (e.g., activity, threat actor, malware, etc.) demonstrates X and could potentially impact us. Therefore, we should do Y.</li>
+<li>Any new information: This threat has a new tool, capability, TTP, etc.
+Key evidence: The threat has the following characteristics that uniquely distinguish it.</li>
+<li>Estimative language (see Probability Matrix): “I assess with a  level of certainty that &lt; judgment&gt; will impact us .”<br></li>
+<li>Background information: Any relevant background information about the threat actor, malware, TTP, etc., to give context to this new assessment.</li>
+<li>Relations to your organization: How does this threat relate to your organization? Does it target your country or sector? Does it target vulnerabilities in the systems or technologies you use? Does it relate to any previous security incidents or detections?</li></ul>
+
+<p>This section should include a kill chain analysis technique like Lockheed Martin’s Cyber Kill Chain. List the IOCs or TTPs found at each stage of the attack to create an attack narrative for the reader. The security operations team can then use this to identify possible mitigations or gaps.</p>
+
+<h3 id="cyber-kill-chain" id="cyber-kill-chain"><strong>Cyber Kill Chain</strong></h3>
+<ul><li><strong>S1: Reconnaissance</strong></li>
+<li><strong>S2: Weaponization</strong></li>
+<li><strong>S3: Delivery</strong></li>
+<li><strong>S4: Exploitation</strong></li>
+<li><strong>S5: Installation</strong></li>
+<li><strong>S6: Command &amp; Control</strong></li>
+<li><strong>S7: Actions on Objective</strong></li></ul>
+
+<h2 id="4-key-intelligence-gaps" id="4-key-intelligence-gaps">4. Key Intelligence Gaps</h2>
+
+<p>A bulleted list that summarizes additional information the CTI team needs to complete their analysis and raise the confidence of the assessment. You should highlight gaps affecting the assessment, such as if new information is discovered or existing information is proven wrong.</p>
+
+<p>These gaps should be tracked externally from the report using a project/task management system.</p>
+
+<h2 id="5-indicators-of-compromise-iocs" id="5-indicators-of-compromise-iocs">5. Indicators of Compromise (IOCs)</h2>
+
+<p>This section consists of IOCs found on endpoint devices (workstations, servers, mobile devices), in network logs, related malware, and any vulnerabilities relevant to the threat being discussed.</p>
+<ul><li>Endpoint Artifact: Endpoint Artifact, Type, Description, Tactic</li>
+<li>Network Artifacts: Network Artifact, Type, Description, Kill Chain Stage (first observed, last observed)</li>
+<li>Malware: Malware, Hash Type, File Hash, Description, Malware Analysis Report, Kill Chain Stage</li>
+<li>Common Vulnerabilities and Exposures (CVEs): CVE ID, CVSS (include version) Score, Patch Available (Y/N), Remediation, Date Reported, Patch Applied (Y/N/ N/A)</li>
+<li>MITRE ATT&amp;CK Techniques: Tactic, Technique, Procedure, D3FEND, Security Control</li>
+<li>Detection Opportunities: Rule/Query, Name, Type, Description, Reference (source)</li></ul>
+
+<h2 id="6-appendices" id="6-appendices">6. Appendices</h2>
+
+<h3 id="probability-matrix" id="probability-matrix">Probability Matrix</h3>
+
+<table>
+<thead>
+<tr>
+<th>almost no chance</th>
+<th>very unlikely</th>
+<th>unlikely</th>
+<th>roughly even chance</th>
+<th>likely</th>
+<th>very likely</th>
+<th>almost certain(ly)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>remote</td>
+<td>highly improbable</td>
+<td>improbable</td>
+<td>roughly even odds</td>
+<td>probable (probably)</td>
+<td>highly probable</td>
+<td>nearly certain</td>
+</tr>
+
+<tr>
+<td>01-05%</td>
+<td>05-20%</td>
+<td>20-45%</td>
+<td>45-55%</td>
+<td>55-80%</td>
+<td>80-95%</td>
+<td>95-99%</td>
+</tr>
+</tbody>
+</table>
+
+<p>Analysts are strongly encouraged not to mix terms from different rows. Products that do mix terms must include a disclaimer clearly noting the terms indicate the same assessment of probability.</p>
+
+<p>To avoid confusion, products that express an analyst&#39;s confidence in an assessment or judgment using a “confidence level” (e.g., “high confidence”) must not combine a confidence level and a degree of likelihood, which refers to an event or development, in the same sentence.</p>
+
+<h3 id="priority-matrix" id="priority-matrix">Priority Matrix</h3>
+
+<p>You should assign each report a priority based on its impact on your organization. The following table describes four general priority levels you can assign to a report.</p>
+<ul><li><strong>Low</strong>: The threat requires regular monitoring and should be addressed when possible.</li>
+<li><strong>Moderate</strong>: The threat needs to be monitored closely and addressed.</li>
+<li><strong>High</strong>: The threat needs to be addressed quickly and monitored.</li>
+<li><strong>Critical</strong>: Immediate action is required.</li></ul>
+
+<h3 id="source-and-information-reliability" id="source-and-information-reliability">Source and Information Reliability</h3>
+
+<p>Each report should include an evaluation of source reliability. An industry standard is the Admiralty Scale, developed by NATO. This scale scores source reliability on a scale of A-F and information credibility on a scale of 1-6. Attaching an appendix that describes this to the reader provides clarity.</p>
+
+<p><strong>Source Reliability (A-F)</strong></p>
+<ul><li><strong>A (Completely reliable)</strong>: The source has a history of consistently providing accurate information.</li>
+<li><strong>B (Usually reliable)</strong>: Most of the time, the source provides accurate information.</li>
+<li><strong>C (Fairly reliable)</strong>: The source has provided accurate information on occasion.</li>
+<li><strong>D (Not usually reliable)</strong>: The source has provided accurate information infrequently.</li>
+<li><strong>E (Unreliable)</strong>: The source has rarely or never provided accurate information.</li>
+<li><strong>F (Reliability cannot be judged)</strong>: The source’s reliability is unknown or untested.</li></ul>
+
+<p><strong>Information Credibility (1-6)</strong></p>
+<ul><li><strong>1 (Confirmed)</strong>: Other independent sources have confirmed the information.</li>
+<li><strong>2 (Probably true)</strong>: The information is likely true but has not been confirmed.</li>
+<li><strong>3 (Possibly true)</strong>: The information might be true, but it is unconfirmed.</li>
+<li><strong>4 (Doubtful)</strong>: The information is unlikely to be true.</li>
+<li><strong>5 (Improbable)</strong>: The information is very unlikely to be true.</li>
+<li><strong>6 (Cannot be judged)</strong>: The credibility of the information cannot be assessed.</li></ul>
+
+<h3 id="confidence-levels" id="confidence-levels">Confidence Levels</h3>
+<ul><li><strong>High</strong>: Good quality of information, evidence from multiple collection capabilities, possible to make a clear judgment.</li>
+<li><strong>Moderate</strong>: Evidence is open to a number of interpretations, or is credible and plausible but lacks correlation.</li>
+<li><strong>Low</strong>: Fragmentary information, or from collection capabilities of dubious reliability.</li></ul>
+
+<h3 id="sensitivity-matrix" id="sensitivity-matrix">Sensitivity Matrix</h3>
+
+<p>Each report should attach a sensitivity level as defined by your organization’s data protection policy. This ensures data is handled appropriately and only shared with appropriate personnel. Attaching an appendix that describes this to the reader provides clarity.</p>
+<ul><li><strong>TLP:RED</strong>: For the eyes and ears of individual recipients only, no further disclosure. Sources may use TLP:RED when information cannot be effectively acted upon without significant risk for the privacy, reputation, or operations of the organizations involved. Recipients may therefore not share TLP:RED information with anyone else. In the context of a meeting, for example, TLP:RED information is limited to those present at the meeting</li>
+<li><strong>TLP:AMBER</strong>: Limited disclosure, recipients can only spread this on a need-to-know basis within their organization and its clients. Note that TLP:AMBER+STRICT restricts sharing to the organization only. Sources may use TLP:AMBER when information requires support to be effectively acted upon, yet carries risk to privacy, reputation, or operations if shared outside of the organizations involved. Recipients may share TLP:AMBER information with members of their own organization and its clients, but only on a need-to-know basis to protect their organization and its clients and prevent further harm. Note: If the source wants to restrict sharing to the organization only, they must specify <strong>TLP:AMBER+STRICT</strong>.</li>
+<li><strong>TLP:GREEN</strong>: Limited disclosure, recipients can spread this within their community. Sources may use TLP:GREEN when information is useful to increase awareness within their wider community. Recipients may share TLP:GREEN information with peers and partner organizations within their community, but not via publicly accessible channels. TLP:GREEN information may not be shared outside of the community. Note: When “community” is not defined, assume the cybersecurity/cyber defense community.</li>
+<li><strong>TLP:CLEAR</strong>: Recipients can spread this to the world, there is no limit on disclosure. Sources may use TLP:CLEAR when information carries minimal or no foreseeable risk of misuse, in accordance with applicable rules and procedures for public release. Subject to standard copyright rules, TLP:CLEAR information may be shared without restriction.</li></ul>
+
+<h3 id="feedback-contacts" id="feedback-contacts">Feedback Contacts</h3>
+
+<p>Provide a point of contact where the intelligence consumer can direct their feedback once the intelligence report has been published. This will help the CTI team improve future reports, ensure intelligence requirements are being met, and maintain communication channels.</p>
+
+<h3 id="definitions-and-acronyms" id="definitions-and-acronyms">Definitions and Acronyms</h3>
+
+<p>A list of key terms and acronyms used throughout the report. This lets the reader understand how the CTI team defines a particular technical term.</p>
+</div></article><article id="post-dln2nb9ee3" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="andariel.html" itemprop="url" class="u-url">Andariel</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-12-28T00:57:22Z" pubdate itemprop="datePublished" content="2024-12-28 00:57:22 +0000 UTC">December 28, 2024</time>
+
+
+<div lang="en" dir="ltr" class="book e-content"><p><strong>Country:</strong> Democratic People&#39;s Republic of Korea (DPRK)
+<strong>Organization:</strong> Lab 110, 3rd Bureau of the Reconnaissance General Bureau (RGB)
+<strong>Objective:</strong> Espionage, Ransomware
+<em>(Page last updated December 27, 2024)</em></p>
+
+<h2 id="aliases" id="aliases">Aliases:</h2>
+<ul><li>Andariel (<a href="https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/" rel="nofollow">Cisco Talos</a>, <a href="https://www.welivesecurity.com/2023/05/09/eset-apt-activity-report-q42022-q12023/" rel="nofollow">ESET</a>, <a href="https://apt.etda.or.th/cgi-bin/showcard.cgi?g=Subgroup%3A%20Andariel%2C%20Silent%20Chollima" rel="nofollow">ETDA</a>, <a href="https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/" rel="nofollow">Kaspersky</a>, <a href="https://lazarus.day/actors/alias/andariel" rel="nofollow">Lazarusholic</a>, <a href="https://attack.mitre.org/groups/G0138/" rel="nofollow">MITRE</a>, <a href="https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html" rel="nofollow">Trend Micro</a>, <a href="https://en.wikipedia.org/wiki/Lazarus_Group#AndAriel" rel="nofollow">Wikipedia</a>)</li>
+<li>APT45 (<a href="https://cloud.google.com/blog/topics/threat-intelligence/apt45-north-korea-digital-military-machine" rel="nofollow">Mandiant</a>)</li>
+<li>Clasiopa (<a href="https://www.security.com/threat-intelligence/clasiopa-materials-research" rel="nofollow">Symantec</a>)</li>
+<li>DarkSeoul (McAfee)</li>
+<li>Jumpy Pisces (<a href="https://unit42.paloaltonetworks.com/north-korean-threat-group-play-ransomware/" rel="nofollow">Unit 42</a>)</li>
+<li>Nickel Hyatt (<a href="https://www.secureworks.com/research/threat-profiles/nickel-hyatt" rel="nofollow">Secureworks</a>)</li>
+<li>Onyx Sleet (<a href="https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming" rel="nofollow">Microsoft</a>)</li>
+<li>PLUTONIUM (previously used by <a href="https://www.microsoft.com/en-us/security/blog/2022/07/14/north-korean-threat-actor-targets-small-and-midsize-businesses-with-h0lygh0st-ransomware/" rel="nofollow">Microsoft</a>)</li>
+<li>Silent Chollima (<a href="https://www.crowdstrike.com/adversaries/silent-chollima/" rel="nofollow">CrowdStrike</a>, <a href="https://malpedia.caad.fkie.fraunhofer.de/actor/silent_chollima" rel="nofollow">Malpedia</a>)</li>
+<li>Stonefly (<a href="https://www.security.com/threat-intelligence/stonefly-north-korea-extortion" rel="nofollow">Symantec</a>)</li>
+<li>TA430 (Proofpoint)</li></ul>
+
+<h3 id="connections-to-other-groups" id="connections-to-other-groups">Connections to other groups:</h3>
+<ul><li>Storm-0530 (<a href="https://www.microsoft.com/en-us/security/blog/2022/07/14/north-korean-threat-actor-targets-small-and-midsize-businesses-with-h0lygh0st-ransomware/" rel="nofollow">Microsoft</a>) (previously tracked as DEV-0530)</li></ul>
+
+<h3 id="identified-members" id="identified-members">Identified Members</h3>
+<ul><li><strong>Rim Jong Hyok</strong>:
+<ul><li><a href="https://www.fbi.gov/wanted/cyber/rim-jong-hyok" rel="nofollow">FBI Most Wanted</a></li>
+<li><a href="https://rewardsforjustice.net/rewards/rim-jong-hyok-%eb%a6%bc%ec%a2%85%ed%98%81/" rel="nofollow">Rewards for Justice</a></li></ul></li></ul>
+
+<h3 id="vulnerabilities-exploited" id="vulnerabilities-exploited">Vulnerabilities Exploited</h3>
+<ul><li><a href="https://cve.org/CVERecord?id=CVE-2023-42793" rel="nofollow">CVE-2023-42793</a> (9.8 critical, in CISA&#39;s KEV Catalog)
+JetBrains TeamCity Authentication Bypass Vulnerability
+Source: <a href="https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/" rel="nofollow">Microsoft</a></li></ul>
+
+<p>The following five vulnerabilities have <a href="https://www.microsoft.com/en-us/security/blog/2024/07/25/onyx-sleet-uses-array-of-malware-to-gather-intelligence-for-north-korea/" rel="nofollow">Microsoft</a> as their source:</p>
+<ul><li><a href="https://cve.org/CVERecord?id=CVE-2023-46604" rel="nofollow">CVE-2023-46604</a> (Vendor 10.0/ <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-46604" rel="nofollow">NVD</a> 9.8 critical, in CISA&#39;s KEV Catalog)
+Apache ActiveMQ Deserialization of Untrusted Data Vulnerability</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-22515" rel="nofollow">CVE-2023-22515</a> (Vendor 10.0/ <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22515" rel="nofollow">NVD</a> 9.8 critical, in CISA&#39;s KEV Catalog)
+Atlassian Confluence Data Center and Server Broken Access Control Vulnerability</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-46604" rel="nofollow">CVE-2023-46604</a> (Vendor 10.0/ <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-46604" rel="nofollow">NVD</a> 9.8 critical, in CISA&#39;s KEV Catalog)
+Apache ActiveMQ Deserialization of Untrusted Data Vulnerability
+Other sources: <a href="https://asec.ahnlab.com/en/59318/" rel="nofollow">ASEC</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-27350" rel="nofollow">CVE-2023-27350</a> (9.8 critical, in CISA&#39;s KEV Catalog)
+PaperCut MF/NG Improper Access Control Vulnerability</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-44228" rel="nofollow">CVE-2021-44228</a> (10.0 critical, in CISA&#39;s KEV Catalog)
+Apache Log4j2 Remote Code Execution Vulnerability (aka Log4Shell)
+Other sources: <a href="https://asec.ahnlab.com/en/34461/" rel="nofollow">ASEC</a>, <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a" rel="nofollow">CISA</a>, <a href="https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/" rel="nofollow">Cisco Talos</a></li></ul>
+
+<h2 id="tactics-techniques-and-procedures" id="tactics-techniques-and-procedures">Tactics, Techniques, and Procedures</h2>
+
+<p>Mapped to <a href="https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fattack.mitre.org%2Fgroups%2FG0138%2FG0138-enterprise-layer.json" rel="nofollow">MITRE ATT&amp;CK</a></p>
+
+<h2 id="known-tools-used" id="known-tools-used">Known Tools Used</h2>
+
+<p>External link: <a href="https://attack.mitre.org/groups/G0138/#:~:text=attachments.%5B3%5D-,Software,-ID" rel="nofollow">MITRE</a></p>
+
+<h2 id="references" id="references">References</h2>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>December 23, 2024 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/ko/85270/" rel="nofollow">Andariel 그룹의 국내 솔루션 대상 공격 사례 분석 (SmallTiger)</a> (Korean language; English translated title: “Analysis of Attack Cases Targeting Domestic Solutions of Andariel Group (SmallTiger)”)</li>
+<li>November 04, 2024 – <strong>Vlad Pasca</strong>: <a href="https://hybrid-analysis.blogspot.com/2024/11/recent-keylogger-attributed-to-north.html" rel="nofollow">Recent Keylogger Attributed to North Korean Group Andariel Analyzed Through A Hybrid Analysis Perspective</a></li>
+<li>October 30, 2024 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/north-korean-threat-group-play-ransomware/" rel="nofollow">Jumpy Pisces Engages in Play Ransomware</a></li>
+<li>October 16, 2024 – <strong>KrCERT/CC</strong>: <a href="https://thorcert.notion.site/TTPs-11-Operation-An-Octopus-d875862055ca4b7b815b5e496b219671" rel="nofollow">TTPs #11: Operation An Octopus – 중앙 집중형 관리 솔루션을 노리는 공격전략 분석</a> (Korean language; English translated title: “TTPs #11: Operation An Octopus – Analysis of attack strategies targeting centralized management solutions”)</li>
+<li>October 02, 2024 – <strong>Symantec</strong>: <a href="https://www.security.com/threat-intelligence/stonefly-north-korea-extortion" rel="nofollow">Stonefly: Extortion Attacks Continue Against U.S. Targets</a></li>
+<li>August 05, 2024 – <strong>National Cyber Security Center of Korea</strong> (NCSC): <a href="https://www.ncsc.go.kr:4018/main/cop/bbs/selectBoardArticle.do?bbsId=SecurityAdvice_main&amp;nttId=146934&amp;menuNo=020000&amp;subMenuNo=020200&amp;thirdMenuNo=" rel="nofollow">북한 해킹조직의 건설ㆍ기계 분야 기술절취 주의</a> (Korean language, PDF; English translated title: “Beware of North Korean hacking organizations stealing construction and machinery technology”)</li>
+<li>July 25, 2024:
+<ul><li><strong>U.S. State Department</strong>: <a href="https://www.state.gov/rewards-for-justice-reward-offer-for-information-on-north-korean-malicious-cyber-actor-targeting-u-s-critical-infrastructure/" rel="nofollow">Rewards for Justice – Reward Offer for Information on North Korean Malicious Cyber Actor Targeting U.S. Critical Infrastructure</a></li>
+<li><strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/north-korean-government-hacker-charged-involvement-ransomware-attacks-targeting-us-hospitals" rel="nofollow">North Korean Government Hacker Charged for Involvement in Ransomware Attacks Targeting U.S. Hospitals and Health Care Providers</a> (<strong>ATTRIBUTION</strong>)</li>
+<li><strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a" rel="nofollow">North Korea Cyber Group Conducts Global Espionage Campaign to Advance Regime’s Military and Nuclear Programs</a> (available as <a href="https://www.cisa.gov/sites/default/files/2024-08/aa24-207a-dprk-cyber-group-conducts-global-espionage-campaign_0.pdf" rel="nofollow">PDF</a>, links Clasiopa to Andariel)</li>
+<li><strong>NCSC-UK</strong>: <a href="https://www.ncsc.gov.uk/news/ncsc-partners-vigilant-dprk-sponsored-cyber-campaign" rel="nofollow">NCSC and partners issue warning over North Korean state-sponsored cyber campaign to steal military and nuclear secrets</a></li>
+<li><strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2024/07/25/onyx-sleet-uses-array-of-malware-to-gather-intelligence-for-north-korea/" rel="nofollow">Onyx Sleet uses array of malware to gather intelligence for North Korea</a></li>
+<li><strong>Mandiant</strong>: <a href="https://cloud.google.com/blog/topics/threat-intelligence/apt45-north-korea-digital-military-machine" rel="nofollow">APT45: North Korea’s Digital Military Machine</a></li></ul></li>
+<li>June 24, 2024 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/74835/" rel="nofollow">Xctdoor Malware Used in Attacks Against Korean Companies (Andariel)</a></li>
+<li>May 27, 2024 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/74039/" rel="nofollow">SmallTiger Malware Used in Attacks Against South Korean Businesses (Kimsuky and Andariel)</a></li>
+<li>May 16, 2024 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/73924/" rel="nofollow">Analysis of APT Attack Cases Using Dora RAT Against Korean Companies (Andariel Group)</a></li>
+<li>April 23, 2024 – <strong>Korean National Police Agency</strong>: <a href="https://www.police.go.kr/user/bbs/BD_selectBbs.do?q_bbsCode=1002&amp;q_bbscttSn=20240423132830276&amp;q_tab=&amp;q_searchKeyTy=&amp;q_searchVal=&amp;q_rowPerPage=10&amp;q_currPage=1&amp;q_sortName=&amp;q_sortOrder=&amp;" rel="nofollow">경찰청·방위사업청 등 관계기관 합동 특별점검을 통해 북한의 케이(K)-방산업체 해킹 공격 규명 및 보호조치 실시</a> (Korean language; English translated title: “Investigation of North Korea&#39;s K-Defense Industry Hacking Attacks and Implementation of Protective Measures through Joint Special Inspection by Related Agencies including the National Police Agency and Defense Acquisition Program Administration”)</li>
+<li>March 11, 2024 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/63192/" rel="nofollow">Andariel Group Exploiting Korean Asset Management Solutions (MeshAgent)</a></li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>December 11, 2023 – <strong>Cisco Talos</strong>: <a href="https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram/" rel="nofollow">Operation Blacksmith: Lazarus targets organizations worldwide using novel Telegram-based malware written in DLang</a></li>
+<li>December 05, 2023 – <strong>SecurityScorecard</strong>: <a href="https://securityscorecard.com/wp-content/uploads/2024/01/Andariel-Report.pdf" rel="nofollow">North Korean State-Sponsored Cyber Attack: Unveiling the Intricacies of Threat Actor Group Andariel</a> (PDF)</li>
+<li>December 04, 2023 – <strong>Seoul Metropolitan Police</strong>: <a href="https://www.smpa.go.kr/user/nd42986.do?View&amp;uQ=&amp;pageST=SUBJECT&amp;pageSV=&amp;imsi=imsi&amp;page=13&amp;pageSC=SORT_ORDER&amp;pageSO=DESC&amp;dmlType=&amp;boardNo=00300907&amp;returnUrl=https://www.smpa.go.kr:443/user/nd42986.do" rel="nofollow">北 해킹조직‘안다리엘’평양發 해킹공격으로 방산기술 탈취, 북한으로 랜섬웨어 수익금 송금</a> (Korean Language; English translated title: “North Korean hacking group &#39;Andariel&#39; steals defense technology through hacking attacks from Pyongyang, sends ransomware profits to North Korea”)</li>
+<li>November 17, 2023 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/59318/" rel="nofollow">Circumstances of the Andariel Group Exploiting an Apache ActiveMQ Vulnerability (CVE-2023-46604)</a></li>
+<li>November 10, 2023 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/59073/" rel="nofollow">Circumstances of an Attack Exploiting an Asset Management Program (Andariel Group)</a></li>
+<li>October 18, 2023 – <strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/" rel="nofollow">Multiple North Korean threat actors exploiting the TeamCity CVE-2023-42793 vulnerability</a></li>
+<li>September 12, 2023 – <strong>Qihoo360</strong>: <a href="https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&amp;mid=2247493393&amp;idx=1&amp;sn=027208d09492e20bb0c0985afd548927&amp;cur_album_id=1915287066892959748#rd" rel="nofollow">APT-C-26（Lazarus）组织使用EarlyRat的攻击活动分析</a> (Chinese language; English translated title: “Analysis of the APT-C-26 (Lazarus) group’s attack activities using EarlyRat”)</li>
+<li>September 01, 2023 – <strong>Ministry of Foreign Affairs of Japan</strong>: <a href="https://www.mofa.go.jp/mofaj/press/release/press1_001546.html" rel="nofollow">北朝鮮の核その他の大量破壊兵器及び弾道ミサイル関連計画その他の北朝鮮に関連する国際連合安全保障理事会決議により禁止された活動等に関与する者に対する資産凍結等の措置の対象者の追加について
+</a> (Japanese language; English translated title: “Addition of persons subject to asset freeze and other measures for those involved in North Korea&#39;s nuclear and other weapons of mass destruction and ballistic missile-related programs and other activities prohibited by United Nations Security Council resolutions related to North Korea”)</li>
+<li>August 22, 2023 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/56405/" rel="nofollow">Analysis of Andariel’s New Attack Activities</a></li>
+<li>June 28, 2023 – <strong>Kaspersky</strong>: <a href="https://securelist.com/lazarus-andariel-mistakes-and-easyrat/110119/" rel="nofollow">Andariel’s silly mistakes and a new malware family</a></li>
+<li>May 16, 2023 – <strong>Deutsche Cyber-
+Sicherheitsorganisation</strong> (DCSO): <a href="https://medium.com/@DCSO_CyTec/andariels-jupiter-malware-and-the-case-of-the-curious-c2-dbfe29f57499" rel="nofollow">Andariel’s “Jupiter” malware and the case of the curious C2</a></li>
+<li>May 09, 2023 – <strong>ESET Research</strong>: <a href="https://web-assets.esetstatic.com/wls/2023/05/eset_apt_activity_report_q42022_q12023.pdf" rel="nofollow">APT Activity Report Q4 2022—Q1 2023 LAZARUS EXTENDS TARGETING TO ALL MAJOR DESKTOP OSes</a> (PDF)</li>
+<li>February 23, 2023 – <strong>Symantec</strong>: <a href="https://www.security.com/threat-intelligence/clasiopa-materials-research" rel="nofollow">Clasiopa: New Group Targets Materials Research</a></li>
+<li>February 15, 2023 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/48198/" rel="nofollow">Distribution of Malware Exploiting Vulnerable Innorix: Andariel</a></li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>August 09, 2022 – <strong>Kaspersky</strong>: <a href="https://securelist.com/andariel-deploys-dtrack-and-maui-ransomware/107063/" rel="nofollow">Andariel deploys DTrack and Maui ransomware</a></li>
+<li>July 07, 2022 – <strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-187a" rel="nofollow">North Korean State-Sponsored Cyber Actors Use Maui Ransomware to Target the Healthcare and Public Health Sector</a></li>
+<li>June 03, 2022 – <strong>ASEC</strong>: <a href="https://www.ahnlab.com/ko/contents/content-center/31890" rel="nofollow">한국에서만 활동하는 안다리엘 그룹, 지난 2년간의 행적</a> (Korean Language; English translation: Andariel Group, active only in Korea, the past two years)</li>
+<li>May 11, 2022 – <strong>ASEC</strong>: <a href="https://asec.ahnlab.com/en/34461/" rel="nofollow">Lazarus Group Exploiting Log4Shell Vulnerability (NukeSped)</a></li>
+<li>April 27, 2022 – <strong>Symantec</strong>: <a href="security.com/threat-intelligence/stonefly-north-korea-espionage" rel="nofollow">Stonefly: North Korea-linked Spying Operation Continues to Hit High-value Targets</a></li>
+<li>March 23, 2022 – <strong>Mandiant</strong>: <a href="https://cloud.google.com/blog/topics/threat-intelligence/mapping-dprk-groups-to-government/" rel="nofollow">Not So Lazarus: Mapping DPRK Cyber Threat Groups to Government Organizations</a> (<strong>ATTRIBUTION</strong>)</li></ul>
+
+<h3 id="2021" id="2021">2021</h3>
+<ul><li>June 15, 2021 – <strong>Kaspersky</strong>: <a href="https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811/" rel="nofollow">Andariel evolves to target South Korea with ransomware</a></li>
+<li>April 19, 2021 – <strong>Malwarebytes</strong>: <a href="https://www.threatdown.com/blog/lazarus-apt-conceals-malicious-code-within-bmp-image-to-drop-its-rat/" rel="nofollow">Lazarus APT conceals malicious code within BMP image to drop its RAT</a></li>
+<li>March 25, 2021 – <strong>U.S. Department of Health and Human Serivces</strong> (HHS): <a href="https://www.hhs.gov/sites/default/files/dprk-cyber-espionage.pdf" rel="nofollow">North Korean Cyber Activity</a> (PDF)</li></ul>
+
+<h3 id="2020" id="2020">2020</h3>
+<ul><li>May 12, 2020 – <strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/analysis-reports/ar20-133c" rel="nofollow">MAR-10288834-3.v1 – North Korean Trojan: PEBBLEDASH</a> (Malware Analysis)</li>
+<li>February 19, 2020 – <strong>LEXFO</strong>: <a href="https://blog.lexfo.fr/ressources/Lexfo-WhitePaper-The_Lazarus_Constellation.pdf" rel="nofollow">The Lazarus Constellation: A study on North Korean malware</a> (PDF)</li></ul>
+
+<h3 id="2019" id="2019">2019</h3>
+<ul><li>September 13, 2019 – <strong>U.S. Treasury</strong>: <a href="https://home.treasury.gov/news/press-releases/sm774" rel="nofollow">Treasury Sanctions North Korean State-Sponsored Malicious Cyber Groups</a> (<strong>ATTRIBUTION</strong>)</li></ul>
+
+<h3 id="2018" id="2018">2018</h3>
+<ul><li>July 16, 2018 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/18/g/new-andariel-reconnaissance-tactics-hint-at-next-targets.html" rel="nofollow">New Andariel Reconnaissance Tactics Uncovered</a></li>
+<li>June 23, 2018: <strong>ASEC</strong>: <a href="https://global.ahnlab.com/global/upload/download/techreport/%5BAhnLab%5DAndariel_a_Subgroup_of_Lazarus%20(3).pdf" rel="nofollow"> Full Discloser of Andariel, A Subgroup of Lazarus Threat Group.</a> (<strong>dead link</strong>)</li>
+<li>May 23, 2018 – <strong>ASEC</strong>: <a href="https://download.ahnlab.com/kr/site/library/%5bReport%5dAndariel_Threat_Group.pdf" rel="nofollow">Andariel Group 동향 보고서</a> (PDF, Korean language; English translated title: “Andariel Group Trend Report”)</li></ul>
+
+<h3 id="2017" id="2017">2017</h3>
+<ul><li>August 04, 2017 – <strong>Black Hat Europe 2017</strong> (Chi-en (Ashley) Shen &amp; Kyoung-ju Kwak &amp; Min-Chang Jang): <a href="https://www.blackhat.com/docs/eu-17/materials/eu-17-Shen-Nation-State%20Moneymules-Hunting-Season-APT-Attacks-Targeting-Financial-Institutions.pdf" rel="nofollow">Nation-State Moneymule&#39;s Hunting Season: APT Attacks Targeting Financial Institutions</a> (PDF)</li>
+<li>July 26, 2017 – <strong>Financial Security Institute</strong> (FSI): <a href="https://t1.daumcdn.net/cfile/tistory/99D10D345B16402814" rel="nofollow">Campaign Rifle – Andariel, the Maiden of Anguish</a> (DOCX file)
+<ul><li>See related <strong>S2W</strong>: <a href="https://medium.com/s2wblog/campaign-rifle-andariel-the-maiden-of-anguish-981543639122" rel="nofollow">Campaign Rifle: Andariel, The Maiden of Anguish</a> (July 26, 2021)</li></ul></li>
+<li>February 12, 2017 – <strong>BAE Systems</strong>: <a href="https://baesystemsai.blogspot.com/2017/02/lazarus-watering-hole-attacks.html?m=1" rel="nofollow">Lazarus &amp; Watering-hole attacks</a></li></ul>
+
+<h3 id="2015" id="2015">2015</h3>
+<ul><li>November 20, 2015 – <strong>Global Information Assurance Certification</strong> (GIAC): <a href="https://www.giac.org/paper/gsec/31524/tracing-lineage-darkseoul/126346" rel="nofollow">Tracing the Lineage of DarkSeoul</a> (PDF)</li>
+<li>November 18, 2015 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/tdrop2-attacks-suggest-dark-seoul-attackers-return/" rel="nofollow">TDrop2 Attacks Suggest Dark Seoul Attackers Return</a></li></ul>
+
+<h3 id="2013" id="2013">2013</h3>
+<ul><li>July 08, 2013 – <strong>McAfee</strong>: <a href="https://www.mcafee.com/us/resources/white-papers/wp-dissecting-operation-troy.pdf" rel="nofollow">Dissecting Operation Troy: Cyberespionage in South Korea</a> (PDF, archive of dead link)</li></ul>
+
+<p></details></p>
+
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+</div></article><article id="post-ml1mbws10j" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="patch-tuesday.html" itemprop="url" class="u-url">Patch Tuesday</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-12-26T03:09:42Z" pubdate itemprop="datePublished" content="2024-12-26 03:09:42 +0000 UTC">December 26, 2024</time>
+
+
+<div lang="en" dir="ltr" class="book e-content"><p>Here&#39;s a handy resource: A list of vendor security advisories, sorted by Patch Tuesday schedule (if they adhere to it). This is not a complete or definitive list, but it&#39;s better than nothing. I also don&#39;t worry about all of the listed vendors, and didn&#39;t include ones who don&#39;t even have a portal/landing page for security advisories. I&#39;ll try to keep the page updated when I add more vendors, or know that their link changed. (Ideally you&#39;d be monitoring these on your own using RSS). Visit the <a href="vendor-verbiage" rel="nofollow">Vendor Verbiage</a> page to figure out what was publicly disclosed or exploited.</p>
+
+<p>Page last updated: December 25, 2024.</p>
+
+<h3 id="first-monday-of-the-month" id="first-monday-of-the-month">First Monday of the month</h3>
+<ul><li>Android: <a href="https://source.android.com/docs/security/bulletin" rel="nofollow">https://source.android.com/docs/security/bulletin</a></li></ul>
+
+<h3 id="first-weekday-of-the-month" id="first-weekday-of-the-month">First Weekday of the month</h3>
+<ul><li>Qualcomm: <a href="https://docs.qualcomm.com/product/publicresources/securitybulletin" rel="nofollow">https://docs.qualcomm.com/product/publicresources/securitybulletin</a></li></ul>
+
+<h3 id="second-tuesday-of-the-month" id="second-tuesday-of-the-month">Second Tuesday of the month</h3>
+<ul><li>Adobe: <a href="https://helpx.adobe.com/security/security-bulletin.html" rel="nofollow">https://helpx.adobe.com/security/security-bulletin.html</a></li>
+<li>Fortinet: <a href="https://www.fortiguard.com/psirt" rel="nofollow">https://www.fortiguard.com/psirt</a></li>
+<li>Intel: <a href="https://www.intel.com/content/www/us/en/security-center/default.html" rel="nofollow">https://www.intel.com/content/www/us/en/security-center/default.html</a></li>
+<li>Ivanti: <a href="https://www.ivanti.com/blog/topics/security-advisory" rel="nofollow">https://www.ivanti.com/blog/topics/security-advisory</a></li>
+<li>Microsoft: <a href="https://msrc.microsoft.com/update-guide/vulnerability/" rel="nofollow">https://msrc.microsoft.com/update-guide/vulnerability/</a></li>
+<li>SAP: <a href="https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html" rel="nofollow">https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html</a></li></ul>
+
+<h3 id="preferred-on-second-tuesday-of-the-month-but-whenever" id="preferred-on-second-tuesday-of-the-month-but-whenever">Preferred on (second Tuesday) of the month (but whenever)</h3>
+<ul><li>Arm: <a href="https://developer.arm.com/Arm%20Security%20Center/#f-navigationhierarchiescontenttype=Security%20Bulletin&amp;aq=%40navigationhierarchiescategories%3D%3D%22Arm%20Security%20Updates%22%20%20AND%20%40navigationhierarchiescontenttype%3D%3D(%22Security%20Update%22%2C%22Security%20Bulletin%22)" rel="nofollow">link shortened for length reasons</a></li>
+<li>Cisco: <a href="https://sec.cloudapps.cisco.com/security/center/publicationListing.x" rel="nofollow">https://sec.cloudapps.cisco.com/security/center/publicationListing.x</a></li>
+<li>Google Chrome: <a href="https://chromereleases.googleblog.com/" rel="nofollow">https://chromereleases.googleblog.com/</a></li></ul>
+
+<h3 id="third-tuesday-of-the-month" id="third-tuesday-of-the-month">Third Tuesday of the month</h3>
+<ul><li>Atlassian: <a href="https://www.atlassian.com/trust/security/advisories" rel="nofollow">https://www.atlassian.com/trust/security/advisories</a></li></ul>
+
+<h3 id="quarterly" id="quarterly">Quarterly</h3>
+<ul><li>Oracle (third Tuesday of January, April, July, and October): <a href="https://www.oracle.com/security-alerts/" rel="nofollow">https://www.oracle.com/security-alerts/</a></li>
+<li>Splunk: <a href="https://advisory.splunk.com/" rel="nofollow">https://advisory.splunk.com/</a></li></ul>
+
+<h3 id="regular-schedule-lol" id="regular-schedule-lol">Regular Schedule? LOL</h3>
+<ul><li>AMD: <a href="https://www.amd.com/en/resources/product-security.html" rel="nofollow">https://www.amd.com/en/resources/product-security.html</a></li>
+<li>Apple: <a href="https://support.apple.com/en-us/100100" rel="nofollow">https://support.apple.com/en-us/100100</a></li>
+<li>Citrix: <a href="https://support.citrix.com/s/topic/0TO4z0000001GYdGAM/security-bulletin?language=en_US" rel="nofollow">https://support.citrix.com/s/topic/0TO4z0000001GYdGAM/security-bulletin?language=en_US</a></li>
+<li>Dell: <a href="https://www.dell.com/support/security/en-us" rel="nofollow">https://www.dell.com/support/security/en-us</a></li>
+<li>Draytek: <a href="https://www.draytek.com/about/security-advisory/" rel="nofollow">https://www.draytek.com/about/security-advisory/</a></li>
+<li>Elastic: <a href="https://discuss.elastic.co/c/announcements/security-announcements/31?ascending=false&amp;order=activity" rel="nofollow">https://discuss.elastic.co/c/announcements/security-announcements/31?ascending=false&amp;order=activity</a></li>
+<li>GitLab: <a href="https://about.gitlab.com/releases/categories/releases/" rel="nofollow">https://about.gitlab.com/releases/categories/releases/</a></li>
+<li>Jenkins: <a href="https://www.jenkins.io/security/advisories/" rel="nofollow">https://www.jenkins.io/security/advisories/</a></li>
+<li>JetBrains: <a href="https://www.jetbrains.com/privacy-security/issues-fixed/" rel="nofollow">https://www.jetbrains.com/privacy-security/issues-fixed/</a></li>
+<li>Juniper: <a href="https://supportportal.juniper.net/s/global-search/%40uri?language=en_US#sort=relevancy&amp;f:ctype=[Security%20Advisories" rel="nofollow">https://supportportal.juniper.net/s/global-search/%40uri?language=en_US#sort=relevancy&amp;f:ctype=[Security%20Advisories</a>]</li>
+<li>Mozilla: <a href="https://www.mozilla.org/en-US/security/advisories/" rel="nofollow">https://www.mozilla.org/en-US/security/advisories/</a></li>
+<li>Okta: <a href="https://trust.okta.com/security-advisories/" rel="nofollow">https://trust.okta.com/security-advisories/</a></li>
+<li>Palo Alto Networks: <a href="https://security.paloaltonetworks.com/" rel="nofollow">https://security.paloaltonetworks.com/</a></li>
+<li>Red Hat: <a href="https://access.redhat.com/security/security-updates/security-advisories" rel="nofollow">https://access.redhat.com/security/security-updates/security-advisories</a></li>
+<li>Rockwell Automation: <a href="https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html" rel="nofollow">https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html</a></li>
+<li>SolarWinds: <a href="https://www.solarwinds.com/trust-center/security-advisories" rel="nofollow">https://www.solarwinds.com/trust-center/security-advisories</a></li>
+<li>SonicWall: <a href="https://psirt.global.sonicwall.com/vuln-list" rel="nofollow">https://psirt.global.sonicwall.com/vuln-list</a></li>
+<li>VMware: <a href="https://support.broadcom.com/web/ecx/security-advisory" rel="nofollow">https://support.broadcom.com/web/ecx/security-advisory?</a></li>
+<li>Zimbra: <a href="https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories" rel="nofollow">https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories</a></li></ul>
+
+<h3 id="patching-lmao" id="patching-lmao">Patching? LMAO</h3>
+<ul><li>D-Link: <a href="https://supportannouncement.us.dlink.com/" rel="nofollow">https://supportannouncement.us.dlink.com/</a></li></ul>
+</div></article><article id="post-1zwgi1p212" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="vendor-verbiage.html" itemprop="url" class="u-url">Vendor Verbiage</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-12-23T23:30:12Z" pubdate itemprop="datePublished" content="2024-12-23 23:30:12 +0000 UTC">December 23, 2024</time>
+
+
+<div lang="en" dir="ltr" class="book e-content"><p>Software vendors make it extremely difficult (by design) to understand when a vulnerability affecting their product is either publicly known (proof of concept) or exploited in the wild (possibly as a zero-day). Everyone&#39;s language is different from each other. I have compiled a list of messages (sorted by vendor name) from official security advisories that either imply or explicitly state proof of concept or evidence of exploitation. I have included a link and date for reference, in case these vendors change their verbiage in the future. Pair this with the <a href="patch-tuesday" rel="nofollow">Patch Tuesday</a> post.</p>
+
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+
+<h3 id="a" id="a">A</h3>
+
+<p><strong>Adobe</strong>:</p>
+<ul><li>Proof of Concept: “Adobe is aware that  CVE-2024-53961 has a known proof-of-concept...” <a href="https://helpx.adobe.com/security/products/coldfusion/apsb24-107.html" rel="nofollow">Link</a> (December 23, 2024)</li>
+<li>Exploited in the Wild:
+<ul><li>“Adobe is aware that CVE-2023-29298 has been exploited in the wild in limited attacks targeting Adobe ColdFusion.” <a href="https://helpx.adobe.com/security/products/coldfusion/apsb23-40.html" rel="nofollow">Link</a> (July 19, 2023)</li>
+<li>“As of September 28, Adobe is aware of a report that CVE-2018-15961 is being actively exploited in the wild.” <a href="https://helpx.adobe.com/security/products/coldfusion/apsb18-33.html" rel="nofollow">Link</a>
+(September 28, 2018)</li>
+<li>“Adobe is aware that CVE-2024-34102 has been exploited in the wild in limited attacks targeting Adobe Commerce merchants.” (<a href="https://helpx.adobe.com/security/products/magento/apsb24-40.html" rel="nofollow">Link</a>: June 26, 2024)</li></ul></li></ul>
+
+<p><strong>Apple</strong>:</p>
+<ul><li>Exploited in the wild:
+<ul><li>“Apple is aware of a report that this issue may have been exploited.” (<a href="https://support.apple.com/en-us/120311" rel="nofollow">Link</a>: January 22, 2024)</li>
+<li>“Apple is aware of a report that this issue may have been actively exploited on Intel-based Mac systems.” (<a href="https://support.apple.com/en-us/121752" rel="nofollow">Link</a>: November 19, 2024)</li></ul></li></ul>
+
+<p><strong>Arm</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Arm is aware of reports of this vulnerability being exploited in the wild.” (<a href="https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities" rel="nofollow">Link</a>: June 07, 2024)</li>
+<li>“There is evidence that this vulnerability may be under limited, targeted exploitation.” (<a href="https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities" rel="nofollow">Link</a>: October 02, 2023)</li></ul></li></ul>
+
+<p><strong>Atlassian</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploited a previously unknown vulnerability in publicly accessible Confluence Data Center and Server instances to create unauthorized Confluence administrator accounts and access Confluence instances.” “UPDATE: We have evidence to suggest that a known nation-state actor is actively exploiting CVE-2023-22515 and continue to work closely with our partners and customers to investigate.” (<a href="https://confluence.atlassian.com/security/cve-2023-22515-broken-access-control-vulnerability-in-confluence-data-center-and-server-1295682276.html" rel="nofollow">Link</a>: October 05, 2023)</li>
+<li>“As part of Atlassian&#39;s ongoing monitoring and investigation of this CVE, we observed several active exploits and reports of threat actors using ransomware.” (<a href="https://confluence.atlassian.com/security/cve-2023-22518-improper-authorization-vulnerability-in-confluence-data-center-and-server-1311473907.html" rel="nofollow">Link</a>: November 06, 2023)</li>
+<li>“Atlassian is aware of current active exploitation of a critical severity unauthenticated remote code execution vulnerability in Confluence Data Center and Server.” (<a href="https://confluence.atlassian.com/kb/faq-for-cve-2022-26134-1139441859.html" rel="nofollow">Link</a>: June 03, 2022)</li></ul></li></ul>
+
+<h3 id="b" id="b">B</h3>
+
+<p><strong>Barracuda</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Based on our investigation to date, we’ve identified that the vulnerability resulted in unauthorized access to a subset of email gateway appliances.” (<a href="https://status.barracuda.com/incidents/34kx82j5n4q9" rel="nofollow">Link</a>: May 23, 2023)</li>
+<li>“Earliest identified evidence of exploitation of CVE-2023-2868 is currently October 2022.” (<a href="https://www.barracuda.com/company/legal/esg-vulnerability" rel="nofollow">Link</a>: May 30, 2023)</li>
+<li>”...including that exploitation occurred on a subset of compromised Barracuda Email Security Gateway (ESG) appliances by an aggressive and highly skilled actor conducting targeted activity...” (<a href="https://www.barracuda.com/company/legal/esg-vulnerability" rel="nofollow">Link</a>: June 15, 2023)</li></ul></li></ul>
+
+<h3 id="c" id="c">C</h3>
+
+<p><strong>Check Point</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Following our security update on May 27, 2024, Check Point&#39;s dedicated task force continues investigating attempts to gain unauthorized access to VPN products used by our customers. On May 28, 2024 we discovered a vulnerability in Security Gateways with IPsec VPN in Remote Access VPN community and the Mobile Access software blade (CVE-2024-24919). Exploiting this vulnerability can result in accessing sensitive information on the Security Gateway.” (<a href="https://support.checkpoint.com/results/sk/sk182336" rel="nofollow">Link</a>: May 29, 2024)</li>
+<li>“Yesterday (May 27, 2024) we delivered a solution that addresses attempts we saw on a small number of customers’ VPN remote access networks as referenced below. Today, we found the root cause for these and are now releasing a fix.” (<a href="https://blog.checkpoint.com/security/enhance-your-vpn-security-posture" rel="nofollow">Link</a>: May 28, 2024)</li></ul></li></ul>
+
+<p><strong>Cisco</strong>:</p>
+<ul><li>Proof of Concept: “The Cisco PSIRT is aware that proof-of-concept exploit code is available for the vulnerability that is described in this advisory.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-injection-6kn9tSxm" rel="nofollow">Link</a>: September 04, 2024)</li>
+<li>Exploited in the Wild:
+<ul><li>“Cisco is aware of active exploitation of these vulnerabilities.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-iosxe-webui-privesc-j22SaA4z" rel="nofollow">Link</a>: October 16, 2023)</li>
+<li>“The Cisco Product Security Incident Response Team (PSIRT) is aware of malicious use of the vulnerability that is described in this advisory.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-bf-dos-vDZhLqrW" rel="nofollow">Link</a>: October 23, 2024)</li>
+<li>“In November 2024, the Cisco Product Security Incident Response Team (PSIRT) became aware of additional attempted exploitation of this vulnerability in the wild.” (<a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-CVE-2014-2120" rel="nofollow">Link</a>: December 02, 2024)</li></ul></li></ul>
+
+<p><strong>Citrix</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Exploits of these CVEs on unmitigated appliances have been observed.” (<a href="https://support.citrix.com/s/article/CTX584986-netscaler-adc-and-netscaler-gateway-security-bulletin-for-cve20236548-and-cve20236549?language=en_US" rel="nofollow">Link</a>: January 16, 2024)</li>
+<li>“Exploits of CVE-2023-3519 on unmitigated appliances have been observed.” (<a href="https://support.citrix.com/s/article/CTX561482-citrix-adc-and-citrix-gateway-security-bulletin-for-cve20233519-cve20233466-cve20233467?language=en_US" rel="nofollow">Link</a>: July 18, 2023)</li>
+<li>“We are aware of a small number of targeted attacks in the wild using this vulnerability” (<a href="https://www.citrix.com/blogs/2022/12/13/critical-security-update-now-available-for-citrix-adc-citrix-gateway/" rel="nofollow">Link</a>: June 07, 2023)</li></ul></li></ul>
+
+<h3 id="d" id="d">D</h3>
+
+<p><strong>D-Link</strong>:</p>
+<ul><li>Proof of Concept:
+<ul><li>“0-day Vulnerability” (<a href="https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10295" rel="nofollow">Link</a>: September 06, 2022)</li>
+<li>“On May 15th,  2024, a 3rd party security researcher, publically 0-day disclosed the D-Link Router DIR-X4860 (firmware ver. 1.04b03) with potential vulnerabilities.” (<a href="https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10390" rel="nofollow">Link</a>: May 16, 2024)</li></ul></li></ul>
+
+<h3 id="e" id="e">E</h3>
+
+<h3 id="f" id="f">F</h3>
+
+<p><strong>F5</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“F5 has observed threat actors using this vulnerability to exploit CVE-2023-46748.” (<a href="https://my.f5.com/manage/s/article/K000137353" rel="nofollow">Link</a>: October 30, 2023)</li>
+<li>“This information is based on the evidence F5 has seen on compromised devices, which appear to be reliable indicators.” (<a href="https://my.f5.com/manage/s/article/K000137365" rel="nofollow">Link</a>: October 30, 2023)</li></ul></li></ul>
+
+<p><strong>Fortinet</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Reports have shown this vulnerability to be exploited in the wild.” (<a href="https://www.fortiguard.com/psirt/FG-IR-24-423" rel="nofollow">Link</a>: November 27, 2024)</li>
+<li>“Note: This is potentially being exploited in the wild.” (<a href="https://www.fortiguard.com/psirt/FG-IR-24-015" rel="nofollow">Link</a>: February 08, 2024)</li>
+<li>“A third-party report is indicating this may be exploited in the wild.” (<a href="https://www.fortiguard.com/psirt/FG-IR-24-029" rel="nofollow">Link</a>: October 11, 2024)</li></ul></li></ul>
+
+<h3 id="g" id="g">G</h3>
+
+<p><strong>Google</strong> (Android):</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Note: There are indications that the following may be under limited, targeted exploitation.” (<a href="https://source.android.com/docs/security/bulletin/2024-11-01" rel="nofollow">Link</a>: November 04, 2024)</li>
+<li>“Note: There are indications that CVE-2024-36971 may be under limited, targeted exploitation.” (<a href="https://source.android.com/docs/security/bulletin/2024-08-01" rel="nofollow">Link</a>: August 05, 2024)</li></ul></li></ul>
+
+<p><strong>Google</strong> (Chrome):</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Google is aware of reports that an exploit for CVE-2024-0519 exists in the wild.” (<a href="https://chromereleases.googleblog.com/2024/01/stable-channel-update-for-desktop_16.html" rel="nofollow">Link</a>: January 16, 2024)</li>
+<li>“Updated on 26 August 2024 to reflect the in the wild exploitation of CVE-2024-7965 which was reported after this release.” (<a href="https://chromereleases.googleblog.com/2024/08/stable-channel-update-for-desktop_21.html" rel="nofollow">Link</a>: August 26, 2024)</li></ul></li></ul>
+
+<h3 id="h" id="h">H</h3>
+
+<h3 id="i" id="i">I</h3>
+
+<p><strong>Ivanti</strong>:</p>
+<ul><li>Proof of Concept: “However, a Proof of Concept is publicly available...” (<a href="https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Virtual-Traffic-Manager-vTM-CVE-2024-7593?language=en_US" rel="nofollow">Link</a>: August 12, 2024)</li>
+<li>Exploited in the Wild:
+<ul><li>“We are aware of a limited number of customers’ Ivanti Connect Secure appliances being exploited by CVE-2025-0282 at the time of disclosure.” (<a href="https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-Policy-Secure-ZTA-Gateways-CVE-2025-0282-CVE-2025-0283?language=en_US" rel="nofollow">Link</a>: January 08, 2025)</li>
+<li>“We are aware of a limited number of customers running CSA 4.6 patch 518 and prior who have been exploited when CVE-2024-9379 or CVE-2024-9380 are chained with CVE-2024-8963” (<a href="https://www.ivanti.com/blog/october-2024-security-update" rel="nofollow">Link</a>: October 08, 2024)</li>
+<li>”...at time of disclosure we were aware of a limited number of customers impacted by CVE-2023-46805, CVE-2024-21887 and CVE-2024-21893.” “We are aware of less than 20 customers impacted by the vulnerabilities prior to public disclosure.” (<a href="https://forums.ivanti.com/s/article/KB-CVE-2023-46805-Authentication-Bypass-CVE-2024-21887-Command-Injection-for-Ivanti-Connect-Secure-and-Ivanti-Policy-Secure-Gateways?language=en_US" rel="nofollow">Link</a>: January 10, 2024)</li></ul></li></ul>
+
+<h3 id="j" id="j">J</h3>
+
+<p><strong>JetBrains</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“On October 17, 2023, the Microsoft Threat Intelligence Center team reached out to JetBrains to inform us they have observed multiple North Korean nation-state threat actors actively exploiting the CVE-2023-42793 vulnerability since early October 2023.” (<a href="https://blog.jetbrains.com/teamcity/2023/10/cve-2023-42793-vulnerability-in-teamcity-october-18-2023-update/" rel="nofollow">Link</a>: October 18, 2023)</li>
+<li>“On December 13, 2023 the Cybersecurity &amp; Infrastructure Security Agency of the U.S. Department of Homeland Security (CISA) released a public advisory, in which they shared new ways in which this vulnerability (CVE-2023-42793) has been exploited by Russian nation-state threat actors as of September 2023.” (<a href="https://blog.jetbrains.com/teamcity/2023/12/cve-2023-42793-vulnerability-in-teamcity-december-14-2023-update/" rel="nofollow">Link</a>: December 14, 2023)</li>
+<li>“Customer A ... Believed they were impacted by the CVE-2024-27198 vulnerability.” “They noticed several unauthorized admin accounts created on the server.” “Their TeamCity environment had been compromised through the recent vulnerabilities.” “Several unknown user accounts had been created on their TeamCity server.” (<a href="https://blog.jetbrains.com/teamcity/2024/03/preventing-exploits-jetbrains-ethical-approach-to-vulnerability-disclosure/" rel="nofollow">Link</a>: March 11, 2024)</li></ul></li></ul>
+
+<p><strong>Juniper</strong>:</p>
+<ul><li>Proof of Concept: “However, a proof-of-concept exploit does exist in the wild.” (<a href="https://supportportal.juniper.net/s/article/2021-07-Security-Bulletin-Junos-OS-J-Web-allows-a-locally-authenticated-attacker-to-escalate-their-privileges-to-root-CVE-2021-0278?language=en_US" rel="nofollow">Link</a>: June 28, 2021)</li>
+<li>Exploited in the Wild: “Juniper SIRT is aware of successful malicious exploitation of these vulnerabilities.”  (<a href="https://supportportal.juniper.net/s/article/2023-08-Out-of-Cycle-Security-Bulletin-Junos-OS-SRX-Series-and-EX-Series-Multiple-vulnerabilities-in-J-Web-can-be-combined-to-allow-a-preAuth-Remote-Code-Execution?language=en_US" rel="nofollow">Link</a>: November 08, 2023)</li></ul>
+
+<h3 id="k" id="k">K</h3>
+
+<h3 id="l" id="l">L</h3>
+
+<h3 id="m" id="m">M</h3>
+
+<p><strong>Microsoft</strong>:</p>
+<ul><li>Proof of Concept: “Publicly disclosed: Yes” (<a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49138" rel="nofollow">Link</a>: December 10, 2024)</li>
+<li>Exploited in the Wild: “Exploited: Yes” ; “Exploitability assessment: Exploitation Detected” (<a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49138" rel="nofollow">Link</a>: December 10, 2024)</li></ul>
+
+<p><strong>Mozilla Foundation</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“We have had reports of this vulnerability being exploited in the wild.” (<a href="https://www.mozilla.org/en-US/security/advisories/mfsa2024-51/" rel="nofollow">Link</a>: October 09, 2024)</li>
+<li>“An exploit built on this vulnerability has been discovered in the wild targeting Firefox and Tor Browser users on Windows.” (<a href="https://www.mozilla.org/en-US/security/advisories/mfsa2016-92/#CVE-2016-9079" rel="nofollow">Link</a>: November 30, 2016)</li></ul></li></ul>
+
+<h3 id="n" id="n">N</h3>
+
+<h3 id="o" id="o">O</h3>
+
+<p><strong>Oracle</strong>:</p>
+<ul><li>Exploited in the Wild: “It was reported as being actively exploited “in the wild” by CrowdStrike.” (<a href="https://blogs.oracle.com/security/post/alert-cve-2024-21287" rel="nofollow">Link</a>: November 18, 2024)</li></ul>
+
+<h3 id="p" id="p">P</h3>
+
+<p><strong>Palo Alto Networks</strong>:</p>
+<ul><li>Proof of Concept:
+<ul><li>“We are aware of a publicly available conference talk and blog posts discussing this issue. A proof of concept for this issue is also publicly available.” (<a href="https://security.paloaltonetworks.com/CVE-2024-5921" rel="nofollow">Link</a>: November 25, 2024)</li>
+<li>“However, a proof of concept for this issue is publicly available.” (<a href="https://security.paloaltonetworks.com/CVE-2024-9473" rel="nofollow">Link</a>: October 09, 2024)</li>
+<li>“Proof of concepts for this vulnerability have been publicly disclosed by third parties.” (<a href="https://security.paloaltonetworks.com/CVE-2024-3400" rel="nofollow">Link</a>: April 29, 2024)</li></ul></li>
+<li>Exploited in the Wild:
+<ul><li>“Palo Alto Networks is aware of customers experiencing this denial of service (DoS) when their firewall blocks malicious DNS packets that trigger this issue.” (<a href="https://security.paloaltonetworks.com/CVE-2024-3393" rel="nofollow">Link</a>: December 26, 2024)</li>
+<li>“Palo Alto Networks is aware of an increasing number of attacks that leverage the exploitation of this vulnerability.” (<a href="https://security.paloaltonetworks.com/CVE-2024-9474" rel="nofollow">Link</a>: November 18, 2024)</li>
+<li>“Palo Alto Networks is aware of an increasing number of attacks that leverage the exploitation of this vulnerability.” (<a href="https://security.paloaltonetworks.com/CVE-2024-3400" rel="nofollow">Link</a>: April 29, 2024)</li>
+<li>“Palo Alto Networks recently learned that an attempted reflected denial-of-service (RDoS) attack was identified by a service provider. This attempted attack took advantage of susceptible firewalls from multiple vendors, including Palo Alto Networks.” (<a href="https://security.paloaltonetworks.com/CVE-2022-0028" rel="nofollow">Link</a>: August 10, 2022)</li></ul></li></ul>
+
+<p><strong>PaperCut</strong>:</p>
+<ul><li>Exploited in the Wild: “We have evidence to suggest that unpatched servers are being exploited in the wild.” “PaperCut received our first report from a customer of suspicious activity on their PaperCut server on the 18th April at 03:30 AEST / 17th April 17:30 UTC.” (<a href="https://www.papercut.com/kb/Main/PO-1216-and-PO-1219" rel="nofollow">Link</a>: April 18, 2023)</li></ul>
+
+<p><strong>Progress Software</strong> (MOVEit):</p>
+<ul><li>Exploited in the Wild: “NOTE: this is exploited in the wild in May and June 2023” (<a href="https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-31May2023" rel="nofollow">Link</a>: June 16, 2023)</li></ul>
+
+<h3 id="q" id="q">Q</h3>
+
+<p><strong>Qlik</strong>:</p>
+<ul><li>Exploited in the Wild: “Qlik has received reports that this vulnerability may be being used by malicious actors.” (<a href="https://community.qlik.com/t5/Official-Support-Articles/Critical-Security-fixes-for-Qlik-Sense-Enterprise-for-Windows/ta-p/2110801" rel="nofollow">Link</a>: May 15, 2024)</li></ul>
+
+<p><strong>QNAP</strong>:</p>
+<ul><li>Exploited in the Wild: “QNAP detected a new DeadBolt ransomware campaign on the morning of September 3rd, 2022 (GMT+8). The campaign appears to target QNAP NAS devices running Photo Station with internet exposure.” (<a href="https://www.qnap.com/en/security-advisory/qsa-22-24" rel="nofollow">Link</a>: September 03, 2022)</li></ul>
+
+<p><strong>Qualcomm</strong>:</p>
+<ul><li>Exploited in the Wild: “There are indications from Google Threat Analysis Group that CVE-2024-43047 may be under limited, targeted exploitation.” (<a href="https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2024-bulletin.html" rel="nofollow">Link</a>: October 07, 2024)</li></ul>
+
+<h3 id="r" id="r">R</h3>
+
+<h3 id="s" id="s">S</h3>
+
+<p><strong>SolarWinds</strong>:</p>
+<ul><li>Exploited in the Wild: “This is being exploited in the wild.” (<a href="https://www.solarwinds.com/trust-center/security-advisories/cve-2024-28995" rel="nofollow">Link</a>: June 06, 2024)</li></ul>
+
+<p><strong>SonicWall</strong>:</p>
+<ul><li>Proof of Concept: “SonicWall PSIRT is aware that a proof of concept (PoC) exploit for this vulnerabilities is publicly available” (<a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0016" rel="nofollow">Link</a>: September 27, 2024)</li>
+<li>Exploited in the Wild: “This vulnerability is potentially being exploited in the wild.” (<a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0015" rel="nofollow">Link</a>: September 06, 2024)</li></ul>
+
+<p><strong>Sophos</strong>:</p>
+<ul><li>Exploited in the Wild:
+<ul><li>“Sophos has observed this vulnerability being used in the wild.” (<a href="https://www.sophos.com/en-us/security-advisories/sophos-sa-20220923-sfos-rce" rel="nofollow">Link</a>: October 20, 2022)</li>
+<li>“In December 2023, we delivered an updated fix after identifying new exploit attempts against this same vulnerability in older, unsupported versions of the Sophos Firewall.” (<a href="https://www.sophos.com/en-us/security-advisories/sophos-sa-20220923-sfos-rce" rel="nofollow">Link</a>: December 11, 2023)</li></ul></li></ul>
+
+<p><strong>SysAid</strong>:</p>
+<ul><li>Exploited in the Wild: “The investigation determined that there was a zero-day vulnerability in the SysAid on-premises software.”“The vulnerability was exploited by a group known as DEV-0950 (Lace Tempest), as identified by the Microsoft Threat Intelligence team.” (<a href="https://www.sysaid.com/blog/service-desk/on-premise-software-security-vulnerability-notification" rel="nofollow">Link</a>: November 08, 2023)</li></ul>
+
+<h3 id="t" id="t">T</h3>
+
+<p><strong>TP-Link</strong>:</p>
+<ul><li>Exploited in the Wild: “TP-Link is aware of reports that the Remote Code Execution (REC) vulnerability detailed in CVE-2023-1389 in AX21 has been added to the Mirai botnet Arsenal.” (<a href="https://www.tp-link.com/us/support/faq/3643/" rel="nofollow">Link</a>: April 27, 2023)</li></ul>
+
+<p><strong>Trend Micro</strong>:</p>
+<ul><li>Exploited in the Wild: “ITW Alert: Trend Micro has observed at least one active attempt of potential exploitation of this vulnerability in the wild.” (<a href="https://success.trendmicro.com/en-US/solution/KA-0013373" rel="nofollow">Link</a>: September 13, 2022)</li></ul>
+
+<h3 id="u" id="u">U</h3>
+
+<h3 id="v" id="v">V</h3>
+
+<p><strong>Veritas</strong>:</p>
+<ul><li>Exploited in the Wild: “March 2023: A known exploit is available in the wild for the vulnerabilities below and could be used as part of a ransomware attack.” (<a href="https://www.veritas.com/support/en_US/security/VTS21-001" rel="nofollow">Link</a>: March ?? 2023)</li></ul>
+
+<p><strong>Versa</strong>:</p>
+<ul><li>Proof of Concept: “A proof of concept exists in the lab environment.” (<a href="https://security-portal.versa-networks.com/emailbulletins/66e4a8ebda545d61ec2b1ab9" rel="nofollow">Link</a>: September 20, 2024)</li>
+<li>Exploited in the Wild: “This vulnerability has been exploited in at least one known instance by an Advanced Persistent Threat actor.” (<a href="https://versa-networks.com/blog/versa-security-bulletin-update-on-cve-2024-39717-versa-director-dangerous-file-type-upload-vulnerability/" rel="nofollow">Link</a>: August 26, 2024)</li></ul>
+
+<p><strong>VMware</strong> (Broadcom):</p>
+<ul><li>Proof of Concept: “VMware has confirmed that exploit code leveraging CVE-2021-39144 against impacted products has been published.” (<a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/23646" rel="nofollow">Link</a>: October 27, 2022)</li>
+<li>Exploited in the Wild:
+<ul><li>“VMware by Broadcom confirmed that exploitation has occurred in the wild for CVE-2024-38812.” (<a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/24968" rel="nofollow">Link</a>: November 18, 2024) (<a href="https://versa-networks.com/blog/versa-security-bulletin-update-on-cve-2024-39717-versa-director-dangerous-file-type-upload-vulnerability/" rel="nofollow">Link</a>: August 26, 2024)</li>
+<li>“VMware has confirmed that exploitation of CVE-2023-20887 has occurred in the wild.” (<a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/23674" rel="nofollow">Link</a>: June 20, 2023)</li></ul></li></ul>
+
+<h3 id="w" id="w">W</h3>
+
+<h3 id="x" id="x">X</h3>
+
+<h3 id="y" id="y">Y</h3>
+
+<h3 id="z" id="z">Z</h3>
+
+<p><strong>Zimbra</strong>:</p>
+<ul><li>Exploited in the Wild: “Important: This vulnerability has been actively exploited, making it imperative to take immediate action.” (<a href="https://blog.zimbra.com/2023/07/security-update-for-zimbra-collaboration-suite-version-8-8-15/" rel="nofollow">Link</a>: July 13, 2023)</li></ul>
+
+<p><strong>Zoho</strong> (ManageEngine):</p>
+<ul><li>Proof of Concept: “The exploit POC for the above vulnerability is available in public.” (<a href="https://www.manageengine.com/products/passwordmanagerpro/advisory/cve-2022-35405.html" rel="nofollow">Link</a>: July 19, 2022)</li></ul>
+
+<p><strong>Zyxel</strong>:</p>
+<ul><li>Exploited in the Wild: “Zyxel is aware of recent attempts by threat actors to target Zyxel firewalls through previously disclosed vulnerabilities” (<a href="https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-protecting-against-recent-firewall-threats-11-27-2024" rel="nofollow">Link</a>: November 27, 2024)</li></ul>
+</div></article><article id="post-3kxbjx0f56" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="gamaredon.html" itemprop="url" class="u-url">Gamaredon</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-12-08T20:28:20Z" pubdate itemprop="datePublished" content="2024-12-08 20:28:20 +0000 UTC">December 8, 2024</time>
+
+
+<div lang="en" dir="ltr" class="book e-content"><p><strong>Country:</strong> Russia
+<strong>Organization:</strong>  Federal Security Service (FSB) Center 16 and 18
+<strong>Objective:</strong> Information Theft, Espionage
+<em>Page last updated: December 12, 2024</em></p>
+
+<h3 id="aliases" id="aliases">Aliases:</h3>
+<ul><li>ACTINIUM (formerly used by Microsoft)</li>
+<li>ARMAGEDON [sic] (<a href="https://ssu.gov.ua/en/novyny/sbu-vstanovyla-khakeriv-fsb-yaki-zdiisnyly-ponad-5-tys-kiberatak-na-derzhavni-orhany-ukrainy" rel="nofollow">Security Service of Ukraine (SSU)</a>)</li>
+<li>Aqua Blizzard (<a href="https://www.microsoft.com/en-us/security/security-insider/aqua-blizzard" rel="nofollow">Microsoft</a>)</li>
+<li>BlueAlpha (<a href="https://www.recordedfuture.com/blog/bluealpha-iranian-apts" rel="nofollow">Recorded Future</a>)</li>
+<li>Blue Otso (PwC)</li>
+<li>Gamaredon (Gamaredon Group) (<a href="https://www.anomali.com/blog/malicious-activity-aligning-with-gamaredon-ttps-targets-ukraine" rel="nofollow">Anomali</a>, <a href="https://blogs.blackberry.com/en/2022/11/gamaredon-leverages-microsoft-office-docs-to-target-ukraine-government" rel="nofollow">BlackBerry</a>, <a href="https://cert.europa.eu/static/MEMO/2023/TLP-CLEAR-CERT-EU-1YUA-CyberOps.pdf" rel="nofollow">CERT-EU</a>, <a href="https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/" rel="nofollow">ESET</a>, <a href="https://apt.etda.or.th/cgi-bin/showcard.cgi?g=Gamaredon%20Group&amp;n=1" rel="nofollow">ETDA</a>, <a href="https://www.fortinet.com/blog/threat-research/gamaredon-group-ttp-profile-analysis" rel="nofollow">Fortinet</a>, <a href="https://intezer.com/blog/research/evilgnome-rare-malware-spying-on-linux-desktop-users/" rel="nofollow">Intezer</a>, <a href="https://malpedia.caad.fkie.fraunhofer.de/actor/gamaredon_group" rel="nofollow">Malpedia</a>, <a href="https://attack.mitre.org/groups/G0047/" rel="nofollow">MITRE</a>, <a href="https://www.trendmicro.com/en_us/research/20/d/gamaredon-apt-group-use-covid-19-lure-in-campaigns.html" rel="nofollow">Trend Micro</a>, <a href="https://en.wikipedia.org/wiki/Gamaredon" rel="nofollow">Wikipedia</a>, <a href="https://yoroi.company/research/the-russian-shadow-in-eastern-europe-ukrainian-mod-campaign/" rel="nofollow">Yoroi</a>)</li>
+<li>IRON TILDEN (<a href="https://www.secureworks.com/research/threat-profiles/iron-tilden" rel="nofollow">Secureworks</a>)</li>
+<li>Primitive Bear (<a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-110a" rel="nofollow">CISA</a>, <a href="https://unit42.paloaltonetworks.com/gamaredon-primitive-bear-ukraine-update-2021/" rel="nofollow">Palo Alto Networks</a>)</li>
+<li>Shuckworm (<a href="https://www.security.com/threat-intelligence/shuckworm-russia-ukraine-military" rel="nofollow">Symantec</a>)</li>
+<li>STEADY#URSA (<a href="https://www.securonix.com/blog/security-advisory-steadyursa-attack-campaign-targets-ukraine-military/" rel="nofollow">Securonix</a>)</li>
+<li>Trident Ursa (<a href="https://unit42.paloaltonetworks.com/trident-ursa/" rel="nofollow">Unit 42</a>)</li>
+<li>UAC-0010 (CERT-UA)</li></ul>
+
+<h3 id="links-to-other-groups" id="links-to-other-groups">Links to Other Groups</h3>
+<ul><li>InivisiMole (<a href="https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/" rel="nofollow">ESET</a>)</li></ul>
+
+<h3 id="identified-members" id="identified-members">Identified Members</h3>
+
+<p>Sources: <a href="https://ssu.gov.ua/en/novyny/sbu-vstanovyla-khakeriv-fsb-yaki-zdiisnyly-ponad-5-tys-kiberatak-na-derzhavni-orhany-ukrainy" rel="nofollow">SSU</a>, <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401779" rel="nofollow">European Union</a></p>
+<ul><li>Sklianko Oleksandr Mykolaiovych (Deputy Chief, 4th Section of the Counterintelligence Operations Service (SCO), FSB Department in occupied Crimea and Sevastopol)</li>
+<li>Chernykh Mykola Serhiiovych (Head of the unit identified as responsible for conducting Gamaredon operations, 4th Section of the SCO, FSB Department in occupied Crimea and Sevastopol)</li>
+<li>Starchenko Anton Oleksandrovych (Officer within the unit identified as responsible for conducting Gamaredon operations, 4th Section of the SCO, FSB Department in occupied Crimea and Sevastopol)</li>
+<li>Miroshnychenko Oleksandr Valeriiovych (Officer within the unit identified as responsible for conducting Gamaredon operations, 4th Section of the SCO, FSB Department in occupied Crimea and Sevastopol)
+▪ Sushchenko Oleh Oleksandrovych (Officer within the unit identified as responsible for conducting Gamaredon operations, 4th Section of the SCO, FSB Department in occupied Crimea and Sevastopol)</li></ul>
+
+<h3 id="vulnerabilities-exploited" id="vulnerabilities-exploited">Vulnerabilities Exploited</h3>
+<ul><li><a href="https://www.cve.org/CVERecord?id=CVE-2017-0199" rel="nofollow">CVE-2017-0199</a> (7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Office and WordPad Remote Code Execution Vulnerability (Source: <a href="https://blogs.blackberry.com/en/2022/11/gamaredon-leverages-microsoft-office-docs-to-target-ukraine-government" rel="nofollow">BlackBerry</a>)</li></ul>
+
+<p>Associated with InvisiMole activity: (Source: <a href="https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/" rel="nofollow">ESET</a>)</p>
+<ul><li><a href="https://www.cve.org/CVERecord?id=CVE-2019-0708" rel="nofollow">CVE-2019-0708</a> (9.8 critical, in CISA&#39;s KEV Catalog)
+Microsoft Remote Desktop Services Remote Code Execution Vulnerability (aka BlueKeep)</li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2017-0144" rel="nofollow">CVE-2017-0144</a> (8.8 high, in CISA&#39;s KEV Catalog)
+Microsoft SMBv1 Remote Code Execution Vulnerability (aka EternalBlue)</li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2007-5633" rel="nofollow">CVE-2007-5633</a> (CVSSv2: 7.2 high)
+speedfan.sys local privilege escalation vulnerability (Bring Your Own Vulnerable Driver)</li></ul>
+
+<h3 id="tactics-techniques-and-procedures" id="tactics-techniques-and-procedures">Tactics, Techniques, and Procedures</h3>
+
+<p>Mapped to MITRE <a href="https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fattack.mitre.org%2Fgroups%2FG0047%2FG0047-enterprise-layer.json" rel="nofollow">ATT&amp;CK Navigator Layers</a></p>
+
+<h3 id="references" id="references">References</h3>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>December 11, 2024 – <strong>Lookout</strong>: <a href="https://www.lookout.com/threat-intelligence/article/gamaredon-russian-android-surveillanceware" rel="nofollow">Lookout Discovers Two Russian Android Spyware Families from Gamaredon APT</a></li>
+<li>December 05, 2024 – <strong>Recorded Future</strong>: <a href="https://www.recordedfuture.com/research/bluealpha-abuses-cloudflare-tunneling-service" rel="nofollow">BlueAlpha Abuses Cloudflare Tunneling Service for GammaDrop Staging Infrastructure</a>, <a href="https://go.recordedfuture.com/hubfs/reports/cta-ru-2024-1205.pdf" rel="nofollow">16 page PDF</a></li>
+<li>September 26, 2024 – <strong>ESET Research</strong>: <a href="https://www.welivesecurity.com/en/eset-research/cyberespionage-gamaredon-way-analysis-toolset-used-spy-ukraine-2022-2023/" rel="nofollow">Cyberespionage the Gamaredon way: Analysis of toolset used to spy on Ukraine in 2022 and 2023</a>, <a href="https://web-assets.esetstatic.com/wls/en/papers/white-papers/cyberespionage-gamaredon-way.pdf" rel="nofollow">52 page PDF</a></li>
+<li>June 24, 2024 – <strong>European Union</strong>: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401779" rel="nofollow">COUNCIL DECISION (CFSP) 2024/1779 of 24 June 2024 amending Decision (CFSP) 2019/797 concerning restrictive measures against cyberattacks threatening the Union or its Member States</a> (PDF) (<strong>ATTRIBUTION</strong> and sanctions)</li>
+<li>February 01?, 2024: <strong>Securonix</strong>: <a href="https://www.securonix.com/blog/security-advisory-steadyursa-attack-campaign-targets-ukraine-military/" rel="nofollow">Securonix Threat Research Security Advisory: Analysis and Detection of STEADY#URSA Attack Campaign Targeting Ukraine Military Dropping New Covert SUBTLE-PAWS PowerShell Backdoor</a></li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>November 17, 2023 – <strong>Check Point Research</strong>: <a href="https://research.checkpoint.com/2023/malware-spotlight-into-the-trash-analyzing-litterdrifter/" rel="nofollow">Malware Spotlight – Into the Trash: Analyzing LitterDrifter</a></li>
+<li>August 28, 2023 – <strong>National Security and Defense Council of Ukraine</strong> (RNBO): <a href="https://www.rnbo.gov.ua/files/2023_YEAR/CYBERCENTER/Gamaredon_activity.pdf" rel="nofollow">Gamaredon Activity Amid Ukraine&#39;s Counteroffensive</a> (PDF)</li>
+<li>July 13, 2023 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/5160737" rel="nofollow">Summary information on the activities of the UAC-0010 group as of July 2023</a></li>
+<li>July 24, 2023 – <strong>NKSC-LT</strong> (Lithuania): <a href="https://www.nksc.lt/doc/rkgc/report_on_cyber_lessons_learned_during_the_war_in_ukraine.pdf" rel="nofollow">Report on Cyber Lessons Learned During the War in Ukraine</a> (PDF)</li>
+<li>June 15, 2023 – <strong>Symantec</strong>: <a href="https://www.security.com/threat-intelligence/shuckworm-russia-ukraine-military" rel="nofollow">Shuckworm: Inside Russia&#39;s Relentless Cyber Campaign Against Ukraine</a></li>
+<li>March 20, 2023 – <strong>ThreatMon</strong>: <a href="https://threatmon.io/cybergun-technical-analysis-of-the-armageddons-infostealer/" rel="nofollow">Cybergun: Technical Analysis of the Armageddon&#39;s Infostealer</a> (PDF, archive of broken link)</li>
+<li>March 17, 2023 – <strong>State Service of Special Communications and Information Protection of Ukraine</strong> (SSSCIP): <a href="https://cip.gov.ua/en/news/gamaredon-carried-out-74-cyberattacks-against-ukraine-in-2022" rel="nofollow">Gamaredon carried out 74 cyberattacks against Ukraine in 2022</a></li>
+<li>March 13, 2023 – <strong>ThreatMon</strong>: <a href="https://threatmon.io/beyond-bullets-and-bombs-an-examination-of-armageddon-groups-cyber-warfare-against-ukraine/" rel="nofollow">Beyond Bullets and Bombs: An Examination of Armageddon Group&#39;s Cyber Warfare Against Ukraine</a> (PDF, archive of broken link)</li>
+<li>January 24, 2023 – <strong>Trellix</strong>: <a href="https://www.trellix.com/blogs/research/cyberattacks-targeting-ukraine-increase/" rel="nofollow">Cyberattacks Targeting Ukraine Increase 20-fold at End of 2022 Fueled by Russia-linked Gamaredon Activity</a></li>
+<li>January 23, 2023 – <strong>European Repository of Cyber Incidents</strong>: <a href="https://strapi.eurepoc.eu/uploads/Eu_Repo_C_APT_profile_Gamaredon_13d3d3be46.pdf" rel="nofollow">ADVANCED PERSISTENT THREAT profile Gamaredon</a> (PDF)</li>
+<li>January 19, 2023 – <strong>BlackBerry</strong>: <a href="https://blogs.blackberry.com/en/2023/01/gamaredon-abuses-telegram-to-target-ukrainian-organizations" rel="nofollow">Gamaredon (Ab)uses Telegram to Target Ukrainian Organizations</a></li>
+<li>January 09, 2023 – <strong>State Cyber Protection Centre of Ukraine</strong> (SCPC): <a href="https://scpc.gov.ua/api/docs/19b0a96e-8c31-44bf-863e-cd3e0b651f22/19b0a96e-8c31-44bf-863e-cd3e0b651f22.pdf" rel="nofollow">ANOTHER UAC-0010 STORY</a> (PDF)</li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>December 20, 2022 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/trident-ursa/" rel="nofollow">Russia&#39;s Trident Ursa (aka Gamaredon APT) Cyber Conflict Operations Unwavering Since Invasion of Ukraine</a></li>
+<li>November 21, 2022 – <strong>BlackBerry</strong>: <a href="https://blogs.blackberry.com/en/2022/11/gamaredon-leverages-microsoft-office-docs-to-target-ukraine-government" rel="nofollow">Gamaredon Leverages Microsoft Office Docs to Target Ukraine Government and Military</a></li>
+<li>November 08, 2022 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/2681855" rel="nofollow">Cyberattack by the UAC-0010 group: sending emails supposedly on behalf of the State Service for Special Communications (CERT-UA#5570)</a> (Ukrainian language)</li>
+<li>September 15, 2022 – <strong>Cisco Talos</strong>: <a href="https://blog.talosintelligence.com/gamaredon-apt-targets-ukrainian-agencies/" rel="nofollow">Gamaredon APT targets Ukrainian government agencies in new campaign</a></li>
+<li>August 15, 2022 – <strong>Symantec</strong>: <a href="https://www.security.com/threat-intelligence/russia-ukraine-shuckworm" rel="nofollow">Shuckworm: Russia-Linked Group Maintains Ukraine Focus</a></li>
+<li>August 10, 2022 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/1229152" rel="nofollow">Cyberattacks by the UAC-0010 (Armageddon) group: GammaLoad, GammaSteel malware (CERT-UA#5134)</a> (Ukrainian language)</li>
+<li>July 26, 2022 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/971405" rel="nofollow">Cyberattacks by the UAC-0010 (Armageddon) group using the GammaLoad.PS1_v2 malware (CERT-UA#5003,5013,5069,5071)</a> (Ukrainian language)</li>
+<li>June 20, 2022 – <strong>Elastic</strong>: <a href="https://www.elastic.co/security-labs/playing-defense-against-gamaredon-group" rel="nofollow">Playing defense against Gamaredon Group</a></li>
+<li>May 12, 2022 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/40240" rel="nofollow">Cyberattacks by the UAC-0010 (Armageddon) group using the GammaLoad.PS1_v2 malware (CERT-UA#4634,4648)</a> (Ukrainian language)</li>
+<li>May 12, 2022 – <strong>Cisco</strong>: <a href="https://blogs.cisco.com/security/network-footprints-of-gamaredon-group" rel="nofollow">Network Footprints of Gamaredon Group</a></li>
+<li>April 20, 2022 – <strong>Symantec</strong>: <a href="https://www.security.com/threat-intelligence/shuckworm-intense-campaign-ukraine" rel="nofollow">Shuckworm: Espionage Group Continues Intense Campaign Against Ukraine</a></li>
+<li>April 07, 2022 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/39386" rel="nofollow">Cyberattack by the UAC-0010 (Armageddon) group on Ukrainian state organizations (CERT-UA#4434)</a> (Ukrainian language)</li>
+<li>April 04, 2022 – <strong>CERT-UA</strong>:
+<ul><li><a href="https://cert.gov.ua/article/39138" rel="nofollow">Cyberattack by the UAC-0010 (Armageddon) group on Ukrainian state organizations (CERT-UA#4378)</a> (Ukrainian language)</li>
+<li><a href="https://cert.gov.ua/article/39086" rel="nofollow">Cyberattack by the UAC-0010 (Armageddon) group on state institutions of the European Union countries (CERT-UA#4334)</a> (Ukrainian language)</li></ul></li>
+<li>February 04, 2022 – <strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2022/02/04/actinium-targets-ukrainian-organizations/" rel="nofollow">ACTINIUM targets Ukrainian organizations</a></li>
+<li>February 03, 2022 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/gamaredon-primitive-bear-ukraine-update-2021/" rel="nofollow">Russia&#39;s Gamaredon aka Primitive Bear APT Group Actively Targeting Ukraine</a></li>
+<li>February 01, 2022 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/18365" rel="nofollow">Cyberattack by the UAC-0010 (Armageddon) group on Ukrainian state organizations (CERT-UA#3787)</a> (Ukrainian language)</li>
+<li>January 31, 2022 – <strong>Symantec</strong>: <a href="https://www.security.com/threat-intelligence/shuckworm-gamaredon-espionage-ukraine" rel="nofollow">Shuckworm Continues Cyber-Espionage Attacks Against Ukraine</a></li></ul>
+
+<h3 id="2021" id="2021">2021</h3>
+<ul><li>November 04, 2021 <strong>Security Service of Ukraine</strong> (SSU):
+<ul><li><a href="https://ssu.gov.ua/en/novyny/sbu-vstanovyla-khakeriv-fsb-yaki-zdiisnyly-ponad-5-tys-kiberatak-na-derzhavni-orhany-ukrainy" rel="nofollow">SSU identifies FSB hackers responsible for over 5,000 cyber attacks against Ukraine (video)</a> (<strong>ATTRIBUTION</strong>)</li>
+<li><a href="https://ssu.gov.ua/uploads/files/DKIB/Technical%20report%20Armagedon.pdf" rel="nofollow">Gamaredon/Armageddon Group: FSB RF cyber attacks against Ukraine</a> (PDF)</li></ul></li>
+<li>August 21, 2019 – <strong>Fortinet</strong>: <a href="https://www.fortinet.com/blog/threat-research/gamaredon-group-ttp-profile-analysis" rel="nofollow">The Gamaredon Group: A TTP Profile Analysis
+</a></li>
+<li>March 03, 2021 – <strong>CERT-UA</strong>: <a href="https://cert.gov.ua/article/10702" rel="nofollow">Renewed cyberattacks using the Pterodo missile defense system of the Armageddon/Gamaredon hacker group</a> (Ukrainian language)</li>
+<li>February 23, 2021 – <strong>Cisco Talos</strong>: <a href="https://blog.talosintelligence.com/gamaredonactivities/" rel="nofollow">Gamaredon – When nation states don&#39;t pay all the bills</a></li>
+<li>January 27, 2021 – <strong>CERT-EE</strong> (Estonia): <a href="https://www.ria.ee/sites/default/files/content-editors/kuberturve/tale_of_gamaredon_infection.pdf" rel="nofollow">Gamaredon Infection: From Dropper to Entry</a></li></ul>
+
+<h3 id="2020" id="2020">2020</h3>
+<ul><li>June 18, 2020 – <strong>ESET</strong>: <a href="https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/" rel="nofollow">Digging up InvisiMole&#39;s hidden arsenal</a>, <a href="https://web-assets.esetstatic.com/wls/2020/06/ESET_InvisiMole.pdf" rel="nofollow">InvisiMole: The Hidden Part of the Story. Unearthing InvisiMole&#39;s Espionage Toolset and Strategic Cooperations</a> (Whitepaper PDF, links InvisiMole to Gamaredon)</li>
+<li>June 11, 2020 – <strong>ESET</strong>: <a href="https://www.welivesecurity.com/2020/06/11/gamaredon-group-grows-its-game/" rel="nofollow">Gamaredon group grows its game</a></li>
+<li>April 17, 2020 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/20/d/gamaredon-apt-group-use-covid-19-lure-in-campaigns.html" rel="nofollow">Gamaredon APT Group Use Covid-19 Lure in Campaigns</a></li>
+<li>February 17, 2020 – <strong>Yoroi</strong>: <a href="https://yoroi.company/research/cyberwarfare-a-deep-dive-into-the-latest-gamaredon-espionage-campaign/" rel="nofollow">Cyberwarfare: A deep dive into the latest Gamaredon Espionage Campaign</a></li>
+<li>February 05, 2020 – <strong>SentinelOne</strong>: <a href="https://www.sentinelone.com/labs/pro-russian-cyberspy-gamaredon-intensifies-ukrainian-security-targeting/" rel="nofollow">Pro-Russian CyberSpy Gamaredon Intensifies Ukrainian Security Targeting</a></li></ul>
+
+<h3 id="2019" id="2019">2019</h3>
+<ul><li>December 12, 2019 – <strong>Recorded Future</strong>: <a href="https://www.recordedfuture.com/blog/bluealpha-iranian-apts" rel="nofollow">Operation Gamework: Infrastructure Overlaps Found Between BlueAlpha and Iranian APTs</a>, <a href="https:/go.recordedfuture.com/hubfs/reports/cta-2019-1212.pdf" rel="nofollow">archive of missing PDF report</a></li>
+<li>December 05, 2019 – <strong>Anomali</strong>: <a href="https://www.anomali.com/blog/malicious-activity-aligning-with-gamaredon-ttps-targets-ukraine" rel="nofollow">Malicious Activity Aligning with Gamaredon TTPs Targets Ukraine</a></li>
+<li>July 17, 2019 – <strong>Intezer</strong>: <a href="https://intezer.com/blog/research/evilgnome-rare-malware-spying-on-linux-desktop-users/" rel="nofollow">EvilGnome: Rare Malware Spying on Linux Desktop Users</a></li>
+<li>June 04, 2019 – <strong>Yoroi</strong>: <a href="https://yoroi.company/research/the-russian-shadow-in-eastern-europe-a-month-later/" rel="nofollow">The Russian Shadow in Eastern Europe: A Month Later</a></li>
+<li>April 30, 2019 – <strong>Threatbook</strong>: <a href="https://x.threatbook.com/v5/article?threatInfoID=1417" rel="nofollow">[Weibu Online Report] Gamaredon gang launches targeted attack on Ukrainian election</a> (Chinese language)</li>
+<li>April 24, 2019 – <strong>Yoroi</strong>: <a href="https://yoroi.company/research/the-russian-shadow-in-eastern-europe-ukrainian-mod-campaign/" rel="nofollow">The Russian Shadow in Eastern Europe: Ukraininan MOD Campaign</a></li>
+
+<li><p>January 07, 2019 – <strong>Vitali Kremez</strong>: <a href="https://www.vkremez.com/2019/01/lets-learn-deeper-dive-into-gamaredon.html" rel="nofollow">Let&#39;s Learn: Deeper Dive into Gamaredon Group Pteranodon Implant Version &#39;_512&#39;</a> (achieve of dead link)</p></li>
+
+<li><p>February 27, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit-42-title-gamaredon-group-toolset-evolution/" rel="nofollow">The Gamaredon Group Toolset Evolution</a></p></li></ul>
+
+<h3 id="2015" id="2015">2015</h3>
+<ul><li>April 28, 2015 – <strong>Lookingglass</strong>: <a href="https://www.lookingglasscyber.com/wp-content/uploads/2015/08/Operation_Armageddon_Final.pdf" rel="nofollow">Operation Armageddon: Cyber Espionage as a Strategic Component of Russian Modern Warfare</a> (PDF, archive of a dead link)</li></ul>
+
+<p></details></p>
+
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+</div></article><article id="post-iw2g6ngzm8" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="north-korean-it-workers.html" itemprop="url" class="u-url">North Korean IT Workers</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-11-23T16:22:46Z" pubdate itemprop="datePublished" content="2024-11-23 16:22:46 +0000 UTC">November 23, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong>  Democratic People&#39;s Republic of Korea (DPRK)
+<strong>Objective:</strong> Corporate Espionage, Financial Gain
+<em>(Page Last Updated: January 09, 2025)</em>
+<strong>Organizations:</strong></p>
+<ul><li>313 General Bureau of the Munitions Industry Department (MID)</li>
+<li>The Ministry of Atomic Energy Industry</li>
+<li>Ministry of Defense</li>
+<li>Korea People&#39;s Army</li>
+<li>DPRK Education Commission&#39;s Foreign Trade Office</li>
+<li>Pyongyang Information Technology Bureau of the Central Committee&#39;s Science and Education Department</li>
+<li>Pyongyang University of Automation (training)</li>
+<li>Technical Reconnaissance Bureau
+<ul><li>subordinate cyber unit: 110th Research Center</li></ul></li>
+<li>Chinyong Information Technology Cooperation Company (Chinyong)</li></ul>
+
+<p><strong>Companies employing DPRK IT workers</strong>:</p>
+<ul><li>Yanbian Silverstar Network Technology Co. Ltd.</li>
+<li>Volasys Silver Star</li></ul>
+
+<p><strong>North Korean money laundering for DPRK IT workers</strong>:</p>
+<ul><li>Green Alpine Trading, LLC</li></ul>
+
+<p><strong>Identified North Korean IT workers</strong>:</p>
+<ol><li>Jong Song Hwa (정성화), CEO of both  Yanbian Silverstar Network Technology Co. Ltd. and Volasys Silver Star</li>
+<li>Kim Ryu Song (김류성), president of Yanbian Silverstar</li>
+<li>Ri Kyong Sik (리경식), president of Volasys Silver Star</li>
+<li>Rim Un Chol (림은철), senior manager</li>
+<li>Kim Mu Rim (김무림), senior manager</li>
+<li>Cho Chung Pom (조충범), mid-level manager</li>
+<li>Hyon Chol Song (현철성), mid-level manager</li>
+<li>Son Un Chol (손은철), mid-level manager</li>
+<li>Sok Kwang Hyok (석광혁), mid-level manager</li>
+<li>Choe Jong Yong (최정용), IT worker</li>
+<li>Ko Chung Sok (고충석), IT worker</li>
+<li>Kim Ye Won (김예원), IT worker</li>
+<li>Jong Kyong Chol (정경철), IT worker</li>
+<li>Jang Chol Myong (장철명), IT worker</li></ol>
+
+<p><strong>Identified individuals assisting DPRK IT workers</strong>:</p>
+<ul><li>Minh Phuong Vong</li>
+<li>Matthew Isaac Knoot</li>
+<li>Christina Marie Chapman</li>
+<li>Oleksandr Didenko</li>
+
+<li><p>Sim Hyon Sop (Sim)</p></li>
+
+<li><p>Lu Huaying</p></li>
+
+<li><p>Zhang Jian</p></li></ul>
+
+<h2 id="groups-or-aliases" id="groups-or-aliases">Groups or Aliases:</h2>
+<ul><li>CL-STA-0237 (<a href="https://unit42.paloaltonetworks.com/fake-north-korean-it-worker-activity-cluster/" rel="nofollow">Unit 42</a>)</li>
+<li>Nickel Tapestry (<a href="https://www.secureworks.com/research/threat-profiles/nickel-tapestry" rel="nofollow">Secureworks</a>)</li>
+<li>UNC5267 (<a href="https://cloud.google.com/blog/topics/threat-intelligence/mitigating-dprk-it-worker-threat" rel="nofollow">Mandiant</a>)</li></ul>
+
+<h2 id="references" id="references">References</h2>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="unknown-date" id="unknown-date">Unknown Date</h3>
+<ul><li><strong>UK Office of Financial Sanctions Implementation HM Treasury</strong>: <a href="https://assets.publishing.service.gov.uk/media/66e2ec410d913026165c3d91/OFSI_Advisory_on_North_Korean_IT_Workers.pdf" rel="nofollow">Advisory on North Korean IT Workers</a> (PDF)</li>
+<li><strong>Republic of Korea Ministry of Foreign Affairs</strong>: <a href="https://www.mofa.go.kr/eng/wpge/m_25525/contents.do" rel="nofollow">Advisory on the Democratic People&#39;s Republic of Korea Information Technology Workers</a></li>
+<li><strong>Australian Government Department of Foreign Affairs and Trade</strong>: <a href="https://www.dfat.gov.au/international-relations/security/sanctions/guidance/advisory-democratic-peoples-republic-korea-dprk-information-technology-it-workers" rel="nofollow">Advisory on Democratic People&#39;s Republic of Korea (DPRK) information technology (IT) workers</a></li></ul>
+
+<h3 id="2025" id="2025">2025</h3>
+<ul><li>January 08, 2025 – <strong>Microsoft Security</strong>: <a href="https://thecyberwire.com/podcasts/microsoft-threat-intelligence/35/notes" rel="nofollow">Threat Landscape Update: North Korean IT Workers, OSINT, and Remote Monitoring and Management Abuse</a></li></ul>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>December 17, 2024 – <strong>U.S. Treasury</strong>: <a href="https://home.treasury.gov/news/press-releases/jy2752" rel="nofollow">Treasury Disrupts North Korean Digital Assets Money Laundering Network</a></li>
+<li>December 12, 2024:
+<ul><li><strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/fourteen-north-korean-nationals-indicted-carrying-out-multi-year-fraudulent-information" rel="nofollow">Fourteen North Korean Nationals Indicted for Carrying Out Multi-Year Fraudulent Information Technology Worker Scheme and Related Extortions</a></li>
+<li><strong>U.S. Department of State</strong>: <a href="https://www.state.gov/rewards-for-justice-reward-offer-for-information-on-dprk-it-companies-it-workers-and-related-money-laundering/" rel="nofollow">Rewards for Justice – Reward Offer for Information on DPRK IT Companies, IT Workers, and Related Money Laundering</a></li>
+<li><strong>Rewards for Justice</strong> Program: <a href="https://rewardsforjustice.net/rewards/yanbian-silverstar-and-volasys-silverstar/" rel="nofollow">Yanbian Silverstar and Volasys Silverstar</a></li></ul></li>
+<li>November 22, 2024 – <strong>Microsoft</strong> Threat Intelligence: <a href="https://www.microsoft.com/en-us/security/blog/2024/11/22/microsoft-shares-latest-intelligence-on-north-korean-and-chinese-threat-actors-at-cyberwarcon/" rel="nofollow">Microsoft shares latest intelligence on North Korean and Chinese threat actors at CYBERWARCON</a></li>
+<li>November 21, 2024 – <strong>SentinelOne</strong>: <a href="https://www.sentinelone.com/labs/dprk-it-workers-a-network-of-active-front-companies-and-their-links-to-china/" rel="nofollow">DPRK IT Workers | A Network of Active Front Companies and Their Links to China</a></li>
+<li>November 14, 2024 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/fake-north-korean-it-worker-activity-cluster/" rel="nofollow">Fake North Korean IT Worker Linked to BeaverTail Video Conference App Phishing Attack</a></li>
+<li>November 13, 2024 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/north-korean-it-workers/" rel="nofollow">Global Companies Are Unknowingly Paying North Koreans: Here&#39;s How to Catch Them</a></li>
+<li>November 01, 2024 – <strong>New York State Department of Financial Services</strong>: <a href="https://www.dfs.ny.gov/industry-guidance/indusry-letters/il20241101-cyber-advisory-remote-workers-nk" rel="nofollow">Re: Cybersecurity Advisory – Threats Posed by Remote Technology Workers with Ties to Democratic People&#39;s Republic of Korea</a></li>
+<li>October 24, 2024 – <strong>HYPR</strong>: <a href="https://blog.hypr.com/hypr-unmasks-fake-it-worker" rel="nofollow">HYPR Unmasks a Fake IT Worker: North Korea Isn&#39;t the Only Threat</a></li>
+<li>October 19, 2024 – <strong>KnowB34</strong>: <a href="https://blog.knowbe4.com/north-korean-it-worker-threat-10-critical-updates-to-your-hiring-process" rel="nofollow">North Korean IT Worker Threat: 10 Critical Updates to Your Hiring Process</a></li>
+<li>October 02, 2024 – <strong>CoinDesk</strong>: <a href="https://www.coindesk.com/tech/2024/10/02/how-north-korea-infiltrated-the-crypto-industry/" rel="nofollow">How North Korea Infiltrated the Crypto Industry</a></li>
+<li>October 01, 2024 – <strong>Bundesamt für Verfassungsschutz</strong> (Germany): <a href="https://www.verfassungsschutz.de/SharedDocs/publikationen/EN/economic-and-scientific-protection/2024-10-01-security-advisory.html" rel="nofollow">Private Sector Security Advisory | 02/2024 | 1 October 2024 | Subject: North Korean IT Workers</a></li>
+<li>September 23, 2024 – <strong>Mandiant</strong>: <a href="https://cloud.google.com/blog/topics/threat-intelligence/mitigating-dprk-it-worker-threat" rel="nofollow">Staying a Step Ahead: Mitigating the DPRK IT Worker Threat</a></li>
+<li>August 19, 2024 – <strong>UK Government</strong>: <a href="https://www.gov.uk/government/publications/democratic-peoples-republic-of-korea-sanctions-guidance/democratic-peoples-republic-of-korea-sanctions-guidance" rel="nofollow">Democratic People&#39;s Republic of Korea sanctions: guidance</a></li>
+<li>August 14, 2024 – <strong>Cinder</strong>: <a href="https://www.cinder.co/blog-posts/north-korean-engineers-in-our-application-pile" rel="nofollow">We found North Korean engineers in our application pile. Here&#39;s what our ex-CIA co founders did about it.</a></li>
+<li>August 08, 2024 – <strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/justice-department-disrupts-north-korean-remote-it-worker-fraud-schemes-through-charges-and" rel="nofollow">Justice Department Disrupts North Korean Remote IT Worker Fraud Schemes Through Charges and Arrest of Nashville Facilitator</a></li>
+<li>July 23, 2024 – <strong>KnowBe4</strong>: <a href="https://blog.knowbe4.com/how-a-north-korean-fake-it-worker-tried-to-infiltrate-us" rel="nofollow">How a North Korean Fake IT Worker Tried to Infiltrate Us</a></li>
+<li>May 16, 2024 – <strong>U.S. Department of Justice</strong>:
+<ul><li><a href="https://www.justice.gov/opa/pr/justice-department-announces-arrest-premises-search-and-seizures-multiple-website-domains" rel="nofollow">Justice Department Announces Arrest, Premises Search, and Seizures of Multiple Website Domains to Disrupt Illicit Revenue Generation Efforts of Democratic People&#39;s Republic of Korea</a></li>
+<li><a href="https://www.justice.gov/usao-dc/pr/charges-and-seizures-brought-fraud-scheme-aimed-denying-revenue-workers-associated-north" rel="nofollow">Charges and Seizures Brought in Fraud Scheme Aimed at Denying Revenue for Workers Associated with North Korea</a></li>
+<li><a href="https://www.justice.gov/usao-md/pr/criminal-complaint-charges-two-men-conspiracy-commit-wire-fraud" rel="nofollow">Criminal Complaint Charges Two Men With Conspiracy To Commit Wire Fraud</a></li></ul></li>
+<li>May 16, 2024 – <strong>U.S. Department of State</strong>:
+<ul><li><a href="https://www.state.gov/rewards-for-justice-reward-offer-for-information-on-north-korean-it-workers/" rel="nofollow">Rewards for Justice – Reward Offer for Information on North Korean IT Workers</a></li>
+<li>Rewards for Justice Program: <a href="https://rewardsforjustice.net/rewards/north-korean-information-technology-it-workers/" rel="nofollow">North Korean Information Technology (IT) Workers</a></li></ul></li>
+<li>May 16, 2024 – <strong>FBI</strong>: <a href="https://www.ic3.gov/PSA/2024/PSA240516" rel="nofollow">Democratic People&#39;s Republic of Korea Leverages U.S.-Based Individuals to Defraud U.S. Businesses and Generate Revenue</a></li>
+<li>April 22, 2024 – <strong>38North</strong>: <a href="https://www.38north.org/2024/04/what-we-learned-inside-a-north-korean-internet-server-how-well-do-you-know-your-partners/" rel="nofollow">What We Learned Inside a North Korean Internet Server: How Well Do You Know Your Partners?</a></li>
+<li>February 21, 2024 – <strong>Mandiant</strong>: <a href="https://open.spotify.com/episode/0xeaavXjlX2XLm3oibOv6g?nd=1&amp;dlsi=f05401d5b20f4f5c" rel="nofollow">The North Korean IT Workers
+</a> (podcast on Spotify)</li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>December 11, 2023 – <strong>Nisos</strong>: <a href="https://www.nisos.com/blog/dprk-it-worker-scam/" rel="nofollow">Investigation: Probable DPRK Online Personas Used To Fraudulently Obtain Remote Employment at U.S. Companies</a></li>
+<li>October 18, 2023 – <strong>FBI</strong>: <a href="https://www.ic3.gov/PSA/2023/PSA231018" rel="nofollow">Additional Guidance on the Democratic People&#39;s Republic of Korea Information Technology Workers</a></li>
+<li>October 18, 2023 – <strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/justice-department-announces-court-authorized-action-disrupt-illicit-revenue-generation" rel="nofollow">Justice Department Announces Court-Authorized Action to Disrupt Illicit Revenue Generation Efforts of Democratic People&#39;s Republic of Korea Information Technology Workers</a></li>
+<li>July 2023 – <strong>FBI</strong>: <a href="https://www.ic3.gov/PSA/2023/PSA231018.pdf" rel="nofollow">North Korean Tactics, Techniques, and Procedures for Revenue Generation</a> (PDF)</li>
+<li>May 23, 2023 – <strong>U.S. Treasury</strong>: <a href="https://home.treasury.gov/news/press-releases/jy1498" rel="nofollow">Treasury Targets DPRK Malicious Cyber and Illicit IT Worker Activities</a></li>
+<li>May 23, 2023 – <strong>U.S. Department of State</strong>: <a href="https://www.state.gov/joint-u-s-rok-symposium-on-countering-dprk-sanctions-evasion-involving-dprk-it-workers/" rel="nofollow">Joint U.S.-ROK Symposium on Countering DPRK Sanctions Evasion Involving DPRK IT Workers</a></li>
+<li>April 24, 2023 – <strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/north-korean-foreign-trade-bank-representative-charged-crypto-laundering-conspiracies" rel="nofollow">North Korean Foreign Trade Bank Representative Charged in Crypto Laundering Conspiracies</a></li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>May 16, 2022 – <strong>U.S. Treasury</strong>:
+<ul><li><a href="https://ofac.treasury.gov/media/923126/download?inline" rel="nofollow">Guidance on the Democratic People&#39;s Republic of Korea Information Technology Workers</a> (PDF)</li>
+<li><a href="https://ofac.treasury.gov/media/923131/download?inline" rel="nofollow">Fact Sheet: Guidance on the Democratic People&#39;s Republic of Korea Information Technology Workers</a> (PDF)</li></ul></li></ul>
+
+<p></details></p>
+
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+</div></article><article id="post-2e2v3n0yl0" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="salt-typhoon.html" itemprop="url" class="u-url">Salt Typhoon</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-09-29T15:02:27Z" pubdate itemprop="datePublished" content="2024-09-29 15:02:27 +0000 UTC">September 29, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong> People&#39;s Republic of China
+<strong>Organization:</strong> N/A
+<strong>Objective:</strong> Espionage
+<em>(Page Last Updated: January 13, 2025)</em></p>
+
+<h2 id="aliases" id="aliases">Aliases:</h2>
+<ul><li>Earth Estries (<a href="https://www.trendmicro.com/en_us/research/23/h/earth-estries-targets-government-tech-for-cyberespionage.html" rel="nofollow">Trend Micro</a>)</li>
+<li>FamousSparrow (<a href="https://www.welivesecurity.com/2021/09/23/famoussparrow-suspicious-hotel-guest/" rel="nofollow">ESET</a>, <a href="https://www.fortiguard.com/threat-signal-report/4164" rel="nofollow">Fortinet</a>)</li>
+<li>GhostEmperor (<a href="https://securelist.com/ghostemperor-from-proxylogon-to-kernel-mode/104407/" rel="nofollow">Kaspersky</a>, <a href="https://malpedia.caad.fkie.fraunhofer.de/actor/ghostemperor" rel="nofollow">Malpedia</a>, <a href="https://docs.rapid7.com/insightidr/ghostemperor/" rel="nofollow">Rapid7</a>)</li>
+<li>Liminal Panda (CrowdStrike)</li>
+<li>Salt Typhoon <a href="https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming" rel="nofollow">Microsoft</a>)</li>
+<li>UNC2286 (<a href="https://cloud.google.com/blog/topics/threat-intelligence/unc4841-post-barracuda-zero-day-remediation" rel="nofollow">Mandiant</a>)</li></ul>
+
+<h2 id="links-to-other-groups" id="links-to-other-groups">Links to other groups</h2>
+<ul><li><a href="https://documents.trendmicro.com/assets/white_papers/wp-uncovering-DRBcontrol.pdf" rel="nofollow">DRBControl</a> (PDF, Source: <a href="https://www.welivesecurity.com/2021/09/23/famoussparrow-suspicious-hotel-guest/" rel="nofollow">ESET</a>)</li>
+<li><a href="https://www.welivesecurity.com/2021/08/24/sidewalk-may-be-as-dangerous-as-crosswalk/" rel="nofollow">SparklingGoblin</a> (subset of “<a href="apt41" rel="nofollow">Winnti</a>” Source: <a href="https://www.welivesecurity.com/2021/09/23/famoussparrow-suspicious-hotel-guest/" rel="nofollow">ESET</a>)</li>
+<li>Tropic Trooper (Source: <a href="https://securelist.com/new-tropic-trooper-web-shell-infection/113737/" rel="nofollow">Kaspersky</a>)
+<ul><li>Tropic Trooper (<a href="https://apt.etda.or.th/cgi-bin/showcard.cgi?g=Tropic%20Trooper%2C%20Pirate%20Panda%2C%20APT%2023%2C%20KeyBoy&amp;n=1" rel="nofollow">ETDA</a>, <a href="https://securelist.com/new-tropic-trooper-web-shell-infection/113737/" rel="nofollow">Kaspersky</a>, <a href="https://attack.mitre.org/groups/G0081/" rel="nofollow">MITRE</a>, <a href="https://unit42.paloaltonetworks.com/unit42-tropic-trooper-targets-taiwanese-government-and-fossil-fuel-provider-with-poison-ivy/" rel="nofollow">Unit 42</a>)</li>
+<li>KeyBoy (<a href="https://citizenlab.ca/2016/11/parliament-keyboy/" rel="nofollow">Citizen Lab</a>, <a href="https://docs.rapid7.com/insightidr/keyboy/" rel="nofollow">Rapid7</a>, formerly used by PwC)</li>
+<li>Pirate Panda (<a href="https://www.anomali.com/blog/anomali-suspects-that-china-backed-apt-pirate-panda-may-be-seeking-access-to-vietnam-government-data-center" rel="nofollow">Anomali</a>, CrowdStrike)</li></ul></li>
+<li>UNC4841 (<a href="https://cloud.google.com/blog/topics/threat-intelligence/unc4841-post-barracuda-zero-day-remediation" rel="nofollow">Mandiant</a>)</li></ul>
+
+<h2 id="vulnerabilities-exploited" id="vulnerabilities-exploited">Vulnerabilities Exploited</h2>
+<ul><li>ProxyLogon (Sources: <a href="https://www.welivesecurity.com/2021/09/23/famoussparrow-suspicious-hotel-guest/" rel="nofollow">ESET</a>, <a href="https://securelist.com/ghostemperor-from-proxylogon-to-kernel-mode/104407/" rel="nofollow">Kaspersky</a>, <a href="https://www.sygnia.co/blog/ghost-emperor-demodex-rootkit/" rel="nofollow">Sygnia</a>, <a href="https://www.trendmicro.com/en_us/research/24/k/earth-estries.html" rel="nofollow">Trend Micro</a>):
+<ul><li><a href="https://cve.org/CVERecord?id=CVE-2021-26855" rel="nofollow">CVE-2021-26855</a> (9.8 critical, in CISA&#39;s KEV Catalog)
+Microsoft Exchange Server Remote Code Execution Vulnerability</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-26857" rel="nofollow">CVE-2021-26857</a> (7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Exchange Server Remote Code Execution Vulnerability</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-26858" rel="nofollow">CVE-2021-26858</a> (7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Exchange Server Remote Code Execution Vulnerability</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-27065" rel="nofollow">CVE-2021-27065</a> (7.8 high, in CISA&#39;s KEV Catalog)</li></ul></li>
+<li>Source: <a href="https://www.trendmicro.com/en_us/research/24/k/earth-estries.html" rel="nofollow">Trend Micro</a>
+<ul><li><a href="https://www.cve.org/CVERecord?id=CVE-2023-46805" rel="nofollow">CVE-2023-46805</a> (8.2 high, in CISA&#39;s KEV Catalog)
+Ivanti Connect Secure and Policy Secure Authentication Bypass Vulnerability</li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2024-21887" rel="nofollow">CVE-2024-21887</a> (9.1 critical, in CISA&#39;s KEV Catalog)
+Ivanti Connect Secure and Policy Secure Command Injection Vulnerability</li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2023-48788" rel="nofollow">CVE-2023-48788</a> (9.8 critical, in CISA&#39;s KEV Catalog)
+Fortinet FortiClient EMS SQL Injection Vulnerability<br></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2022-3236" rel="nofollow">CVE-2022-3236</a> (9.8 critical, in CISA&#39;s KEV Catalog)
+Sophos Firewall Code Injection Vulnerability</li></ul></li>
+<li>unidentified Microsoft SharePoint and Oracle Opera business software vulnerabilities (Source: <a href="https://www.welivesecurity.com/2021/09/23/famoussparrow-suspicious-hotel-guest/" rel="nofollow">ESET</a>)</li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2017-11882" rel="nofollow">CVE-2017-11882</a> (7.8 high, in CISA&#39;s KEV Catalog. Note: associated with alias Tropic Trooper)
+Microsoft Office Memory Corruption Vulnerability
+Source: <a href="https://www.trendmicro.com/en_us/research/18/c/tropic-trooper-new-strategy.html" rel="nofollow">Trend Micro</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2012-0158" rel="nofollow">CVE-2012-0158</a> (8.8 high, in CISA&#39;s KEV Catalog. Note: associated with alias Tropic Trooper, KeyBoy)
+Microsoft MSCOMCTL.OCX Remote Code Execution Vulnerability
+Sources: <a href="https://unit42.paloaltonetworks.com/unit42-tropic-trooper-targets-taiwanese-government-and-fossil-fuel-provider-with-poison-ivy/" rel="nofollow">Unit 42</a>, <a href="https://citizenlab.ca/2016/11/parliament-keyboy/" rel="nofollow">Citizen Lab</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2017-0199" rel="nofollow">CVE-2017-0199</a> (7.8 high, in CISA&#39;s KEV Catalog. Note: associated with alias Tropic Trooper)
+Microsoft Office and WordPad Remote Code Execution Vulnerability
+Source: <a href="https://citizenlab.ca/2018/08/familiar-feeling-a-malware-campaign-targeting-the-tibetan-diaspora-resurfaces/" rel="nofollow">Citizen Lab</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2015-1641" rel="nofollow">CVE-2015-1641</a> (7.8 high, in CISA&#39;s KEV Catalog. Note: associated with alias KeyBoy)
+Microsoft Office Memory Corruption Vulnerability
+Source: <a href="https://citizenlab.ca/2016/11/parliament-keyboy/" rel="nofollow">Citizen Lab</a></li></ul>
+
+<h2 id="references" id="references">References</h2>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="2025" id="2025">2025</h3>
+<ul><li>January 13, 2025 – <strong>Washington Post</strong>: <a href="https://www.washingtonpost.com/national-security/2025/01/13/salt-typhoon-china-sanctions-biden/" rel="nofollow">Biden administration looks to penalize Salt Typhoon telecom hackers</a> (news article)</li>
+<li>January 05, 2025 – <strong>Wall Street Journal</strong>: <a href="https://www.wsj.com/tech/cybersecurity/typhoon-china-hackers-military-weapons-97d4ef95" rel="nofollow">How Chinese Hackers Graduated From Clumsy Corporate Thieves to Military Weapons</a> (news article)</li></ul>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>December 29, 2024 – <strong>Reuters</strong>: <a href="https://www.reuters.com/technology/cybersecurity/chinese-salt-typhoon-cyberespionage-targets-att-networks-secure-carrier-says-2024-12-29/" rel="nofollow">AT&amp;T, Verizon targeted by Salt Typhoon cyberespionage operation, but networks secure</a> (news article)</li>
+<li>December 04, 2024 – <strong>Wall Street Journal</strong>: <a href="https://www.wsj.com/politics/national-security/dozens-of-countries-hit-in-chinese-telecom-hacking-campaign-top-u-s-official-says-2a3a5cca" rel="nofollow">Dozens of Countries Hit in Chinese Telecom Hacking Campaign, Top U.S. Official Says</a>  (news article)</li>
+<li>December 03, 2024 – <strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/alerts/2024/12/03/cisa-and-partners-release-joint-guidance-prc-affiliated-threat-actor-compromising-networks-global" rel="nofollow">CISA and Partners Release Joint Guidance on PRC-Affiliated Threat Actor Compromising Networks of Global Telecommunications Providers</a></li>
+<li>November 27, 2024 – <strong>Bloomberg</strong>: <a href="https://archive.ph/UFNtj" rel="nofollow">T-Mobile Engineers Spotted Hackers Running Commands on Routers</a> (news article, archive of paywalled article)</li>
+<li>November 25, 2024 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/24/k/earth-estries.html" rel="nofollow">Game of Emperor: Unveiling Long Term Earth Estries Cyber Intrusions</a></li>
+<li>November 20, 2024 – <strong>Natto Thoughts</strong>: <a href="https://nattothoughts.substack.com/p/salt-typhoon-churning-up-a-storm" rel="nofollow">Salt Typhoon: Churning Up a Storm of Consternation</a></li>
+<li>November 19, 2024 – <strong>CrowdStrike</strong>: <a href="https://www.crowdstrike.com/en-us/blog/liminal-panda-telecom-sector-threats/" rel="nofollow">Unveiling LIMINAL PANDA: A Closer Look at China&#39;s Cyber Threats to the Telecom Sector</a></li>
+<li>November 15, 2024 – <strong>Wall Street Journal</strong>: <a href="https://www.wsj.com/politics/national-security/t-mobile-hacked-in-massive-chinese-breach-of-telecom-networks-4b2d7f92" rel="nofollow">T-Mobile Hacked in Massive Chinese Breach of Telecom Networks</a> (news article)</li>
+<li>November 07, 2024 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/24/k/breaking-down-earth-estries-persistent-ttps-in-prolonged-cyber-o.html" rel="nofollow">Breaking Down Earth Estries&#39; Persistent TTPs in Prolonged Cyber Operations</a></li>
+<li>October 25, 2024 – <strong>Wall Street Journal</strong>: <a href="https://www.wsj.com/politics/national-security/chinese-hackers-targeted-phones-of-trump-vance-and-harris-campaign-e04abbdf" rel="nofollow">Chinese Hackers Targeted Phones of Trump, Vance, and Harris Campaign</a> (news article)</li>
+<li>October 25, 2024 – <strong>CISA</strong>: <a href="https://www.cisa.gov/news-events/news/joint-statement-fbi-and-cisa-prc-activity-targeting-telecommunications" rel="nofollow">Joint Statement by FBI and CISA on PRC Activity Targeting Telecommunications</a> (not explicitly mentioned)</li>
+<li>October 11, 2024 – <strong>Washington Post</strong>: <a href="https://www.washingtonpost.com/national-security/2024/10/11/china-hack-telecoms-salt-typhoon/" rel="nofollow">White House forms emergency team to deal with China espionage hack</a> (news article)</li>
+<li>October 04, 2024 – <strong>Wall Street Journal</strong>: <a href="https://www.wsj.com/tech/cybersecurity/u-s-wiretap-systems-targeted-in-china-linked-hack-327fc63b" rel="nofollow">U.S. Wiretap Systems Targeted in China-Linked Hack</a> (news article)</li>
+<li>September 25, 2024 – <strong>Wall Street Journal</strong>: <a href="https://www.wsj.com/politics/national-security/china-cyberattack-internet-providers-260bd835" rel="nofollow">China-Linked Hackers Breach U.S. Internet Providers in New &#39;Salt Typhoon&#39; Cyberattack</a> (news article)</li>
+<li>September 05, 2024 – <strong>Kaspersky</strong>: <a href="https://securelist.com/new-tropic-trooper-web-shell-infection/113737/" rel="nofollow">Tropic Trooper spies on government entities in the Middle East</a></li>
+<li>July 17, 2024 – <strong>Sygnia</strong>: <a href="https://www.sygnia.co/blog/ghost-emperor-demodex-rootkit/" rel="nofollow">The Return of Ghost Emperor&#39;s Demodex</a></li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>August 30, 2023 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/23/h/earth-estries-targets-government-tech-for-cyberespionage.html" rel="nofollow">Earth Estries Targets Government, Tech for Cyberespionage</a></li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>February 28, 2022 – <strong>NCSC-UK</strong>: <a href="https://www.ncsc.gov.uk/files/NCSC-MAR-SparrowDoor.pdf" rel="nofollow">Malware Analysis Report: SparrowDoor</a> (PDF)</li></ul>
+
+<h3 id="2021" id="2021">2021</h3>
+<ul><li>December 14, 2021 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/21/l/collecting-in-the-dark-tropic-trooper-targets-transportation-and-government-organizations.html" rel="nofollow">Collecting In the Dark: Tropic Trooper Targets Transportation and Government</a> (archive of dead link)</li>
+<li>October 19, 2021 – <strong>CrowdStrike</strong>: <a href="https://www.crowdstrike.com/en-us/blog/an-analysis-of-lightbasin-telecommunications-attacks/" rel="nofollow">LIMINAL PANDA: A Roaming Threat to Telecommunications Companies</a></li>
+<li>September 30, 2021 – <strong>Kaspersky</strong>: <a href="https://securelist.com/ghostemperor-from-proxylogon-to-kernel-mode/104407/" rel="nofollow">GhostEmperor: From ProxyLogon to kernel mode</a></li>
+<li>September 23, 2021 – <strong>ESET</strong>: <a href="https://www.welivesecurity.com/2021/09/23/famoussparrow-suspicious-hotel-guest/" rel="nofollow">FamousSparrow: A suspicious hotel guest</a></li></ul>
+
+<h3 id="2020" id="2020">2020</h3>
+<ul><li>May 12, 2020 – <strong>Trend Micro</strong>: <a href="https://blog.trendmicro.com/trendlabs-security-intelligence/tropic-troopers-back-usbferry-attack-targets-air-gapped-environments/" rel="nofollow">Tropic Trooper&#39;s Back: USBferry Attack Targets Air-gapped Environments</a> (archive of dead link)</li>
+<li>April 30, 2020 – <strong>Anomali</strong>: <a href="https://www.anomali.com/blog/anomali-suspects-that-china-backed-apt-pirate-panda-may-be-seeking-access-to-vietnam-government-data-center" rel="nofollow">Anomali Suspects that China-Backed APT Pirate Panda May Be Seeking Access to Vietnam Government Data Center</a></li></ul>
+
+<h3 id="2018" id="2018">2018</h3>
+<ul><li>August 08, 2018 – <strong>Citizen Lab</strong>: <a href="https://citizenlab.ca/2018/08/familiar-feeling-a-malware-campaign-targeting-the-tibetan-diaspora-resurfaces/" rel="nofollow">Familiar Feeling: A Malware Campaign Targeting the Tibetan Diaspora Resurfaces</a></li>
+<li>March 14, 2018 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/18/c/tropic-trooper-new-strategy.html" rel="nofollow">Tropic Trooper’s New Strategy</a></li></ul>
+
+<h3 id="2017" id="2017">2017</h3>
+<ul><li>November 16, 2017 – <strong>Lookout</strong>: <a href="https://www.lookout.com/threat-intelligence/article/titan-mobile-threat" rel="nofollow">Tropic Trooper Goes Mobile With Titan Surveillanceware</a></li>
+<li>February 11, 2017 – <strong>PwC</strong>: <a href="https://www.pwc.co.uk/issues/cyber-security-services/research/the-keyboys-are-back-in-town.html" rel="nofollow">The KeyBoys are back in town</a> (archive of dead link)</li></ul>
+
+<h3 id="2016" id="2016">2016</h3>
+<ul><li>November 22, 2016 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-tropic-trooper-targets-taiwanese-government-and-fossil-fuel-provider-with-poison-ivy/" rel="nofollow">Tropic Trooper Targets Taiwanese Government and Fossil Fuel Provider With Poison Ivy</a></li>
+<li>November 17, 2016 – <strong>Citizen Lab</strong>: <a href="https://citizenlab.ca/2016/11/parliament-keyboy/" rel="nofollow">It’s Parliamentary: KeyBoy and the targeting of the Tibetan Community</a></li></ul>
+
+<h3 id="2015" id="2015">2015</h3>
+<ul><li>May 14, 2015 – <strong>Trend Micro</strong>: <a href="https://documents.trendmicro.com/assets/wp/wp-operation-tropic-trooper.pdf" rel="nofollow">Operation Tropic Trooper: Relying on Tried-and-Tested Flaws to Infiltrate Secret Keepers</a> (PDF)</li></ul>
+
+<h3 id="2013" id="2013">2013</h3>
+<ul><li>June 13, 2013 – <strong>Cisco</strong>: <a href="https://blogs.cisco.com/security/scope-of-keyboy-targeted-malware-attacks" rel="nofollow">Scope of &#39;KeyBoy&#39; Targeted Malware Attacks</a></li>
+<li>June 07, 2013 – <strong>Rapid7</strong>: <a href="https://www.rapid7.com/blog/post/2013/06/07/keyboy-targeted-attacks-against-vietnam-and-india/" rel="nofollow">KeyBoy, Targeted Attacks against Vietnam and India</a> (archive of dead link)</li></ul>
+
+<p></details></p>
+
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+</div></article><article id="post-850umgqjx2" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="flax-typhoon.html" itemprop="url" class="u-url">Flax Typhoon</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-09-23T00:10:07Z" pubdate itemprop="datePublished" content="2024-09-23 00:10:07 +0000 UTC">September 23, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong> People&#39;s Republic of China
+<strong>Organization:</strong> Integrity Technology Group
+<strong>Objective:</strong> Espionage, Information theft
+<em>(Page last updated: January 03, 2025)</em></p>
+
+<h2 id="aliases-sorted-alphabetically" id="aliases-sorted-alphabetically">Aliases (sorted alphabetically):</h2>
+<ul><li>Ethereal Panda (<a href="https://www.crowdstrike.com/adversaries/ethereal-panda/" rel="nofollow">CrowdStrike</a>)</li>
+<li>Flax Typhoon (<a href="https://www.cfr.org/cyber-operations/flax-typhoon" rel="nofollow">CFR</a>, <a href="https://apt.etda.or.th/cgi-bin/showcard.cgi?g=Flax%20Typhoon" rel="nofollow">ETDA</a>, FBI, <a href="https://www.microsoft.com/en-us/security/blog/2023/08/24/flax-typhoon-using-legitimate-software-to-quietly-access-taiwanese-organizations/" rel="nofollow">Microsoft</a>, <a href="https://malpedia.caad.fkie.fraunhofer.de/actor/flax_typhoon" rel="nofollow">Malpedia</a>, NSA, NCSC-UK)</li>
+<li>RedJuliett (<a href="https://www.recordedfuture.com/research/redjuliett-intensifies-taiwanese-cyber-espionage-via-network-perimeter" rel="nofollow">Recorded Future</a>)</li>
+<li>Storm-0919 (previously used by Microsoft)</li></ul>
+
+<h2 id="associated-company" id="associated-company">Associated Company</h2>
+
+<p>Integrity Technology Group (Integrity Tech) (Source: <a href="https://www.ic3.gov/Media/News/2024/240918.pdf" rel="nofollow">FBI</a> (PDF))
+aka Yongxin Zhicheng, 永信至诚</p>
+
+<h2 id="vulnerabilities-exploited" id="vulnerabilities-exploited">Vulnerabilities Exploited</h2>
+
+<p><details><summary>Source: FBI</summary></p>
+<ul><li><a href="https://cve.org/CVERecord?id=CVE-2024-5217" rel="nofollow">CVE-2024-5217</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2024-4577" rel="nofollow">CVE-2024-4577</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2024-29973" rel="nofollow">CVE-2024-29973</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2024-29269" rel="nofollow">CVE-2024-29269</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2024-21762" rel="nofollow">CVE-2024-21762</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-50386" rel="nofollow">CVE-2023-50386</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-47218" rel="nofollow">CVE-2023-47218</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-46747" rel="nofollow">CVE-2023-46747</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-46604" rel="nofollow">CVE-2023-46604</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-43478" rel="nofollow">CVE-2023-43478</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-4166" rel="nofollow">CVE-2023-4166</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-38646" rel="nofollow">CVE-2023-38646</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-3852" rel="nofollow">CVE-2023-3852</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-38035" rel="nofollow">CVE-2023-38035</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-37582" rel="nofollow">CVE-2023-37582</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-36844" rel="nofollow">CVE-2023-36844</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-36542" rel="nofollow">CVE-2023-36542</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-35885" rel="nofollow">CVE-2023-35885</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-35843" rel="nofollow">CVE-2023-35843</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-3519" rel="nofollow">CVE-2023-3519</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-35081" rel="nofollow">CVE-2023-35081</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-34960" rel="nofollow">CVE-2023-34960</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-34598" rel="nofollow">CVE-2023-34598</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-3368" rel="nofollow">CVE-2023-3368</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-33510" rel="nofollow">CVE-2023-33510</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-30799" rel="nofollow">CVE-2023-30799</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-28771" rel="nofollow">CVE-2023-28771</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-28365" rel="nofollow">CVE-2023-28365</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-27997" rel="nofollow">CVE-2023-27997</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-27524" rel="nofollow">CVE-2023-27524</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-26469" rel="nofollow">CVE-2023-26469</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-25690" rel="nofollow">CVE-2023-25690</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-24229" rel="nofollow">CVE-2023-24229</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-23333" rel="nofollow">CVE-2023-23333</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-22527" rel="nofollow">CVE-2023-22527</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-22515" rel="nofollow">CVE-2023-22515</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2023-42475" rel="nofollow">CVE-2023-42475</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2022-40881" rel="nofollow">CVE-2022-40881</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2022-3590" rel="nofollow">CVE-2022-3590</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2022-31814" rel="nofollow">CVE-2022-31814</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2022-30525" rel="nofollow">CVE-2022-30525</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2022-26134" rel="nofollow">CVE-2022-26134</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2022-20707" rel="nofollow">CVE-2022-20707</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2022-1388" rel="nofollow">CVE-2022-1388</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-46422" rel="nofollow">CVE-2021-46422</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-45511" rel="nofollow">CVE-2021-45511</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-44228" rel="nofollow">CVE-2021-44228</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-36260" rel="nofollow">CVE-2021-36260</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-28799" rel="nofollow">CVE-2021-28799</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-20090" rel="nofollow">CVE-2021-20090</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-1473" rel="nofollow">CVE-2021-1473</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2021-1472" rel="nofollow">CVE-2021-1472</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2020-8515" rel="nofollow">CVE-2020-8515</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2020-4450" rel="nofollow">CVE-2020-4450</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2020-35391" rel="nofollow">CVE-2020-35391</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2020-3452" rel="nofollow">CVE-2020-3452</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2020-3451" rel="nofollow">CVE-2020-3451</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2020-15415" rel="nofollow">CVE-2020-15415</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2019-7256" rel="nofollow">CVE-2019-7256</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2019-19824" rel="nofollow">CVE-2019-19824</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2019-17621" rel="nofollow">CVE-2019-17621</a> (KEV)</li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2019-12168" rel="nofollow">CVE-2019-12168</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2019-11829" rel="nofollow">CVE-2019-11829</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2018-18852" rel="nofollow">CVE-2018-18852</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2017-7876" rel="nofollow">CVE-2017-7876</a></li>
+<li><a href="https://cve.org/CVERecord?id=CVE-2015-7450" rel="nofollow">CVE-2015-7450</a> (KEV)</li></ul>
+
+<p></details></p>
+
+<h2 id="references" id="references">References</h2>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="2025" id="2025">2025</h3>
+<ul><li>January 03, 2025:
+<ul><li><strong>U.S. State Department</strong>: <a href="https://www.state.gov/sanctioning-prc-cyber-company-involved-in-malicious-botnet-operations/" rel="nofollow">Sanctioning PRC Cyber Company Involved in Malicious Botnet Operations</a></li>
+<li><strong>U.S. Treasury</strong>: <a href="https://home.treasury.gov/news/press-releases/jy2769" rel="nofollow">Treasury Sanctions Technology Company for Support to Malicious Cyber Group</a></li></ul></li></ul>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>October 09, 2024: <strong>Natto Thoughts</strong>: <a href="https://nattothoughts.substack.com/p/business-priorities-of-chinese-cyber" rel="nofollow">Business Priorities of Chinese Cyber Range Providers Go Hand in Hand with State Cyber Capability Development</a></li>
+<li>September 25, 2024: <strong>Natto Thoughts</strong>: <a href="https://nattothoughts.substack.com/p/flax-typhoon-linked-company-integrity" rel="nofollow">Flax Typhoon-Linked Company Integrity Technology: a Competitor, Business Partner and Client of i-SOON</a></li>
+<li>September 18, 2024: (<strong>ATTRIBUTION</strong>)
+<ul><li><strong>FBI</strong>: <a href="https://www.ic3.gov/Media/News/2024/240918.pdf" rel="nofollow">People’s Republic of China-Linked Actors Compromise Routers and IoT Devices for Botnet Operations</a> (PDF)</li>
+<li><strong>NSA</strong>: <a href="https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3909590/" rel="nofollow">NSA and Allies Issue Advisory about PRC-Linked Actors and Botnet Operations</a></li>
+<li><strong>U.S. Department of Justice</strong>: <a href="https://www.justice.gov/opa/pr/court-authorized-operation-disrupts-worldwide-botnet-used-peoples-republic-china-state" rel="nofollow">Court-Authorized Operation Disrupts Worldwide Botnet Used by People’s Republic of China State-Sponsored Hackers</a></li>
+<li><strong>ASD ACSC</strong>: <a href="https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/peoples-republic-china-linked-actors-compromise-routers-and-iot-devices-botnet-operations" rel="nofollow">People’s Republic of China-Linked Actors Compromise Routers and IoT Devices for Botnet Operations</a> (available as <a href="https://www.cyber.gov.au/sites/default/files/2024-09/CSA-PRC-LINKED-ACTORS-BOTNET.pdf" rel="nofollow">PDF</a>)</li>
+<li><strong>NCSC-UK</strong>: <a href="https://www.ncsc.gov.uk/news/ncsc-and-partners-issue-advice-to-counter-china-linked-campaign-targeting-thousands-of-devices" rel="nofollow">NCSC and partners issue advice to counter China-linked campaign targeting thousands of devices</a></li>
+<li><strong>The Record</strong>: <a href="https://therecord.media/china-public-company-integrity-tech-accused-flax-typhoon-botnet-fbi" rel="nofollow">Company listed on Shanghai stock exchange accused of aiding Chinese cyberattacks</a> (background information on Integrity Technology Group)</li></ul></li>
+<li>June 24, 2024 – <strong>Recorded Future</strong>: <a href="https://www.recordedfuture.com/research/redjuliett-intensifies-taiwanese-cyber-espionage-via-network-perimeter" rel="nofollow">Chinese State-Sponsored RedJuliett Intensifies Taiwanese Cyber Espionage via Network Perimeter Exploitation</a> (available as <a href="https://go.recordedfuture.com/hubfs/reports/cta-cn-2024-0624.pdf" rel="nofollow">PDF</a>)</li>
+<li>April 04, 2024 – <strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/security-insider/intelligence-reports/east-asia-threat-actors-employ-unique-methods" rel="nofollow">Same targets, new playbooks: East Asia threat actors employ unique methods</a> (brief mention, no IOC)</li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>September 23, 2023??? – <strong>SecurityScorecard</strong>: <a href="https://securityscorecard.com/research/securityscorecard-identifies-possible-flax-typhoon-infrastructure/" rel="nofollow">SecurityScorecard Identifies Possible Flax Typhoon Infrastructure</a></li>
+<li>August 24, 2023 – <strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2023/08/24/flax-typhoon-using-legitimate-software-to-quietly-access-taiwanese-organizations/" rel="nofollow">Flax Typhoon using legitimate software to quietly access Taiwanese organizations</a></li>
+<li>March 03, 2023 – <strong>CrowdStrike</strong>: <a href="https://go.crowdstrike.com/rs/281-OBQ-266/images/CrowdStrike2023GlobalThreatReport.pdf" rel="nofollow">2023 Global Threat Report</a> (PDF, page 29)</li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>September 26, 2022 – <strong>Center for Security and Emerging Technology</strong>: <a href="https://cset.georgetown.edu/wp-content/uploads/CSET-Downrange-A-Survey-of-Chinas-Cyber-Ranges-1.pdf" rel="nofollow">Downrange: A Survey of China’s Cyber Ranges</a> (PDF, page 8)</li></ul>
+
+<h3 id="2020" id="2020">2020</h3>
+<ul><li>May 20, 2020?? – <strong>PRC Ministry of State Security</strong>: <a href="https://www.integritytech.com.cn/html/News/News_438_1.html" rel="nofollow">前沿 | 网络靶场，未来安全的基础设施</a> (web archive of a MSS-run periodical reprinted on IntegrityTech&#39;s website, English translation: “Frontier | Cyber ​​Range, the secure infrastructure of the future”)
+</details></li></ul>
+
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+</div></article><article id="post-7or4ye14zt" class="norm h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	<h2 class="post-title" itemprop="name" class="p-name"><a href="apt34-oilrig.html" itemprop="url" class="u-url">APT34 (OilRig)</a>
+		
+	</h2>
+	<time class="dt-published" datetime="2024-09-12T00:47:47Z" pubdate itemprop="datePublished" content="2024-09-12 00:47:47 +0000 UTC">September 12, 2024</time>
+
+
+<div lang="en" dir="auto" class="book e-content"><p><strong>Country:</strong> Islamic Republic of Iran
+<strong>Organization:</strong> Ministry of Intelligence and Security (MOIS)
+<strong>Objective:</strong> Espionage, Sabotage
+<em>(Page last updated October 12, 2024)</em></p>
+
+<h2 id="aliases-sorted-alphabetically" id="aliases-sorted-alphabetically">Aliases (sorted alphabetically):</h2>
+<ul><li>APT34 (<a href="https://research.checkpoint.com/2024/iranian-malware-attacks-iraqi-government/" rel="nofollow">Check Point Research</a>, FireEye, <a href="https://intezer.com/blog/research/new-iranian-campaign-tailored-to-us-companies-uses-updated-toolset/" rel="nofollow">Intezer</a>, NSA, <a href="https://nsfocusglobal.com/apt34-unleashes-new-wave-of-phishing-attack-with-variant-of-sidetwist-trojan/" rel="nofollow">NSFOCUS</a>, <a href="https://www.trendmicro.com/en_us/research/23/i/apt34-deploys-phishing-attack-with-new-malware.html" rel="nofollow">Trend Micro</a>)</li>
+<li>CHRYSENE (<a href="https://www.dragos.com/threat/chrysene/" rel="nofollow">Dragos</a>)</li>
+<li>Cobalt Gypsy (<a href="https://www.secureworks.com/research/threat-profiles/cobalt-gypsy" rel="nofollow">Secureworks</a>) (primary)</li>
+<li>Cobalt Lyceum (<a href="https://www.secureworks.com/research/threat-profiles/cobalt-lyceum" rel="nofollow">Secureworks</a>)</li>
+<li>Crambus (<a href="https://symantec-enterprise-blogs.security.com/threat-intelligence/crambus-middle-east-government" rel="nofollow">Symantec</a>)</li>
+<li>Earth Simnavaz (<a href="https://www.trendmicro.com/en_us/research/24/j/earth-simnavaz-cyberattacks-uae-gulf-regions.html" rel="nofollow">Trend Micro</a>)</li>
+<li>Europium (previously used by Microsoft)</li>
+<li>Greenbug (<a href="https://www.clearskysec.com/greenbug/" rel="nofollow">ClearSky</a>, <a href="https://symantec-enterprise-blogs.security.com/threat-intelligence/greenbug-espionage-telco-south-asia" rel="nofollow">Symantec</a>)</li>
+<li>Hazel Sandstorm (<a href="https://www.microsoft.com/en-us/security/security-insider/hazel-sandstorm" rel="nofollow">Microsoft</a>)</li>
+<li>Helix Kitten (<a href="https://www.crowdstrike.com/blog/meet-crowdstrikes-adversary-of-the-month-for-november-helix-kitten/" rel="nofollow">CrowdStrike</a>, <a href="https://en.wikipedia.org/wiki/Helix_Kitten" rel="nofollow">Wikipedia</a>)</li>
+<li>HEXANE (<a href="https://www.dragos.com/threat/hexane/" rel="nofollow">Dragos</a>) (linked to <em>Lyceum</em> by Kaspersky)</li>
+<li>ITG13 (<a href="https://securityintelligence.com/posts/new-destructive-wiper-zerocleare-targets-energy-sector-in-the-middle-east/" rel="nofollow">IBM</a>)</li>
+<li>Lyceum (<a href="https://securelist.com/lyceum-group-reborn/104586/" rel="nofollow">Kaspersky</a>, <a href="https://www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign" rel="nofollow">Secureworks</a>)</li>
+<li>OilRig (<a href="https://www.clearskysec.com/oilrig/" rel="nofollow">ClearSky</a>, <a href="https://cyble.com/threat-actor-profiles/oilrig/" rel="nofollow">Cyble</a>, <a href="https://apt.etda.or.th/cgi-bin/showcard.cgi?g=OilRig%2C%20APT%2034%2C%20Helix%20Kitten%2C%20Chrysene" rel="nofollow">EDTA</a>, <a href="https://www.eset.com/int/about/newsroom/press-releases/research/iran-linked-oilrig-attacks-israeli-organizations-with-cloud-service-powered-downloaders-eset-research-discovers/" rel="nofollow">ESET</a>, <a href="https://securelist.com/oilrigs-poison-frog/95490/" rel="nofollow">Kaspersky</a>, <a href="https://malpedia.caad.fkie.fraunhofer.de/actor/oilrig" rel="nofollow">Malpedia</a>, <a href="https://attack.mitre.org/groups/G0049/" rel="nofollow">MITRE</a>, <a href="https://unit42.paloaltonetworks.com/oilrig-novel-c2-channel-steganography/" rel="nofollow">Unit 42</a>)</li>
+<li>TA452 (<a href="https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta542-banker-malware-distribution-service" rel="nofollow">Proofpoint</a>)</li>
+<li>TG-2889 (formerly used by Secureworks)</li>
+<li>Yellow Maero (<a href="https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/muddy-advanced-persistent-teacher.html" rel="nofollow">PwC</a></li></ul>
+
+<h3 id="sub-group" id="sub-group">Sub-group:</h3>
+<ul><li>DEV-0842 (Microsoft) / Void Manticore (<a href="https://research.checkpoint.com/2024/bad-karma-no-justice-void-manticore-destructive-activities-in-israel/" rel="nofollow">Check Point Research</a>)</li>
+<li>DEV-0861 (Microsoft) / Scarred Manticore (<a href="https://research.checkpoint.com/2023/from-albania-to-the-middle-east-the-scarred-manticore-is-listening/" rel="nofollow">Check Point Research</a>) / UNC1860 (<a href="https://cloud.google.com/blog/topics/threat-intelligence/unc1860-iran-middle-eastern-networks/" rel="nofollow">Mandiant</a>)</li>
+<li>DEV-0166 (Microsoft) / IntrudingDivisor (<a href="https://unit42.paloaltonetworks.com/unit42-twoface-webshell-persistent-access-point-lateral-movement/" rel="nofollow">Unit 42</a>)</li>
+<li>DEV-0133 (Microsoft)</li></ul>
+
+<h3 id="known-associates" id="known-associates">Known Associates</h3>
+<ul><li>Mojtaba Mostafavi. Source: <a href="https://home.treasury.gov/news/press-releases/jy1048" rel="nofollow">U.S. Treasury</a> (linked by PwC, via Lab Dookhtegan leaks)</li>
+<li>Farzin Karimi Mazlganchai: <a href="https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/muddy-advanced-persistent-teacher.html" rel="nofollow">PwC</a></li></ul>
+
+<h3 id="vulnerabilities-exploited" id="vulnerabilities-exploited">Vulnerabilities Exploited</h3>
+<ul><li><a href="https://cve.org/CVERecord?id=CVE-2024-30088" rel="nofollow">CVE-2024-30088</a>, (CVSS3v1: 7.0 high)
+Windows Kernel Elevation of Privilege Vulnerability
+Source: <a href="https://www.trendmicro.com/en_us/research/24/j/earth-simnavaz-cyberattacks-uae-gulf-regions.html" rel="nofollow">Trend Micro</a></li>
+<li>CVE-2019-0604 (<a href="https://www.cve.org/CVERecord?id=CVE-2019-0604" rel="nofollow">CVE</a>, <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-0604" rel="nofollow">NVD</a>. CVSSv3.1: 9.8 critical, in CISA&#39;s KEV Catalog)
+Microsoft SharePoint Remote Code Execution Vulnerability
+Source: <a href="https://www.microsoft.com/en-us/security/blog/2022/09/08/microsoft-investigates-iranian-attacks-against-the-albanian-government/" rel="nofollow">Microsoft</a></li>
+<li>CVE-2017-11882 (<a href="https://www.cve.org/CVERecord?id=CVE-2017-11882" rel="nofollow">CVE</a>, <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-11882" rel="nofollow">NVD</a>. CVSSv3.1: 7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Office Memory Corruption Vulnerability
+Source: <a href="https://cloud.google.com/blog/topics/threat-intelligence/targeted-attack-in-middle-east-by-apt34/" rel="nofollow">Mandiant</a></li>
+<li>CVE-2017-0199 (<a href="https://www.cve.org/CVERecord?id=CVE-2017-0199" rel="nofollow">CVE</a>, <a href="https://nvd.nist.gov/vuln/detail/CVE-2017-0199" rel="nofollow">NVD</a>, CVSS3v1: 7.8 high, in CISA&#39;s KEV Catalog)
+Microsoft Office and WordPad Remote Code Execution Vulnerability
+Source: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-group-steps-attacks-new-delivery-documents-new-injector-trojan/" rel="nofollow">Unit 42</a></li></ul>
+
+<h2 id="tactics-techniques-and-procedures-ttps" id="tactics-techniques-and-procedures-ttps">Tactics, Techniques, and Procedures (TTPs)</h2>
+<ul><li>Enterprise TTPs mapped to MITRE <a href="https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fattack.mitre.org%2Fgroups%2FG0049%2FG0049-enterprise-layer.json" rel="nofollow">ATT&amp;CK Navigator Layers</a></li>
+<li>Industrial Control System (ICS) TTPs mapped to MITRE <a href="https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fattack.mitre.org%2Fgroups%2FG0049%2FG0049-ics-layer.json" rel="nofollow">ATT&amp;CK Navigator Layers</a></li></ul>
+
+<h2 id="known-tools-used" id="known-tools-used">Known Tools Used</h2>
+
+<p>As listed by <a href="https://attack.mitre.org/groups/G0049/#:~:text=machines.%5B24%5D-,Software,-ID" rel="nofollow">MITRE</a></p>
+
+<h2 id="references" id="references">References</h2>
+
+<p>Disclaimer: Not an exhaustive list of resources. Most contain actionable intelligence, not just news reporting.</p>
+
+<p><details open=""><summary>Links (Sorted in Chronological Order)</summary></p>
+
+<h3 id="2024" id="2024">2024</h3>
+<ul><li>October 11, 2024 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/24/j/earth-simnavaz-cyberattacks-uae-gulf-regions.html" rel="nofollow">Earth Simnavaz (aka APT34) Levies Advanced Cyberattacks Against UAE and Gulf Regions</a></li>
+<li>September 19, 2024 – <strong>Mandiant</strong>: <a href="https://cloud.google.com/blog/topics/threat-intelligence/unc1860-iran-middle-eastern-networks/" rel="nofollow">UNC1860 and the Temple of Oats: Iran&#39;s Hidden Hand in Middle Eastern Networks</a></li>
+<li>September 11, 2024 – <strong>Check Point Research</strong>: <a href="https://research.checkpoint.com/2024/iranian-malware-attacks-iraqi-government/" rel="nofollow">Targeted Iranian Attacks Against Iraqi Government Infrastructure</a></li>
+<li>May 20, 2024 – <strong>Check Point Research</strong>: <a href="https://research.checkpoint.com/2024/bad-karma-no-justice-void-manticore-destructive-activities-in-israel/" rel="nofollow">Bad Karma, No Justice: Void Manticore Destructive Activities in Israel</a></li></ul>
+
+<h3 id="2023" id="2023">2023</h3>
+<ul><li>December 20, 2023 – <strong>Security Scorecard</strong>: <a href="https://securityscorecard.com/research/a-detailed-analysis-of-the-menorah-malware-used-by-apt34/" rel="nofollow">A detailed analysis of the Menorah malware used by APT34</a></li>
+<li>December 14, 2023 – <strong>ESET</strong>: <a href="https://www.welivesecurity.com/en/eset-research/oilrig-persistent-attacks-cloud-service-powered-downloaders/" rel="nofollow">OilRig’s persistent attacks using cloud service-powered downloaders</a></li>
+<li>October 31, 2023 – <strong>Check Point Research</strong>: <a href="https://research.checkpoint.com/2023/from-albania-to-the-middle-east-the-scarred-manticore-is-listening/" rel="nofollow">From Albania to the Middle East: The Scarred Manticore is Listening</a> (AFFILIATED WITH MOIS)</li>
+<li>October 19, 2023 – <strong>Symantec</strong>: <a href="https://symantec-enterprise-blogs.security.com/threat-intelligence/crambus-middle-east-government" rel="nofollow">Crambus: New Campaign Targets Middle Eastern Government</a></li>
+<li>September 29, 2023 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/23/i/apt34-deploys-phishing-attack-with-new-malware.html" rel="nofollow">APT34 Deploys Phishing Attack With New Malware</a></li>
+<li>September 21, 2023 – <strong>ESET</strong>: <a href="https://www.welivesecurity.com/en/eset-research/oilrigs-outer-space-juicy-mix-same-ol-rig-new-drill-pipes/" rel="nofollow">OilRig’s Outer Space and Juicy Mix: Same ol’ rig, new drill pipes</a></li>
+<li>August 30, 2023 – <strong>NSFOCUS</strong>: <a href="https://nsfocusglobal.com/apt34-unleashes-new-wave-of-phishing-attack-with-variant-of-sidetwist-trojan/" rel="nofollow">APT34 Unleashes New Wave of Phishing Attack with Variant of SideTwist Trojan</a></li>
+<li>May 09, 2023 – <strong>ESET</strong>: <a href="https://www.welivesecurity.com/2023/05/09/eset-apt-activity-report-q42022-q12023/" rel="nofollow">ESET APT Activity Report Q4 2022­–Q1 2023</a>, specifically on page 8 in <a href="https://web-assets.esetstatic.com/wls/2023/05/eset_apt_activity_report_q42022_q12023.pdf" rel="nofollow">PDF</a> (PDF)</li>
+<li>May 08, 2023 – <strong>Kaspersky</strong>: <a href="https://me-en.kaspersky.com/about/press-releases/kaspersky-experts-warn-of-increased-it-supply-chain-attacks-by-oilrig-apt-in-the-middle-east-and-turkiye" rel="nofollow">Kaspersky experts warn of increased IT supply chain attacks by OilRig APT in the Middle East and Turkiye</a></li>
+<li>February 02, 2023 – <strong>Trend Micro</strong>: <a href="https://www.trendmicro.com/en_us/research/23/b/new-apt34-malware-targets-the-middle-east.html" rel="nofollow">New APT34 Malware Targets The Middle East</a></li></ul>
+
+<h3 id="2022" id="2022">2022</h3>
+<ul><li>September 08, 2022 – <strong>Microsoft</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2022/09/08/microsoft-investigates-iranian-attacks-against-the-albanian-government/" rel="nofollow">Microsoft investigates Iranian attacks against the Albanian government</a> (ATTRIBUTION TO MOIS)</li>
+<li>May 10, 2022 – <strong>Malwarebytes</strong>: <a href="https://www.threatdown.com/blog/apt34-targets-jordan-government-using-new-saitama-backdoor/" rel="nofollow">APT34 targets Jordan Government using new Saitama backdoor</a></li></ul>
+
+<h3 id="2021" id="2021">2021</h3>
+<ul><li>October 18, 2021 – <strong>Kaspersky</strong>: <a href="https://securelist.com/lyceum-group-reborn/104586/" rel="nofollow">Lyceum group reborn</a></li>
+<li>April 08, 2021 – <strong>Check Point Research</strong>: <a href="https://research.checkpoint.com/2021/irans-apt34-returns-with-an-updated-arsenal/" rel="nofollow">Iran’s APT34 Returns with an Updated Arsenal</a></li></ul>
+
+<h3 id="2020" id="2020">2020</h3>
+<ul><li>July 22, 2020 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/oilrig-novel-c2-channel-steganography/" rel="nofollow">OilRig Targets Middle Eastern Telecommunications Organization and Adds Novel C2 Channel with Steganography to Its Inventory</a></li>
+<li>May 19, 2020 – <strong>Symantec</strong>: <a href="https://symantec-enterprise-blogs.security.com/threat-intelligence/greenbug-espionage-telco-south-asia" rel="nofollow">Sophisticated Espionage Group Turns Attention to Telecom Providers in South Asia</a></li>
+<li>March 02, 2020 – <strong>Telsy</strong>: <a href="https://www.telsy.com/en/apt34-aka-oilrig-attacks-lebanon-government-entities-with-maildropper-implant/" rel="nofollow">APT34 (aka OilRig, aka Helix Kitten) attacks Lebanon government entities with MailDropper implants</a></li>
+<li>January 30, 2020 – <strong>Intezer</strong>: <a href="https://intezer.com/blog/research/new-iranian-campaign-tailored-to-us-companies-uses-updated-toolset/" rel="nofollow">New Iranian Campaign Tailored to US Companies Utilizes an Updated Toolset</a></li></ul>
+
+<h3 id="2019" id="2019">2019</h3>
+<ul><li>December 17, 2019 – <strong>Kaspersky</strong>: <a href="https://securelist.com/oilrigs-poison-frog/95490/" rel="nofollow">OilRig’s Poison Frog – old samples, same trick</a></li>
+<li>December 04, 2019 – <strong>IBM</strong>: <a href="https://securityintelligence.com/posts/new-destructive-wiper-zerocleare-targets-energy-sector-in-the-middle-east/" rel="nofollow">New Destructive Wiper ZeroCleare Targets Energy Sector in the Middle East</a></li>
+<li>November 09, 2019 – <strong>NSFOCUS</strong>: <a href="https://nsfocusglobal.com/apt34-event-analysis-report/" rel="nofollow">APT34 Event Analysis Report</a></li>
+<li>October 21, 2019 – <strong>National Security Agency</strong>: <a href="https://media.defense.gov/2019/Oct/18/2002197242/-1/-1/0/NSA_CSA_TURLA_20191021%20VER%203%20-%20COPY.PDF" rel="nofollow">Turla Group Exploits Iranian APT To Expand Coverage Of Victims</a> (PDF)</li>
+<li>August 27, 2019 – <strong>Secureworks</strong>: <a href="https://www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign" rel="nofollow">LYCEUM Takes Center Stage in Middle East Campaign</a></li>
+<li>July 18, 2019 – <strong>FireEye</strong>: <a href="https://cloud.google.com/blog/topics/threat-intelligence/hard-pass-declining-apt34-invite-to-join-their-professional-network/" rel="nofollow">Hard Pass: Declining APT34&#39;s Invite to Join Their Professional Network</a></li>
+<li>July 16, 2019 – <strong>BGD e-GOV CIRT</strong> (Bangladesh): <a href="https://www.cirt.gov.bd/dnspionage-focus-on-internal-actions/" rel="nofollow">[DNSPIONAGE] – FOCUS ON INTERNAL ACTIONS</a></li>
+<li>May 15, 2019 – <strong>Proofpoint</strong>: <a href="https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta542-banker-malware-distribution-service" rel="nofollow">Threat Actor Profile: TA542, From Banker to Malware Distribution Service</a></li>
+<li>May 06, 2019 – <strong>NSFOCUS</strong>: <a href="https://nsfocusglobal.com/analysis-of-file-disclosure-by-apt34/" rel="nofollow">Analysis of File Disclosure by APT34</a></li>
+<li>April 30, 2019 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/behind-the-scenes-with-oilrig/" rel="nofollow">Behind the Scenes with OilRig</a></li>
+<li>April 16, 2019 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/dns-tunneling-in-the-wild-overview-of-oilrigs-dns-tunneling/" rel="nofollow">DNS Tunneling in the Wild: Overview of OilRig’s DNS Tunneling</a></li></ul>
+
+<h3 id="2018" id="2018">2018</h3>
+<ul><li>November 27, 2018 – <strong>Cisco Talos</strong>: <a href="https://blog.talosintelligence.com/dnspionage-campaign-targets-middle-east/" rel="nofollow">DNSpionage Campaign Targets Middle East</a> (attributed by FireEye on July 18, 2019)</li>
+<li>November 16, 2018 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-analyzing-oilrigs-ops-tempo-testing-weaponization-delivery/" rel="nofollow">Analyzing OilRig&#39;s Ops Tempo from Testing to Weaponization to Delivery</a></li>
+<li>September 12, 2018 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-uses-updated-bondupdater-target-middle-eastern-government/" rel="nofollow">OilRig Uses Updated BONDUPDATER to Target Middle Eastern Government</a></li>
+<li>September 04, 2018 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-targets-middle-eastern-government-adds-evasion-techniques-oopsie/" rel="nofollow">OilRig targets a Middle Eastern Government and Adds Evasion Techniques to OopsIE</a></li>
+<li>July 25, 2018 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-targets-technology-service-provider-government-agency-quadagent/" rel="nofollow">OilRig Targets Technology Service Provider and Government Agency with QUADAGENT</a></li>
+<li>February 23, 2018 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oopsie-oilrig-uses-threedollars-deliver-new-trojan/" rel="nofollow">OopsIE! OilRig Uses ThreeDollars to Deliver New Trojan</a></li>
+<li>February 23, 2018 – <strong>Booz Allen</strong>: <a href="https://www.boozallen.com/s/insight/blog/dark-labs-discovers-apt34-malware-variants.html" rel="nofollow">Researchers Discover New variants of APT34 Malware</a></li>
+<li>January 25, 2018 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-uses-rgdoor-iis-backdoor-targets-middle-east/" rel="nofollow">OilRig uses RGDoor IIS Backdoor on Targets in the Middle East</a></li></ul>
+
+<h3 id="2017" id="2017">2017</h3>
+<ul><li>December 15, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-introducing-the-adversary-playbook-first-up-oilrig/" rel="nofollow">Introducing the Adversary Playbook: First up, OilRig</a></li>
+<li>December 11, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-performs-tests-twoface-webshell/" rel="nofollow">OilRig Performs Tests on the TwoFace Webshell</a></li>
+<li>December 07, 2017 – <strong>FireEye</strong>: <a href="https://cloud.google.com/blog/topics/threat-intelligence/targeted-attack-in-middle-east-by-apt34/" rel="nofollow">New Targeted Attack in the Middle East by APT34, a Suspected Iranian Threat Group, Using CVE-2017-11882 Exploit</a></li>
+<li>November 08, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-deploys-alma-communicator-dns-tunneling-trojan/" rel="nofollow">OilRig Deploys “ALMA Communicator” – DNS Tunneling Trojan</a></li>
+<li>October 24, 2017 – <strong>ClearSky</strong>: <a href="https://www.clearskysec.com/greenbug/" rel="nofollow">Iranian Threat Agent Greenbug Impersonates Israeli High-Tech and Cyber Security Companies</a></li>
+<li>October 09, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-group-steps-attacks-new-delivery-documents-new-injector-trojan/" rel="nofollow">OilRig Group Steps Up Attacks with New Delivery Documents and New Injector Trojan</a></li>
+<li>September 26, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-striking-oil-closer-look-adversary-infrastructure/" rel="nofollow">Striking Oil: A Closer Look at Adversary Infrastructure</a></li>
+<li>August 28, 2017 – <strong>ClearSky</strong>: <a href="https://www.clearskysec.com/ismagent/" rel="nofollow">Recent ISMAgent Samples and Infrastructure by Iranian Threat Group GreenBug</a></li>
+<li>July 27, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-uses-ismdoor-variant-possibly-linked-greenbug-threat-group/" rel="nofollow">OilRig Uses ISMDoor Variant; Possibly Linked to Greenbug Threat Group</a></li>
+<li>July 27, 2017 – <strong>Secureworks</strong>: <a href="https://www.secureworks.com/research/the-curious-case-of-mia-ash" rel="nofollow">The Curious Case of Mia Ash: Fake Persona Lures Middle Eastern Targets</a></li>
+<li>April 27, 2017 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-actors-provide-glimpse-development-testing-efforts/" rel="nofollow">OilRig Actors Provide a Glimpse into Development and Testing Efforts</a></li>
+<li>March 31, 2017 – <strong>LogRhythm Labs</strong>: <a href="https://www.content.shi.com/SHIcom/ContentAttachmentImages/SharedResources/PDFs/lr-041017-oilrig-report2.pdf" rel="nofollow">OilRig Campaign Analysis</a> (PDF, TLP:WHITE)</li>
+<li>February 15, 2017 – <strong>Secureworks</strong>: <a href="https://www.secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations" rel="nofollow">Iranian PupyRAT Bites Middle Eastern Organizations</a></li>
+<li>January 05, 2017 – <strong>ClearSky</strong>: <a href="https://www.clearskysec.com/oilrig/" rel="nofollow">Iranian Threat Agent OilRig Delivers Digitally Signed Malware, Impersonates University of Oxford</a></li></ul>
+
+<h3 id="2016" id="2016">2016</h3>
+<ul><li>October 04, 2016 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/unit42-oilrig-malware-campaign-updates-toolset-and-expands-targets/" rel="nofollow">OilRig Malware Campaign Updates Toolset and Expands Targets</a></li>
+<li>May 26, 2016 – <strong>Unit 42</strong>: <a href="https://unit42.paloaltonetworks.com/the-oilrig-campaign-attacks-on-saudi-arabian-organizations-deliver-helminth-backdoor/" rel="nofollow">The OilRig Campaign: Attacks on Saudi Arabian Organizations Deliver Helminth Backdoor</a></li></ul>
+
+<h3 id="2015" id="2015">2015</h3>
+<ul><li>October 07, 2015 – <strong>Secureworks</strong>: <a href="https://www.secureworks.com/research/suspected-iran-based-hacker-group-creates-network-of-fake-linkedin-profiles" rel="nofollow">Hacker Group Creates Network of Fake LinkedIn Profiles</a></li></ul>
+
+<p></details></p>
+<p>Feedback: Please direct message any comments, concerns, corrections or questions to <a href="https://infosec.exchange/@screaminggoat" rel="nofollow">https://infosec.exchange/@screaminggoat</a></p>
+</div></article>
+		<nav id="paging" class="content-container clearfix">
+				<a href="page/2.html">&#8672; Older</a>
+		</nav>
+		</section>
+		<footer>
+			<hr/>
+			<nav dir="ltr">
+				<a class="home pubd" href="https://infosec.press/">Infosec Press</a> &middot; powered by <a style="margin-left:0" href="https://writefreely.org/">writefreely</a>
+			</nav>
+		</footer>
+	</body>
+	<script src="https://infosec.press/js/localdate.js"></script>
+<script>
+	try {
+	  WebFontConfig = {
+		custom: { families: [ 'Lora:400,700:latin', 'Open+Sans:400,700:latin' ], urls: [ '/css/fonts.css' ] }
+	  };
+	  (function() {
+		var wf = document.createElement('script');
+		wf.src = '/js/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	  })();
+	} catch (e) {}
+	</script>
+</html>
